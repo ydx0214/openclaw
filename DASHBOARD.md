@@ -8,6 +8,8 @@
 **Mode:** Auto Improve  
 **Sync:** GitHub Enabled
 
+[English](./README.md) · [中文首页](./README.zh-CN.md) · [中文看板](./DASHBOARD.zh-CN.md)
+
 </div>
 
 ---

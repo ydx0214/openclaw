@@ -45,6 +45,7 @@
 - [x] 将 completion proof 内嵌进 `browser-upload-handoff.md`，把上传类任务的完成标准收紧为“页面侧已接受目标文件 + 至少一条次证明 + handoff-ready”，继续压低官网投递、附件表单、资料提交中的假完成风险
 - [ ] 将“结构化资料 -> 字段映射 -> draft-ready 验证 -> 明确 submit 批准边界”固化成通用浏览器表单执行流程，优先降低多步骤表单、带上传表单和资料提交流程中的假完成与误提交风险
 - [x] 将 research / prep / delivery / form / upload 这些已有 playbook 的默认串联顺序固化进 `openclaw-agent-delegation.md`，减少复杂混合任务中起手路由正确但中途接力断开的返工
+- [x] 将 completion proof 内嵌进 `windows-file-dialog-handoff.md`，把 Open / Save / Save As / Select Folder 的完成标准收紧为“本地结果 + 源应用接受 + handoff-ready”，继续压低跨浏览器 / 桌面 / 文档链路中的假完成风险
 
 ## Phase 6
 

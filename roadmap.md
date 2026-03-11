@@ -49,6 +49,7 @@
 
 - [x] 为跨浏览器 / 桌面 / 文档任务补一份统一的 completion proof 模板，先定义最终产物、主证明信号、次证明信号、假完成陷阱和 handoff-ready 条件，继续压低复杂真实任务里的“看起来做了、实际没完成”问题
 - [x] 将 completion proof 正式落成 `playbooks/completion-proof.md`，作为浏览器 / 桌面 / 文档 / 本地文件交接类复杂任务的统一验收覆盖层
+- [x] 将 completion proof 内嵌进 `playbooks/local-file-delivery-handoff.md`，把本地文件交付类任务的完成标准收紧为“精确交付物 + 可见证明 + handoff-ready”，继续压低导出后错文件、旧文件和末端假完成风险
 
 - [x] 将生图 / 视频生成类复杂任务统一为 `Generation Brief -> prompt pack -> acceptance` 默认前置流程，优先降低多轮 prompt 返工和交付失焦
 - [ ] 将多媒体生成流程正式接入更多任务入口，默认按 playbook 执行而不是临时拼 prompt

@@ -17,6 +17,15 @@ $weeklyDir = Join-Path $RepoPath "reports\weekly"
 $output = Join-Path $weeklyDir ("{0}.md" -f $weekId)
 $categoryConfigPath = Join-Path $RepoPath "scripts\weekly_summary.categories.json"
 
+if (-not (Test-Path $dailyDir)) {
+    Write-Error "DAILY_REPORT_DIR_MISSING: $dailyDir"
+    exit 1
+}
+
+if (-not (Test-Path $weeklyDir)) {
+    New-Item -ItemType Directory -Path $weeklyDir -Force | Out-Null
+}
+
 $files = Get-ChildItem $dailyDir -Filter *.md | Where-Object {
     $_.Name -ne 'TEMPLATE.md' -and $_.LastWriteTime -ge $start
 } | Sort-Object LastWriteTime
@@ -99,4 +108,16 @@ $categorySection## High Frequency Failure Patterns
 "@
 
 Set-Content -Path $output -Value $summary -Encoding UTF8
-Write-Output $output
+
+if (-not (Test-Path $output)) {
+    Write-Error "WEEKLY_SUMMARY_WRITE_FAILED: $output"
+    exit 1
+}
+
+$writtenText = Get-Content $output -Raw -Encoding UTF8
+if ($writtenText -notmatch '## Problems By Category' -or $writtenText -notmatch '## High Frequency Failure Patterns') {
+    Write-Error "WEEKLY_SUMMARY_VERIFY_FAILED: missing expected sections"
+    exit 1
+}
+
+Write-Output "OK: $output (reports=$($files.Count); categories=$($categoryStats.Count))"

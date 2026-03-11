@@ -57,3 +57,4 @@
 - 新增 `playbooks/openclaw-agent-delegation.md`，把复杂任务起手分流固化为 direct / ACP / local-tool-chain 三条默认路线，并接入 `PLAYBOOKS.md` 与 `TOOLS.md`，降低大任务一开始选错执行路径导致的返工与弱验证风险
 - 新增 `playbooks/local-file-delivery-handoff.md`，把“本地文件已生成/已下载 -> reveal/open/review/唯一交付文件选择 -> 下一流程交接”沉淀为标准接力流程，并接入 `PLAYBOOKS.md`、`TOOLS.md` 与 `desktop-operations.md`，降低简历/文档/导出文件/图片交付中的错文件、旧文件和末端假完成风险
 - 将 research / prep / delivery / form / upload 的 4 条默认串联链路固化进 `playbooks/openclaw-agent-delegation.md`，减少复杂混合任务中虽已选对工具域、但中途接力断层导致的返工
+- 新增 `ideas/completion-proof-template.md`，把复杂任务的完成标准统一收口为最终产物、主/次证明信号、假完成陷阱与 handoff-ready 条件，并将 completion proof 规则接入 `playbooks/openclaw-agent-delegation.md` 与 `roadmap.md`，继续降低浏览器 / 桌面 / 文档链路中的假完成风险

@@ -2,6 +2,8 @@
 
 ## 2026-03-12
 
+- 新增 `playbooks/document-delivery-pack.md`，并将“source of truth -> delivery artifact -> output check -> next-step handoff”接入 `PLAYBOOKS.md`、`playbooks/document-task-routing.md` 与 `roadmap.md`，减少 Word / PDF / Markdown / Office 文档任务在末端交付时的错文件、旧文件和假完成风险
+
 - 新增 `self-evolution-log/ideas/multimedia-prompt-pack-template.md`，并将“Generation Brief -> shared guardrails -> variant prompts -> acceptance -> next revision axis”接入 `playbooks/multimedia-generation-workflow.md` 与 `roadmap.md`，减少生图 / 视频 / 图生视频任务从目标确认到可执行 prompt 之间的断层
 - 新增 `playbooks/research-action-pack.md`，把“Research Brief -> Action Pack -> 下一执行流程”正式固化为研究类任务的标准交接层，并接入 `PLAYBOOKS.md`、`TOOLS.md`、`playbooks/browser-research-briefing.md` 与 `roadmap.md`，减少官网研究、政策/FAQ、产品对比、职位研究完成后还要手工二次整理输入的返工
 ## 2026-03-11

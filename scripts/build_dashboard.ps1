@@ -5,6 +5,12 @@ param(
 $weeklyDir = Join-Path $RepoPath "reports\weekly"
 $dashboardFile = Join-Path $RepoPath "DASHBOARD.md"
 
+$repoUrl = "(not configured)"
+$remoteUrl = git -C $RepoPath remote get-url origin 2>$null
+if ($LASTEXITCODE -eq 0 -and $remoteUrl) {
+    $repoUrl = $remoteUrl.Trim()
+}
+
 $weeklyFile = Get-ChildItem $weeklyDir -Filter "*.md" |
     Where-Object { $_.Name -ne "TEMPLATE.md" } |
     Sort-Object LastWriteTime -Descending |
@@ -52,7 +58,7 @@ $content = "# Evolution Dashboard`r`n`r`n" +
 "| Workflow | $workflow |`r`n`r`n" +
 "---`r`n`r`n" +
 "## Repo`r`n`r`n" +
-"- GitHub: https://github.com/ydx0214/openclaw.git`r`n" +
+"- GitHub: $repoUrl`r`n" +
 "- Daily: reports/daily/`r`n" +
 "- Weekly: reports/weekly/`r`n" +
 "- Fixes: fixes/`r`n" +

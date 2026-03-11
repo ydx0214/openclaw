@@ -59,3 +59,4 @@
 - 将 research / prep / delivery / form / upload 的 4 条默认串联链路固化进 `playbooks/openclaw-agent-delegation.md`，减少复杂混合任务中虽已选对工具域、但中途接力断层导致的返工
 - 新增 `ideas/completion-proof-template.md`，把复杂任务的完成标准统一收口为最终产物、主/次证明信号、假完成陷阱与 handoff-ready 条件，并将 completion proof 规则接入 `playbooks/openclaw-agent-delegation.md` 与 `roadmap.md`，继续降低浏览器 / 桌面 / 文档链路中的假完成风险
 - 新增 `playbooks/completion-proof.md`，把复杂任务的完成标准从“动作执行成功”提升为“最终产物 + 强证明信号 + handoff-ready 条件成立”，并接入 `PLAYBOOKS.md`、`TOOLS.md` 与 roadmap，降低浏览器 / 桌面 / 文档链路中的假完成风险
+- 将 completion proof 内嵌进 `playbooks/browser-download-handoff.md`，把浏览器下载类任务的完成标准收紧为“精确本地文件 + 强证明信号 + 明确下一流程”，继续压低下载预览/提示误判为完成的风险

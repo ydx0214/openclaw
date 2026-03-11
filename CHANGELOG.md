@@ -53,3 +53,4 @@
 - 新增 `playbooks/browser-download-handoff.md`，把“浏览器下载触发 -> 本地落盘 -> 文件校验 -> 下一流程交接”沉淀为标准下载接力流程，并接入 `PLAYBOOKS.md`、`TOOLS.md` 与 roadmap，降低 PDF/JD/导出文件类复杂任务中的假完成与错文件复用风险
 - 新增 `playbooks/downloaded-file-routing.md`，把“已下载本地文件 -> 按执行目标分流到文档 / 求职 / 简历交付 / 多媒体 / 解包流程”沉淀为标准路由规则，减少下载完成后停在本地文件、后续链路接不上或走错工具链的情况
 - 新增 `playbooks/windows-file-dialog-handoff.md`，把 Windows 打开/保存/另存为/选文件夹 对话框沉淀为统一交接流程，并接入 `PLAYBOOKS.md` 与 `TOOLS.md`，降低浏览器上传下载、Office 导出、桌面应用文件选择中的假完成风险
+- 新增 `playbooks/web-form-execution.md`，把通用浏览器表单任务沉淀为 `数据准备 -> 字段映射 -> 页面侧验证 -> 明确提交边界` 工作流，并接入 `PLAYBOOKS.md`，降低多步骤表单、带上传表单和草稿/提交边界不清时的假完成风险

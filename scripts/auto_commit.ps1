@@ -29,8 +29,11 @@ if (-not $branch) {
 
 git push origin $branch
 if ($LASTEXITCODE -ne 0) {
-    Write-Error "GIT_PUSH_FAILED"
-    exit 1
+    git push --set-upstream origin $branch
+    if ($LASTEXITCODE -ne 0) {
+        Write-Error "GIT_PUSH_FAILED"
+        exit 1
+    }
 }
 
 Write-Output "OK: $commitMessage -> $branch"

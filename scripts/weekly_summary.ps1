@@ -6,7 +6,8 @@ Set-Location $RepoPath
 
 $today = Get-Date
 $start = $today.AddDays(-7)
-$weekId = Get-Date -Format "yyyy-ww"
+$isoWeek = [System.Globalization.ISOWeek]::GetWeekOfYear($today)
+$weekId = "{0}-{1:D2}" -f $today.Year, $isoWeek
 $rangeText = "{0:yyyy-MM-dd} ~ {1:yyyy-MM-dd}" -f $start, $today
 $dailyDir = Join-Path $RepoPath "reports\daily"
 $weeklyDir = Join-Path $RepoPath "reports\weekly"
@@ -17,14 +18,14 @@ $files = Get-ChildItem $dailyDir -Filter *.md | Where-Object {
     $_.Name -ne 'TEMPLATE.md' -and $_.LastWriteTime -ge $start
 } | Sort-Object LastWriteTime
 
-$categoryConfigs = Get-Content $categoryConfigPath -Raw | ConvertFrom-Json
+$categoryConfigs = Get-Content $categoryConfigPath -Raw -Encoding UTF8 | ConvertFrom-Json
 $categoryStats = [ordered]@{}
 foreach ($category in $categoryConfigs) {
     $categoryStats[$category.name] = 0
 }
 
 foreach ($file in $files) {
-    $text = Get-Content $file.FullName -Raw
+    $text = Get-Content $file.FullName -Raw -Encoding UTF8
     foreach ($category in $categoryConfigs) {
         $pattern = ($category.patterns | ForEach-Object { [regex]::Escape($_) }) -join '|'
         if ($text -match $pattern) {

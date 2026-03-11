@@ -21,7 +21,7 @@ if (-not $weeklyFile) {
     exit 1
 }
 
-$text = Get-Content $weeklyFile -Raw
+$text = Get-Content $weeklyFile -Raw -Encoding UTF8
 
 $categoryMatches = [regex]::Matches($text, '(?ms)^###\s+(.+?)\r?\n-\s*(\d+)')
 $weeklyRows = @()

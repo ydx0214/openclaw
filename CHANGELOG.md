@@ -36,3 +36,4 @@
 - 新增正式 `scripts/task_health.registry.json` 与 `scripts/task_health.ps1`，将 registry + `status/*.last-run.json` + freshness 规则串成首个可执行任务健康汇总原型
 - 给 `build_dashboard.ps1` 接入 `status/task_health.summary.md`，让任务健康汇总首次进入首页主视图，减少“有状态但不可见”的落地断层
 - 新增 `ideas/document-task-routing-template.md`，把 PDF / Word / 简历 / 表格 / Markdown 任务沉淀为统一分流与验收模板，降低复杂文档任务走错工具链和漏校验的概率
+- 新增 `playbooks/document-task-routing.md`，把复杂文档任务按提取、排版、简历、表格、Markdown 交付 5 条路径分流，并接入 `PLAYBOOKS.md` 与 `TOOLS.md`

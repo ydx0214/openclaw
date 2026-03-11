@@ -11,24 +11,31 @@ $rangeText = "{0:yyyy-MM-dd} ~ {1:yyyy-MM-dd}" -f $start, $today
 $dailyDir = Join-Path $RepoPath "reports\daily"
 $weeklyDir = Join-Path $RepoPath "reports\weekly"
 $output = Join-Path $weeklyDir ("{0}.md" -f $weekId)
+$categoryConfigPath = Join-Path $RepoPath "scripts\weekly_summary.categories.json"
 
 $files = Get-ChildItem $dailyDir -Filter *.md | Where-Object {
     $_.Name -ne 'TEMPLATE.md' -and $_.LastWriteTime -ge $start
 } | Sort-Object LastWriteTime
 
-$model = 0
-$browser = 0
-$automation = 0
-$config = 0
-$workflow = 0
+$categoryConfigs = Get-Content $categoryConfigPath -Raw | ConvertFrom-Json
+$categoryStats = [ordered]@{}
+foreach ($category in $categoryConfigs) {
+    $categoryStats[$category.name] = 0
+}
 
 foreach ($file in $files) {
     $text = Get-Content $file.FullName -Raw
-    if ($text -match '模型|model|server_error|provider') { $model++ }
-    if ($text -match '浏览器|browser|snapshot|元素|页面') { $browser++ }
-    if ($text -match '自动化|automation|脚本|点击|任务') { $automation++ }
-    if ($text -match '配置|config|gateway|凭证|重启') { $config++ }
-    if ($text -match '流程|workflow|日报|记录|重复') { $workflow++ }
+    foreach ($category in $categoryConfigs) {
+        $pattern = ($category.patterns | ForEach-Object { [regex]::Escape($_) }) -join '|'
+        if ($text -match $pattern) {
+            $categoryStats[$category.name]++
+        }
+    }
+}
+
+$categorySection = ""
+foreach ($entry in $categoryStats.GetEnumerator()) {
+    $categorySection += "### {0}`r`n- {1}`r`n`r`n" -f $entry.Key, $entry.Value
 }
 
 $summary = @"
@@ -44,32 +51,17 @@ $summary = @"
 ## Done
 
 - 汇总最近 7 天日报
-- 统计高频问题分类
+- 按可配置规则统计高频问题分类
 - 生成周报文件
 
 ## Improved
 
 - 让进化记录从“每天一篇”升级到“每周可回顾”
-- 增加基础问题分类统计
+- 把问题分类从脚本硬编码升级为独立规则文件，新增类别不必改脚本
 
 ## Problems By Category
 
-### Model
-- $model
-
-### Browser
-- $browser
-
-### Automation
-- $automation
-
-### Config
-- $config
-
-### Workflow
-- $workflow
-
-## High Frequency Failure Patterns
+$categorySection## High Frequency Failure Patterns
 
 - 优先关注计数最高的类别，并在下周重点修复
 

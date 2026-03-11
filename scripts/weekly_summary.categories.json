@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Model",
+    "patterns": ["模型", "model", "server_error", "provider"]
+  },
+  {
+    "name": "Browser",
+    "patterns": ["浏览器", "browser", "snapshot", "元素", "页面"]
+  },
+  {
+    "name": "Automation",
+    "patterns": ["自动化", "automation", "脚本", "点击", "任务"]
+  },
+  {
+    "name": "Config",
+    "patterns": ["配置", "config", "gateway", "凭证", "重启"]
+  },
+  {
+    "name": "Workflow",
+    "patterns": ["流程", "workflow", "日报", "记录", "重复"]
+  }
+]

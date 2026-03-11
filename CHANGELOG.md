@@ -11,3 +11,4 @@
 
 - 让看板分类统计从固定 5 类改为自动读取最新周报中的全部类别，减少新增分类后的静默漏显示风险
 - 修复自动提交脚本在新分支/新仓库首次推送时缺少 upstream 的问题，失败后自动回退到 `git push --set-upstream origin <branch>`
+- 把周报分类关键词从脚本内硬编码抽到 scripts/weekly_summary.categories.json，新增类别时只需改配置，降低后续维护耦合风险

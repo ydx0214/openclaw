@@ -21,11 +21,7 @@ Homepage for self-evolution progress.
 
 | Metric | Count |
 |---|---:|
-| Model | 1 |
-| Browser | 1 |
-| Automation | 1 |
-| Config | 0 |
-| Workflow | 1 |
+| (none) | 0 |
 
 ---
 

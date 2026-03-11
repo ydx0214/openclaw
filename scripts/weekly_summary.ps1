@@ -120,4 +120,4 @@ if ($writtenText -notmatch '## Problems By Category' -or $writtenText -notmatch 
     exit 1
 }
 
-Write-Output "OK: $output (reports=$($files.Count); categories=$($categoryStats.Count))"
+Write-Output "OK: WEEKLY_SUMMARY status=ok; path=$output; reports=$($files.Count); categories=$($categoryStats.Count)"

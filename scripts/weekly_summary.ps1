@@ -6,7 +6,10 @@ Set-Location $RepoPath
 
 $today = Get-Date
 $start = $today.AddDays(-7)
-$isoWeek = [System.Globalization.ISOWeek]::GetWeekOfYear($today)
+$calendar = [System.Globalization.CultureInfo]::InvariantCulture.Calendar
+$weekRule = [System.Globalization.CalendarWeekRule]::FirstFourDayWeek
+$firstDayOfWeek = [System.DayOfWeek]::Monday
+$isoWeek = $calendar.GetWeekOfYear($today, $weekRule, $firstDayOfWeek)
 $weekId = "{0}-{1:D2}" -f $today.Year, $isoWeek
 $rangeText = "{0:yyyy-MM-dd} ~ {1:yyyy-MM-dd}" -f $start, $today
 $dailyDir = Join-Path $RepoPath "reports\daily"

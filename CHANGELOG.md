@@ -2,6 +2,8 @@
 
 ## 2026-03-12
 
+- 新增 `self-evolution-log/ideas/document-intake-brief-template.md`，并将“task goal -> source files -> output strategy -> constraints -> verification -> routing decision”接入 `playbooks/document-task-routing.md` 与 `roadmap.md`，降低 PDF / Word / 简历 / 表格混合任务起手走错链路、误覆盖原件和交付目标不清的风险
+
 - 新增 `self-evolution-log/ideas/multimedia-delivery-pack-template.md`，并将多媒体工作流从 `Generation Brief -> prompt pack -> iteration log -> acceptance` 扩展为 `Generation Brief -> prompt pack -> iteration log -> delivery pack -> acceptance`，同时接入 `playbooks/multimedia-generation-workflow.md` 与 `roadmap.md`，减少生图 / 视频 / 图生视频任务在生成后到上传/发布前的版本失焦、素材散落与末端假完成风险
 
 - 新增 `playbooks/local-batch-file-routing.md`，并将本地 ZIP/解压、批量改名、批量图片转换、按扩展名整理、校验和、文件名清洗按交付目标分流到 `local-toolbox` / `batch-file-studio`，同时接入 `PLAYBOOKS.md`、`TOOLS.md` 与 `roadmap.md`，降低本地文件批处理任务中范围不清、输出物不明确和“命令跑了但文件未真正 handoff-ready”的风险

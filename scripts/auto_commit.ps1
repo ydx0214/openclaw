@@ -27,6 +27,12 @@ if (-not $branch) {
     exit 1
 }
 
+$originUrl = git remote get-url origin 2>$null
+if ($LASTEXITCODE -ne 0 -or -not $originUrl) {
+    Write-Error "GIT_REMOTE_ORIGIN_MISSING: commit created locally, but remote 'origin' is not configured"
+    exit 1
+}
+
 git push origin $branch
 if ($LASTEXITCODE -ne 0) {
     git push --set-upstream origin $branch

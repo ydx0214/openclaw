@@ -14,3 +14,4 @@
 - 把周报分类关键词从脚本内硬编码抽到 scripts/weekly_summary.categories.json，新增类别时只需改配置，降低后续维护耦合风险
 - 给 weekly_summary.ps1 增加分类规则缺失/损坏时的内置回退与告警，避免单个配置文件问题阻断周报生成
 - 给 build_dashboard.ps1 增加“无周报时继续生成看板”的降级回退，避免初始化阶段因上游文件缺失直接失败
+- 给 auto_commit.ps1 增加 `origin` 远程预检与明确报错，减少新仓库初始化时的推送排障成本

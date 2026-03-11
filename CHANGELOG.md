@@ -25,3 +25,4 @@
 - 给 auto_commit.ps1 补统一结构化状态输出与 push 后 SHA 校验，减少“提交成功但远端未对齐”的静默失真风险
 - 将 weekly_summary.ps1 的成功输出统一为 `status=ok` 结构化摘要，补齐日报/周报/看板/自动提交链路的最小一致协议
 - 在 roadmap 中补充统一状态输出协议（`task` / `status` / `path` / `summary`），为后续任务健康汇总与自动告警预留一致输入
+- 新增 `ideas/task-health-summary-template.md`，把最小任务健康摘要协议落成可复用样例，降低后续新脚本接入统一状态输出的成本

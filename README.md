@@ -10,6 +10,7 @@
 - `ideas/`：待验证想法
 - `fixes/`：已确认问题与修复记录
 - `roadmap.md`：下一阶段计划
+- `scripts/auto_commit.ps1`：每日自动提交脚本
 
 ## 每日记录标准
 

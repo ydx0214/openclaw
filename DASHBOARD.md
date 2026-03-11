@@ -1,71 +1,39 @@
-# Evolution Dashboard
+﻿# Evolution Dashboard
 
-> 首页可视化进化看板
+Homepage for self-evolution progress.
 
 ---
 
-## 当前状态
+## Current Status
 
-| 项目 | 状态 |
+| Item | Status |
 |---|---|
-| 日报系统 | ✅ 已接入 |
-| 周报系统 | ✅ 已接入 |
-| 分类统计 | ✅ 已接入 |
-| 自动提交 | ✅ 已接入 |
-| GitHub 同步 | ✅ 已接入 |
-| 可视化看板 | ✅ 已建立 |
+| Daily reports | READY |
+| Weekly reports | READY |
+| Category stats | READY |
+| Auto commit | READY |
+| GitHub sync | READY |
+| Dashboard | READY |
 
 ---
 
-## 本周概览
+## Weekly Overview
 
-| 维度 | 数值 |
+| Metric | Count |
 |---|---:|
-| Model 问题 | 1 |
-| Browser 问题 | 1 |
-| Automation 问题 | 1 |
-| Config 问题 | 0 |
-| Workflow 问题 | 1 |
-
-### 本周高频问题
-- 浏览器自动化不稳定
-- 生成 / 点击链路容易卡住
-- 模型链路偶发 `server_error`
+| Model | 1 |
+| Browser | 1 |
+| Automation | 1 |
+| Config | 0 |
+| Workflow | 1 |
 
 ---
 
-## 已完成能力
-
-- 日报记录
-- 周报汇总
-- 问题分类
-- 高频问题统计
-- 自动 commit / push
-- GitHub 留痕
-
----
-
-## 当前重点优化方向
-
-1. 提高浏览器自动化稳定性
-2. 降低生成链路卡顿
-3. 减少模型上游报错影响
-4. 持续沉淀可复用流程
-
----
-
-## 仓库入口
+## Repo
 
 - GitHub: https://github.com/ydx0214/openclaw.git
-- 日报: `reports/daily/`
-- 周报: `reports/weekly/`
-- 修复记录: `fixes/`
-- 想法记录: `ideas/`
+- Daily: reports/daily/
+- Weekly: reports/weekly/
+- Fixes: fixes/
+- Ideas: ideas/
 
----
-
-## 下一步
-
-- 做自动更新首页脚本
-- 做趋势统计（按周 / 按类别）
-- 做更强的首页视觉版 README

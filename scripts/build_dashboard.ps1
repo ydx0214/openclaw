@@ -24,46 +24,34 @@ $automation = Get-Count "Automation"
 $config = Get-Count "Config"
 $workflow = Get-Count "Workflow"
 
-$lines = @(
-    "# Evolution Dashboard",
-    "",
-    "> 首页可视化进化看板",
-    "",
-    "---",
-    "",
-    "## 当前状态",
-    "",
-    "| 项目 | 状态 |",
-    "|---|---|",
-    "| 日报系统 | ✅ 已接入 |",
-    "| 周报系统 | ✅ 已接入 |",
-    "| 分类统计 | ✅ 已接入 |",
-    "| 自动提交 | ✅ 已接入 |",
-    "| GitHub 同步 | ✅ 已接入 |",
-    "| 可视化看板 | ✅ 已建立 |",
-    "",
-    "---",
-    "",
-    "## 本周概览",
-    "",
-    "| 维度 | 数值 |",
-    "|---|---:|",
-    "| Model 问题 | $model |",
-    "| Browser 问题 | $browser |",
-    "| Automation 问题 | $automation |",
-    "| Config 问题 | $config |",
-    "| Workflow 问题 | $workflow |",
-    "",
-    "---",
-    "",
-    "## 仓库入口",
-    "",
-    "- GitHub: https://github.com/ydx0214/openclaw.git",
-    "- 日报: reports/daily/",
-    "- 周报: reports/weekly/",
-    "- 修复记录: fixes/",
-    "- 想法记录: ideas/"
-)
+$content = "# Evolution Dashboard`r`n`r`n" +
+"Homepage for self-evolution progress.`r`n`r`n" +
+"---`r`n`r`n" +
+"## Current Status`r`n`r`n" +
+"| Item | Status |`r`n" +
+"|---|---|`r`n" +
+"| Daily reports | READY |`r`n" +
+"| Weekly reports | READY |`r`n" +
+"| Category stats | READY |`r`n" +
+"| Auto commit | READY |`r`n" +
+"| GitHub sync | READY |`r`n" +
+"| Dashboard | READY |`r`n`r`n" +
+"---`r`n`r`n" +
+"## Weekly Overview`r`n`r`n" +
+"| Metric | Count |`r`n" +
+"|---|---:|`r`n" +
+"| Model | $model |`r`n" +
+"| Browser | $browser |`r`n" +
+"| Automation | $automation |`r`n" +
+"| Config | $config |`r`n" +
+"| Workflow | $workflow |`r`n`r`n" +
+"---`r`n`r`n" +
+"## Repo`r`n`r`n" +
+"- GitHub: https://github.com/ydx0214/openclaw.git`r`n" +
+"- Daily: reports/daily/`r`n" +
+"- Weekly: reports/weekly/`r`n" +
+"- Fixes: fixes/`r`n" +
+"- Ideas: ideas/`r`n"
 
-Set-Content -Path $dashboardFile -Value ($lines -join "`r`n") -Encoding UTF8
+Set-Content -Path $dashboardFile -Value $content -Encoding UTF8
 Write-Output $dashboardFile

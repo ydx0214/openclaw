@@ -34,3 +34,4 @@
 - 新增 `ideas/task-health-freshness-template.md`，补充按任务区分的 freshness 阈值模板，降低后续 `stale` 判定的误报/漏报风险
 - 新增 `ideas/task-health-registry-template.json`，显式定义监控任务、状态文件与 `allowNoop` 语义，降低后续健康汇总对文件名约定的隐式耦合
 - 新增正式 `scripts/task_health.registry.json` 与 `scripts/task_health.ps1`，将 registry + `status/*.last-run.json` + freshness 规则串成首个可执行任务健康汇总原型
+- 给 `build_dashboard.ps1` 接入 `status/task_health.summary.md`，让任务健康汇总首次进入首页主视图，减少“有状态但不可见”的落地断层

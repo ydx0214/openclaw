@@ -52,6 +52,18 @@ if (-not $weeklyRows) {
 }
 $weeklyOverview = ($weeklyRows -join '') + "`r`n"
 
+$taskHealthSummaryFile = Join-Path $statusDir "task_health.summary.md"
+$taskHealthSection = "_Not available yet._`r`n`r`n"
+$taskHealthOverall = "UNKNOWN"
+if (Test-Path $taskHealthSummaryFile) {
+    $taskHealthRaw = Get-Content $taskHealthSummaryFile -Raw -Encoding UTF8
+    $taskHealthOverallMatch = [regex]::Match($taskHealthRaw, '(?m)^- Overall:\s+(.+)$')
+    if ($taskHealthOverallMatch.Success) {
+        $taskHealthOverall = $taskHealthOverallMatch.Groups[1].Value.Trim().ToUpperInvariant()
+    }
+    $taskHealthSection = $taskHealthRaw.TrimEnd() + "`r`n`r`n"
+}
+
 $content = "# Evolution Dashboard`r`n`r`n" +
 "Homepage for self-evolution progress.`r`n`r`n" +
 "---`r`n`r`n" +
@@ -63,13 +75,17 @@ $content = "# Evolution Dashboard`r`n`r`n" +
 "| Category stats | READY |`r`n" +
 "| Auto commit | READY |`r`n" +
 "| GitHub sync | READY |`r`n" +
-"| Dashboard | READY |`r`n`r`n" +
+"| Dashboard | READY |`r`n" +
+"| Task health | $taskHealthOverall |`r`n`r`n" +
 "---`r`n`r`n" +
 "## Weekly Overview`r`n`r`n" +
 "- Source: $weeklySourceLabel`r`n`r`n" +
 "| Metric | Count |`r`n" +
 "|---|---:|`r`n" +
 $weeklyOverview +
+"---`r`n`r`n" +
+"## Task Health`r`n`r`n" +
+$taskHealthSection +
 "---`r`n`r`n" +
 "## Repo`r`n`r`n" +
 "- GitHub: $repoUrl`r`n" +
@@ -82,7 +98,7 @@ $weeklyOverview +
 Set-Content -Path $dashboardFile -Value $content -Encoding UTF8
 
 $written = Get-Content $dashboardFile -Raw -Encoding UTF8
-if ($written -notmatch '(?m)^# Evolution Dashboard' -or $written -notmatch '(?m)^## Weekly Overview' -or $written -notmatch '(?m)^## Repo') {
+if ($written -notmatch '(?m)^# Evolution Dashboard' -or $written -notmatch '(?m)^## Weekly Overview' -or $written -notmatch '(?m)^## Task Health' -or $written -notmatch '(?m)^## Repo') {
     Write-Error "DASHBOARD_VERIFY_FAILED: missing required sections"
     exit 1
 }

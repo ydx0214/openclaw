@@ -21,10 +21,16 @@ if ($LASTEXITCODE -ne 0) {
     exit 1
 }
 
-git push origin main
+$branch = git branch --show-current
+if (-not $branch) {
+    Write-Error "GIT_BRANCH_DETECT_FAILED"
+    exit 1
+}
+
+git push origin $branch
 if ($LASTEXITCODE -ne 0) {
     Write-Error "GIT_PUSH_FAILED"
     exit 1
 }
 
-Write-Output "OK: $commitMessage"
+Write-Output "OK: $commitMessage -> $branch"

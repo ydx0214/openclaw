@@ -75,3 +75,5 @@
 - [ ] 继续把 `local-batch-file-routing` 接到更多高频入口，优先覆盖下载目录整理、上传前文件清洗、素材批量改名和交付包打包场景
 - [x] 为高风险批量改名/移动任务补更明确的 preview -> apply -> verify 统一验收模板，继续降低误改名、误触达和范围漂移风险
 - [ ] 继续把 `preview -> apply -> verify` 防护层接到更多下载目录整理、上传前文件清洗、素材批量改名和归档打包入口，优先减少批处理任务中的范围漂移与误触文件族风险
+- [x] 新增 `playbooks/capability-intake-handoff.md`，把“新能力需求 -> 最佳能力路径 -> 最小 smoke test -> 下一执行链路”固化成接入流程，并接入 `PLAYBOOKS.md` 与 `TOOLS.md`，减少找到 skill / 工具 / MCP 但没有真正变成可执行任务链的断层
+- [ ] 继续把 capability intake 流程接到更多高频入口，优先覆盖“能不能做 X / 有没有 skill / 要不要接 MCP / 是否值得 ACP 开发”这类能力探索场景

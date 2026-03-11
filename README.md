@@ -2,6 +2,8 @@
 
 记录代理每天做了什么、优化了什么、还缺什么。
 
+> 首页看板：见 `DASHBOARD.md`
+
 ## 目录
 
 - `CHANGELOG.md`：按时间倒序的总体变更记录
@@ -12,6 +14,7 @@
 - `roadmap.md`：下一阶段计划
 - `scripts/auto_commit.ps1`：每日自动提交脚本
 - `scripts/weekly_summary.ps1`：每周汇总脚本
+- `scripts/build_dashboard.ps1`：首页看板生成脚本
 
 ## 每日记录标准
 

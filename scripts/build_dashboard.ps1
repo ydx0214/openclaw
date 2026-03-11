@@ -4,10 +4,16 @@ param(
 
 $weeklyDir = Join-Path $RepoPath "reports\weekly"
 $dashboardFile = Join-Path $RepoPath "DASHBOARD.md"
+$statusDir = Join-Path $RepoPath "status"
+$statusFile = Join-Path $statusDir "build_dashboard.last-run.json"
 
 if (-not (Test-Path $RepoPath)) {
     Write-Error "REPO_PATH_MISSING: $RepoPath"
     exit 1
+}
+
+if (-not (Test-Path $statusDir)) {
+    New-Item -ItemType Directory -Path $statusDir -Force | Out-Null
 }
 
 $repoUrl = "(not configured)"
@@ -27,6 +33,7 @@ if (Test-Path $weeklyDir) {
 $weeklyRows = @()
 $weeklySourceLabel = "(fallback: no weekly report yet)"
 $categoryCount = 0
+$fallback = $true
 if ($weeklyFile) {
     $text = Get-Content $weeklyFile -Raw -Encoding UTF8
     $weeklySourceLabel = [System.IO.Path]::GetFileName($weeklyFile)
@@ -38,6 +45,7 @@ if ($weeklyFile) {
         $weeklyRows += "| $name | $count |`r`n"
     }
     $categoryCount = $categoryMatches.Count
+    $fallback = $false
 }
 if (-not $weeklyRows) {
     $weeklyRows += "| (none) | 0 |`r`n"
@@ -68,7 +76,8 @@ $weeklyOverview +
 "- Daily: reports/daily/`r`n" +
 "- Weekly: reports/weekly/`r`n" +
 "- Fixes: fixes/`r`n" +
-"- Ideas: ideas/`r`n"
+"- Ideas: ideas/`r`n" +
+"- Status: status/`r`n"
 
 Set-Content -Path $dashboardFile -Value $content -Encoding UTF8
 
@@ -78,5 +87,28 @@ if ($written -notmatch '(?m)^# Evolution Dashboard' -or $written -notmatch '(?m)
     exit 1
 }
 
-$fallback = if ($weeklyFile) { 'no' } else { 'yes' }
-Write-Output "OK: DASHBOARD_UPDATED path=$dashboardFile; weeklySource=$weeklySourceLabel; categories=$categoryCount; fallback=$fallback"
+$status = if ($fallback) { 'fallback' } else { 'ok' }
+$summary = if ($fallback) { 'dashboard rebuilt without weekly report; fallback mode' } else { 'dashboard rebuilt from latest weekly report' }
+$statusPayload = [ordered]@{
+    task = 'build_dashboard'
+    status = $status
+    path = $dashboardFile
+    summary = $summary
+    timestamp = (Get-Date).ToString('o')
+    details = [ordered]@{
+        fallback = $fallback
+        weeklySource = $weeklySourceLabel
+        categories = $categoryCount
+        repoUrl = $repoUrl
+    }
+}
+$statusJson = $statusPayload | ConvertTo-Json -Depth 5
+Set-Content -Path $statusFile -Value $statusJson -Encoding UTF8
+
+$statusWritten = Get-Content $statusFile -Raw -Encoding UTF8 | ConvertFrom-Json
+if ($statusWritten.task -ne 'build_dashboard' -or $statusWritten.status -ne $status) {
+    Write-Error "DASHBOARD_STATUS_VERIFY_FAILED: status file content mismatch"
+    exit 1
+}
+
+Write-Output "OK: BUILD_DASHBOARD task=build_dashboard; status=$status; path=$dashboardFile; summary=$summary; statusFile=$statusFile; weeklySource=$weeklySourceLabel; categories=$categoryCount"

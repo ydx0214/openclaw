@@ -38,4 +38,5 @@ Homepage for self-evolution progress.
 - Weekly: reports/weekly/
 - Fixes: fixes/
 - Ideas: ideas/
+- Status: status/
 

@@ -29,3 +29,9 @@
 - [ ] 在统一 stdout 状态行之外，补一份可选的 `last-run.status.json` 落盘模板，减少后续看板/告警脚本对文本解析的耦合
 - [ ] 为 `task_health` 定义按任务区分的 freshness 规则，稳定判定 `stale` 而不是用统一硬编码时长
 - [ ] 补一份 monitored-task registry（任务清单 / statusFile / freshness / required / allowNoop），避免健康汇总继续依赖文件名约定和隐式猜测
+
+## Phase 5
+
+- [ ] 将复杂文档任务（PDF / Word / 简历 / 表格 / Markdown）沉淀成正式分流 playbook，优先提升任务起点的路由正确率
+- [ ] 为简历与官网投递材料准备补一条“资料检查 -> 简历草稿 -> 变体 -> 表单包 -> 浏览器填表前校验”的固定工作流
+- [ ] 为 Word / 论文类任务补一条更短的可执行入口，默认包含 inspect、style-report、render-check 三步验收

@@ -1,6 +1,8 @@
-# Changelog
+﻿# Changelog
 
 ## 2026-03-11
+
+- 新增 ideas/form-fill-pack-template.md，把复杂浏览器表单执行前的数据准备沉淀为统一 Form Fill Pack 模板，并接入 playbooks/web-form-execution.md 与 oadmap.md，降低官网申请、资料提交和带上传多步表单中的边填边猜、资料漂移与误提交风险
 
 - 新增 `ideas/browser-stable-automation-rule.md`，并将“多步浏览器任务默认使用 `snapshot(refs=aria)` + 固定 `targetId` + 每步后按状态变化刷新 snapshot`”接入 `TOOLS.md` 与 `playbooks/web-form-execution.md`，降低动态页面、多步骤表单和上传流程中的 stale ref 与跨步误操作风险
 
@@ -69,3 +71,4 @@
 - �� completion proof ��Ƕ�� `playbooks/windows-file-dialog-handoff.md`���� Open / Save / Save As / Select Folder ����ɱ�׼�ս�Ϊ�����ؽ�� + ԴӦ�ý��� + handoff-ready��������ѹ�Ϳ������ / ���� / �ĵ���·�еļ���ɷ���
 
 - 将浏览器稳定自动化规则进一步接入 rowser-research-briefing.md、rowser-upload-handoff.md、rowser-download-handoff.md，把 snapshot(refs=aria) + 固定 	argetId + 关键状态变化后刷新 snapshot 从表单流程扩展到研究 / 下载 / 上传三条高频链路，降低 stale ref、跨步误操作和动态页面重绘返工
+

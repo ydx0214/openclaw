@@ -49,3 +49,4 @@
 - ������ʽ playbooks/browser-research-briefing.md������ҳ������о�����Ϊ�ɸ��ü����̣������� PLAYBOOKS.md �� TOOLS.md�����͹������С�ְλ�о�����Ʒ�Ƚϵ�������������Ϸ�������
 - 新增 playbooks/career-prep-handoff.md，把职位页研究结果正式收口为 Prep Brief、材料缺口、派生产物与 Fill Readiness 判定，并接入 PLAYBOOKS.md、TOOLS.md 与 careers-site-application.md，降低官网投递中途补材料的返工风险
 - 新增 `playbooks/resume-tailoring-from-jd.md`，把 JD / 官方职位页稳定转成 evidence map、emphasis plan、resume variant brief 与 answer themes，并接入 `PLAYBOOKS.md`，降低官网投递前简历定制与多岗位材料分化的返工风险
+- 新增 `playbooks/resume-delivery-pack.md`，把岗位定向简历的末端收口固定为“简历变体 -> 交付文件 -> 输出校验 -> 上传交接”，并接入 `PLAYBOOKS.md`、`TOOLS.md` 与官网投递推荐链路，降低错文件上传、旧文件复用和未验证导出的风险

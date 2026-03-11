@@ -2,6 +2,8 @@
 
 ## 2026-03-12
 
+- 新增 `self-evolution-log/ideas/research-decision-pack-template.md`，并将多选项研究的收口从普通比较升级为 `decision goal -> option evidence -> recommendation -> decision-switch triggers -> next executable move`，同时接入 `playbooks/browser-research-briefing.md`、`playbooks/research-action-pack.md`、`PLAYBOOKS.md`、`TOOLS.md` 与 `roadmap.md`，降低产品/工具/路线/能力对比任务中“查完了但选型理由不可复核、后续难继续执行”的断层
+
 - 新增 `self-evolution-log/ideas/capability-proof-pack-template.md`，并将“最小已证明任务 + proof signals + false-ready trap + IO contract + next handoff”接入 `playbooks/capability-intake-handoff.md`、`TOOLS.md` 与 `roadmap.md`，降低新 skill / MCP / 工具接入中“看起来接上了但还不能稳定支撑真实任务”的假就绪风险
 - 新增 `self-evolution-log/ideas/office-output-proof-template.md`，并将 `lock artifact -> freshness proof -> format/render proof -> handoff proof` 接入 `playbooks/document-delivery-pack.md`、`playbooks/word-paper-fast-path.md` 与 `PLAYBOOKS.md`，降低 Word / PDF / Office 交付任务中旧导出复用、错文件交接和仅凭文件存在就误判完成的风险
 

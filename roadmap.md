@@ -40,6 +40,7 @@
 - [x] 将“多页浏览器研究 -> Research Brief -> 下一流程输入（如 Career Prep Brief / form pack / 操作清单）”固定成默认衔接规则，减少查完资料后再次手工整理的重复劳动
 - [x] 将 `Research Action Pack` 正式落成 `playbooks/research-action-pack.md`，并接入浏览器研究到表单 / 文档 / 简历 / 操作清单的执行交接链路，减少研究完成后再次手工整理输入的返工
 - [ ] 继续把 `Action Pack` 叠层接到更多研究类入口，优先覆盖官网研究、政策/FAQ、文档转执行清单、产品对比后的决策交接
+- [x] 为多选项研究新增 `research-decision-pack-template.md`，把产品/工具/路线/能力比较收口为 `decision goal -> option evidence -> recommendation -> decision-switch triggers -> next executable move`，降低研究已完成但选型理由不可复核、后续难以继续执行的断层
 - [x] 将文档类复杂任务的末端收口固化为 `document-delivery-pack.md`，把“编辑/转换完成”提升为“一个可编辑源 + 一个明确交付文件 + 已验证下一步”的标准交接
 - [ ] 继续把 `document-delivery-pack` 接到更多文档类入口，优先覆盖 Markdown->Word、PDF/Word 转交付、简历之外的一般 Office 交付场景
 - [x] 新增 `ideas/office-output-proof-template.md`，并将“lock artifact -> freshness proof -> format/render proof -> handoff proof”接入 `playbooks/document-delivery-pack.md`、`playbooks/word-paper-fast-path.md` 与 `PLAYBOOKS.md`，降低 Word / PDF / Office 交付任务中旧导出复用、错文件交接和仅凭文件存在就误判完成的风险

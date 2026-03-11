@@ -2,10 +2,15 @@ param(
     [string]$RepoPath = "C:\Users\19766\.openclaw\workspace\self-evolution-log"
 )
 
-$weeklyFile = Join-Path $RepoPath "reports\weekly\2026-11.md"
+$weeklyDir = Join-Path $RepoPath "reports\weekly"
 $dashboardFile = Join-Path $RepoPath "DASHBOARD.md"
 
-if (-not (Test-Path $weeklyFile)) {
+$weeklyFile = Get-ChildItem $weeklyDir -Filter "*.md" |
+    Where-Object { $_.Name -ne "TEMPLATE.md" } |
+    Sort-Object LastWriteTime -Descending |
+    Select-Object -First 1 -ExpandProperty FullName
+
+if (-not $weeklyFile) {
     Write-Error "WEEKLY_FILE_NOT_FOUND"
     exit 1
 }

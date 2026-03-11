@@ -26,3 +26,4 @@
 - 将 weekly_summary.ps1 的成功输出统一为 `status=ok` 结构化摘要，补齐日报/周报/看板/自动提交链路的最小一致协议
 - 在 roadmap 中补充统一状态输出协议（`task` / `status` / `path` / `summary`），为后续任务健康汇总与自动告警预留一致输入
 - 新增 `ideas/task-health-summary-template.md`，把最小任务健康摘要协议落成可复用样例，降低后续新脚本接入统一状态输出的成本
+- 新增 `ideas/last-run-status-template.json`，为无人值守脚本补一个可落盘的最近运行状态模板，降低后续看板/告警对文本解析的耦合

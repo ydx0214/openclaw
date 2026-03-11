@@ -19,6 +19,8 @@ Homepage for self-evolution progress.
 
 ## Weekly Overview
 
+- Source: 2026-11.md
+
 | Metric | Count |
 |---|---:|
 | Model | 0 |

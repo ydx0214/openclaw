@@ -16,19 +16,18 @@ $weeklyFile = Get-ChildItem $weeklyDir -Filter "*.md" |
     Sort-Object LastWriteTime -Descending |
     Select-Object -First 1 -ExpandProperty FullName
 
-if (-not $weeklyFile) {
-    Write-Error "WEEKLY_FILE_NOT_FOUND"
-    exit 1
-}
-
-$text = Get-Content $weeklyFile -Raw -Encoding UTF8
-
-$categoryMatches = [regex]::Matches($text, '(?ms)^###\s+(.+?)\r?\n-\s*(\d+)')
 $weeklyRows = @()
-foreach ($match in $categoryMatches) {
-    $name = $match.Groups[1].Value.Trim()
-    $count = $match.Groups[2].Value.Trim()
-    $weeklyRows += "| $name | $count |`r`n"
+$weeklySourceLabel = "(fallback: no weekly report yet)"
+if ($weeklyFile) {
+    $text = Get-Content $weeklyFile -Raw -Encoding UTF8
+    $weeklySourceLabel = [System.IO.Path]::GetFileName($weeklyFile)
+
+    $categoryMatches = [regex]::Matches($text, '(?ms)^###\s+(.+?)\r?\n-\s*(\d+)')
+    foreach ($match in $categoryMatches) {
+        $name = $match.Groups[1].Value.Trim()
+        $count = $match.Groups[2].Value.Trim()
+        $weeklyRows += "| $name | $count |`r`n"
+    }
 }
 if (-not $weeklyRows) {
     $weeklyRows += "| (none) | 0 |`r`n"
@@ -49,6 +48,7 @@ $content = "# Evolution Dashboard`r`n`r`n" +
 "| Dashboard | READY |`r`n`r`n" +
 "---`r`n`r`n" +
 "## Weekly Overview`r`n`r`n" +
+"- Source: $weeklySourceLabel`r`n`r`n" +
 "| Metric | Count |`r`n" +
 "|---|---:|`r`n" +
 $weeklyOverview +

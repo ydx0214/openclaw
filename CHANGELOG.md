@@ -32,3 +32,4 @@
 - 给 `auto_commit.ps1` 接入 `status/auto_commit.last-run.json` 最近运行状态落盘，补齐提交链路的双通道状态输出，消除任务健康汇总的末端盲区
 - 新增 `ideas/task-health-rollup-template.md`，先固化 `status/*.last-run.json` 的消费模板，为后续任务健康汇总脚本与首页健康区块预留稳定输入
 - 新增 `ideas/task-health-freshness-template.md`，补充按任务区分的 freshness 阈值模板，降低后续 `stale` 判定的误报/漏报风险
+- 新增 `ideas/task-health-registry-template.json`，显式定义监控任务、状态文件与 `allowNoop` 语义，降低后续健康汇总对文件名约定的隐式耦合

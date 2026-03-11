@@ -28,3 +28,4 @@
 - [ ] 补一份统一状态输出协议：至少包含 `task`、`status=ok|noop|fallback|error`、`path`、`summary`，作为后续任务健康汇总与告警的最小输入
 - [ ] 在统一 stdout 状态行之外，补一份可选的 `last-run.status.json` 落盘模板，减少后续看板/告警脚本对文本解析的耦合
 - [ ] 为 `task_health` 定义按任务区分的 freshness 规则，稳定判定 `stale` 而不是用统一硬编码时长
+- [ ] 补一份 monitored-task registry（任务清单 / statusFile / freshness / required / allowNoop），避免健康汇总继续依赖文件名约定和隐式猜测

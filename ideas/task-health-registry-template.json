@@ -1,0 +1,30 @@
+{
+  "$schema": "task-health-registry-template.v1",
+  "description": "给 task_health 原型提供最小任务注册表示例，避免通过 status 文件名或脚本名隐式猜测监控对象。",
+  "tasks": [
+    {
+      "task": "build_dashboard",
+      "statusFile": "status/build_dashboard.last-run.json",
+      "freshnessHours": 36,
+      "required": true,
+      "allowNoop": false,
+      "note": "首页看板构建任务；缺失时应直接显示异常。"
+    },
+    {
+      "task": "weekly_summary",
+      "statusFile": "status/weekly_summary.last-run.json",
+      "freshnessHours": 192,
+      "required": true,
+      "allowNoop": false,
+      "note": "周报汇总任务；按周检查 freshness。"
+    },
+    {
+      "task": "auto_commit",
+      "statusFile": "status/auto_commit.last-run.json",
+      "freshnessHours": 36,
+      "required": true,
+      "allowNoop": true,
+      "note": "自动提交任务；允许无变更时输出 noop。"
+    }
+  ]
+}

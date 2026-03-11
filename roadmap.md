@@ -25,3 +25,4 @@
 
 - [ ] 给无人值守脚本统一补上 `preflight -> execute -> verify -> explain` 稳态流程模板
 - [ ] 将日报、周报、看板、自动提交脚本按同一模板做最小一致化
+- [ ] 补一份统一状态输出协议：至少包含 `task`、`status=ok|noop|fallback|error`、`path`、`summary`，作为后续任务健康汇总与告警的最小输入

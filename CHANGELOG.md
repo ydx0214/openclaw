@@ -42,3 +42,4 @@
 
 - 新增浏览器/桌面文件上传交接模板，明确上传前锁定文件路径、Browser -> Windows 对话框接管、页面侧验收，并接入 desktop / careers playbook，降低官网投递与复杂表单附件上传中的假完成风险
 - 将上传交接模板正式落成 `playbooks/browser-upload-handoff.md` 并接入 `PLAYBOOKS.md`，把浏览器附件上传沉淀为可复用的独立流程
+- 新增 `ideas/multimedia-generation-brief-template.md`，把生图 / 视频生成任务前置收口为统一 `Generation Brief` 模板，降低多轮 prompt 返工和多媒体交付失焦风险

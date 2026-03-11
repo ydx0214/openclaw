@@ -9,12 +9,52 @@ if (-not (Test-Path $RepoPath)) {
     exit 1
 }
 
+$statusDir = Join-Path $RepoPath "status"
+$statusFile = Join-Path $statusDir "auto_commit.last-run.json"
+if (-not (Test-Path $statusDir)) {
+    New-Item -ItemType Directory -Path $statusDir -Force | Out-Null
+}
+
+function Write-StatusFile {
+    param(
+        [string]$Status,
+        [string]$Path,
+        [string]$Summary,
+        [hashtable]$Details
+    )
+
+    $payload = [ordered]@{
+        task = 'auto_commit'
+        status = $Status
+        path = $Path
+        summary = $Summary
+        timestamp = (Get-Date).ToString('o')
+        details = $Details
+    }
+    $json = $payload | ConvertTo-Json -Depth 5
+    Set-Content -Path $statusFile -Value $json -Encoding UTF8
+
+    $written = Get-Content $statusFile -Raw -Encoding UTF8 | ConvertFrom-Json
+    if ($written.task -ne 'auto_commit' -or $written.status -ne $Status) {
+        Write-Error "AUTO_COMMIT_STATUS_VERIFY_FAILED: status file content mismatch"
+        exit 1
+    }
+}
+
 $timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
 
 # 保守提交：只有有变更时才提交
 $changes = git status --porcelain
 if (-not $changes) {
-    Write-Output "OK: AUTO_COMMIT status=noop; reason=no_changes"
+    $summary = 'no changes to commit'
+    Write-StatusFile -Status 'noop' -Path $RepoPath -Summary $summary -Details ([ordered]@{
+        branch = $null
+        head = $null
+        remote = $null
+        verify = 'skipped'
+        changed = $false
+    })
+    Write-Output "OK: AUTO_COMMIT status=noop; reason=no_changes; statusFile=$statusFile"
     exit 0
 }
 
@@ -65,4 +105,14 @@ if ($remoteSha -ne $headSha) {
     exit 1
 }
 
-Write-Output "OK: AUTO_COMMIT status=ok; branch=$branch; head=$headSha; remote=$upstreamRef; verify=matched"
+$summary = 'commit created and pushed with verified remote alignment'
+Write-StatusFile -Status 'ok' -Path $RepoPath -Summary $summary -Details ([ordered]@{
+    branch = $branch
+    head = $headSha
+    remote = $upstreamRef
+    originUrl = $originUrl.Trim()
+    verify = 'matched'
+    changed = $true
+})
+
+Write-Output "OK: AUTO_COMMIT status=ok; branch=$branch; head=$headSha; remote=$upstreamRef; verify=matched; statusFile=$statusFile"

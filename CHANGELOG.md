@@ -51,3 +51,4 @@
 - 新增 `playbooks/resume-tailoring-from-jd.md`，把 JD / 官方职位页稳定转成 evidence map、emphasis plan、resume variant brief 与 answer themes，并接入 `PLAYBOOKS.md`，降低官网投递前简历定制与多岗位材料分化的返工风险
 - 新增 `playbooks/resume-delivery-pack.md`，把岗位定向简历的末端收口固定为“简历变体 -> 交付文件 -> 输出校验 -> 上传交接”，并接入 `PLAYBOOKS.md`、`TOOLS.md` 与官网投递推荐链路，降低错文件上传、旧文件复用和未验证导出的风险
 - 新增 `playbooks/browser-download-handoff.md`，把“浏览器下载触发 -> 本地落盘 -> 文件校验 -> 下一流程交接”沉淀为标准下载接力流程，并接入 `PLAYBOOKS.md`、`TOOLS.md` 与 roadmap，降低 PDF/JD/导出文件类复杂任务中的假完成与错文件复用风险
+- 新增 `playbooks/downloaded-file-routing.md`，把“已下载本地文件 -> 按执行目标分流到文档 / 求职 / 简历交付 / 多媒体 / 解包流程”沉淀为标准路由规则，减少下载完成后停在本地文件、后续链路接不上或走错工具链的情况

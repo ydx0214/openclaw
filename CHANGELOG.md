@@ -33,3 +33,4 @@
 - 新增 `ideas/task-health-rollup-template.md`，先固化 `status/*.last-run.json` 的消费模板，为后续任务健康汇总脚本与首页健康区块预留稳定输入
 - 新增 `ideas/task-health-freshness-template.md`，补充按任务区分的 freshness 阈值模板，降低后续 `stale` 判定的误报/漏报风险
 - 新增 `ideas/task-health-registry-template.json`，显式定义监控任务、状态文件与 `allowNoop` 语义，降低后续健康汇总对文件名约定的隐式耦合
+- 新增正式 `scripts/task_health.registry.json` 与 `scripts/task_health.ps1`，将 registry + `status/*.last-run.json` + freshness 规则串成首个可执行任务健康汇总原型

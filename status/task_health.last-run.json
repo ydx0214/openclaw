@@ -1,0 +1,47 @@
+﻿{
+    "task":  "task_health",
+    "status":  "ok",
+    "path":  "C:\\Users\\19766\\.openclaw\\workspace\\self-evolution-log\\status\\task_health.summary.md",
+    "summary":  "task health rolled up from registry",
+    "timestamp":  "2026-03-11T18:32:29.1330547+08:00",
+    "details":  {
+                    "registry":  "C:\\Users\\19766\\.openclaw\\workspace\\self-evolution-log\\scripts\\task_health.registry.json",
+                    "tasks":  3,
+                    "worstStatus":  "ok",
+                    "items":  [
+                                  {
+                                      "task":  "build_dashboard",
+                                      "status":  "ok",
+                                      "freshnessHours":  36,
+                                      "required":  true,
+                                      "allowNoop":  false,
+                                      "statusFile":  "status/build_dashboard.last-run.json",
+                                      "timestamp":  "2026-03-11T18:22:02.2520238+08:00",
+                                      "ageHours":  0.17,
+                                      "summary":  "dashboard rebuilt from latest weekly report"
+                                  },
+                                  {
+                                      "task":  "weekly_summary",
+                                      "status":  "ok",
+                                      "freshnessHours":  192,
+                                      "required":  true,
+                                      "allowNoop":  false,
+                                      "statusFile":  "status/weekly_summary.last-run.json",
+                                      "timestamp":  "2026-03-11T17:41:50.8643325+08:00",
+                                      "ageHours":  0.84,
+                                      "summary":  "Weekly summary generated successfully."
+                                  },
+                                  {
+                                      "task":  "auto_commit",
+                                      "status":  "ok",
+                                      "freshnessHours":  36,
+                                      "required":  true,
+                                      "allowNoop":  true,
+                                      "statusFile":  "status/auto_commit.last-run.json",
+                                      "timestamp":  "2026-03-11T18:22:06.1247238+08:00",
+                                      "ageHours":  0.17,
+                                      "summary":  "commit created and pushed with verified remote alignment"
+                                  }
+                              ]
+                }
+}

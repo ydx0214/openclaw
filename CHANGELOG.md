@@ -67,3 +67,5 @@
 
 - ���� playbooks/word-paper-fast-path.md���� Word / ���� / ���� .docx �������Ϊ inspect -> style-report -> lane selection �Ķ�������̣������� PLAYBOOKS.md��TOOLS.md �� roadmap�������ĵ��ิ������һ���������ޡ������ַ����ķ���
 - �� completion proof ��Ƕ�� `playbooks/windows-file-dialog-handoff.md`���� Open / Save / Save As / Select Folder ����ɱ�׼�ս�Ϊ�����ؽ�� + ԴӦ�ý��� + handoff-ready��������ѹ�Ϳ������ / ���� / �ĵ���·�еļ���ɷ���
+
+- 将浏览器稳定自动化规则进一步接入 rowser-research-briefing.md、rowser-upload-handoff.md、rowser-download-handoff.md，把 snapshot(refs=aria) + 固定 	argetId + 关键状态变化后刷新 snapshot 从表单流程扩展到研究 / 下载 / 上传三条高频链路，降低 stale ref、跨步误操作和动态页面重绘返工

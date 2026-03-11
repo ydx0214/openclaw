@@ -64,7 +64,7 @@
 
 - [x] 将生图 / 视频生成类复杂任务统一为 `Generation Brief -> prompt pack -> acceptance` 默认前置流程，优先降低多轮 prompt 返工和交付失焦
 - [ ] 将多媒体生成流程正式接入更多任务入口，默认按 playbook 执行而不是临时拼 prompt
-- [ ] 为多媒体任务补“素材盘点 -> 参考图收集 -> 平台规格 -> 版本对比记录”四段式工作流，提升从模糊创意到可交付结果的稳定性
+- [x] 为多媒体任务补“素材盘点 -> 参考图收集 -> 平台规格 -> 版本对比记录”中的平台规格锁定层：新增 `ideas/multimedia-platform-spec-card-template.md` 并接入 `playbooks/multimedia-generation-workflow.md`，降低封面图、短视频、图生视频中的错比例、错时长、错安全区和交付件不清造成的返工
 - [x] 补一份 `multimedia-prompt-pack-template.md`，把 `Generation Brief -> shared guardrails -> variant prompts -> acceptance -> next revision axis` 固化成可直接复用的首轮 prompt 输出模板，降低生图 / 视频 / 图生视频任务里从目标确认到可执行 prompt 的断层
 - [x] 为多媒体任务补版本对比记录与可复用素材清单，并新增 `multimedia-delivery-pack-template.md` 作为末端收口模板，减少多轮生成后的资产散落、版本失焦与后续上传/发布前再次手工挑版本的成本
 - [ ] 如果多媒体任务持续高频，考虑将 `multimedia-prompt-pack-template.md` 提升为正式 playbook 或接入统一多媒体任务包

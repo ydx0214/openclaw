@@ -2,6 +2,8 @@
 
 ## 2026-03-12
 
+- 新增 `self-evolution-log/ideas/multimedia-platform-spec-card-template.md`，并将多媒体工作流前置为 `Platform Spec Card -> Generation Brief -> prompt pack -> iteration log -> delivery pack -> acceptance`，同时接入 `playbooks/multimedia-generation-workflow.md` 与 `roadmap.md`，降低封面图、短视频、图生视频任务中的错比例、错时长、错安全区和交付件不清造成的返工
+
 - 新增 `self-evolution-log/ideas/batch-rename-apply-guard-template.md`，并将高风险本地批量改名/移动任务的 `preview -> apply -> verify` 防护层接入 `playbooks/local-batch-file-routing.md` 与 `roadmap.md`，降低下载目录整理、上传前文件清洗、素材批量改名等复杂文件任务中的误改名、误触文件族和范围漂移风险
 
 - 新增 `self-evolution-log/ideas/document-intake-brief-template.md`，并将“task goal -> source files -> output strategy -> constraints -> verification -> routing decision”接入 `playbooks/document-task-routing.md` 与 `roadmap.md`，降低 PDF / Word / 简历 / 表格混合任务起手走错链路、误覆盖原件和交付目标不清的风险

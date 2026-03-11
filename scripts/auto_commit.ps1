@@ -13,14 +13,6 @@ if (-not $changes) {
     exit 0
 }
 
-git add .
-$commitMessage = "daily self-evolution update $timestamp"
-git commit -m $commitMessage
-if ($LASTEXITCODE -ne 0) {
-    Write-Error "GIT_COMMIT_FAILED"
-    exit 1
-}
-
 $branch = git branch --show-current
 if (-not $branch) {
     Write-Error "GIT_BRANCH_DETECT_FAILED"
@@ -29,7 +21,15 @@ if (-not $branch) {
 
 $originUrl = git remote get-url origin 2>$null
 if ($LASTEXITCODE -ne 0 -or -not $originUrl) {
-    Write-Error "GIT_REMOTE_ORIGIN_MISSING: commit created locally, but remote 'origin' is not configured"
+    Write-Error "GIT_REMOTE_ORIGIN_MISSING: skip commit because remote 'origin' is not configured"
+    exit 1
+}
+
+git add .
+$commitMessage = "daily self-evolution update $timestamp"
+git commit -m $commitMessage
+if ($LASTEXITCODE -ne 0) {
+    Write-Error "GIT_COMMIT_FAILED"
     exit 1
 }
 

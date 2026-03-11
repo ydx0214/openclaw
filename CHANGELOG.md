@@ -2,6 +2,8 @@
 
 ## 2026-03-12
 
+- 新增 `playbooks/local-batch-file-routing.md`，并将本地 ZIP/解压、批量改名、批量图片转换、按扩展名整理、校验和、文件名清洗按交付目标分流到 `local-toolbox` / `batch-file-studio`，同时接入 `PLAYBOOKS.md`、`TOOLS.md` 与 `roadmap.md`，降低本地文件批处理任务中范围不清、输出物不明确和“命令跑了但文件未真正 handoff-ready”的风险
+
 - 新增 `ideas/desktop-action-proof-template.md`，并将“Final artifact / Primary proof / Secondary proof / False-completion trap / Handoff-ready”接入 `playbooks/desktop-operations.md` 与 `roadmap.md`，减少资源管理器、Office 与本地 GUI 操作中“动作发出去了但目标状态没真正达成”的假完成风险
 
 - 新增 `playbooks/document-delivery-pack.md`，并将“source of truth -> delivery artifact -> output check -> next-step handoff”接入 `PLAYBOOKS.md`、`playbooks/document-task-routing.md` 与 `roadmap.md`，减少 Word / PDF / Markdown / Office 文档任务在末端交付时的错文件、旧文件和假完成风险

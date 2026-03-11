@@ -67,3 +67,9 @@
 - [x] 补一份 `multimedia-prompt-pack-template.md`，把 `Generation Brief -> shared guardrails -> variant prompts -> acceptance -> next revision axis` 固化成可直接复用的首轮 prompt 输出模板，降低生图 / 视频 / 图生视频任务里从目标确认到可执行 prompt 的断层
 - [ ] 为多媒体任务补版本对比记录与可复用素材清单，减少多轮生成后的资产散落与回退成本
 - [ ] 如果多媒体任务持续高频，考虑将 `multimedia-prompt-pack-template.md` 提升为正式 playbook 或接入统一多媒体任务包
+
+## Phase 7
+
+- [x] 将本地文件批处理任务正式沉淀为 `playbooks/local-batch-file-routing.md`，把 ZIP/解压、批量改名、图片格式转换、按扩展名整理、校验和、文件名清洗统一按交付目标分流到 `local-toolbox` / `batch-file-studio`
+- [ ] 继续把 `local-batch-file-routing` 接到更多高频入口，优先覆盖下载目录整理、上传前文件清洗、素材批量改名和交付包打包场景
+- [ ] 为高风险批量改名/移动任务补更明确的 preview -> apply -> verify 统一验收模板，继续降低误改名、误触达和范围漂移风险

@@ -2,6 +2,8 @@
 
 ## 2026-03-12
 
+- 新增 `ideas/desktop-action-proof-template.md`，并将“Final artifact / Primary proof / Secondary proof / False-completion trap / Handoff-ready”接入 `playbooks/desktop-operations.md` 与 `roadmap.md`，减少资源管理器、Office 与本地 GUI 操作中“动作发出去了但目标状态没真正达成”的假完成风险
+
 - 新增 `playbooks/document-delivery-pack.md`，并将“source of truth -> delivery artifact -> output check -> next-step handoff”接入 `PLAYBOOKS.md`、`playbooks/document-task-routing.md` 与 `roadmap.md`，减少 Word / PDF / Markdown / Office 文档任务在末端交付时的错文件、旧文件和假完成风险
 
 - 新增 `self-evolution-log/ideas/multimedia-prompt-pack-template.md`，并将“Generation Brief -> shared guardrails -> variant prompts -> acceptance -> next revision axis”接入 `playbooks/multimedia-generation-workflow.md` 与 `roadmap.md`，减少生图 / 视频 / 图生视频任务从目标确认到可执行 prompt 之间的断层

@@ -30,3 +30,4 @@
 - 给 `build_dashboard.ps1` 接入 `status/build_dashboard.last-run.json` 最近运行状态落盘，验证“状态行 + JSON”双通道输出可落地
 - 给 `weekly_summary.ps1` 接入 `status/weekly_summary.last-run.json` 最近运行状态落盘，补齐第二条核心汇总链路的双通道状态输出
 - 给 `auto_commit.ps1` 接入 `status/auto_commit.last-run.json` 最近运行状态落盘，补齐提交链路的双通道状态输出，消除任务健康汇总的末端盲区
+- 新增 `ideas/task-health-rollup-template.md`，先固化 `status/*.last-run.json` 的消费模板，为后续任务健康汇总脚本与首页健康区块预留稳定输入

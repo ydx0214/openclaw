@@ -42,6 +42,7 @@
 - [ ] 继续把 `Action Pack` 叠层接到更多研究类入口，优先覆盖官网研究、政策/FAQ、文档转执行清单、产品对比后的决策交接
 - [x] 将文档类复杂任务的末端收口固化为 `document-delivery-pack.md`，把“编辑/转换完成”提升为“一个可编辑源 + 一个明确交付文件 + 已验证下一步”的标准交接
 - [ ] 继续把 `document-delivery-pack` 接到更多文档类入口，优先覆盖 Markdown->Word、PDF/Word 转交付、简历之外的一般 Office 交付场景
+- [x] 新增 `ideas/office-output-proof-template.md`，并将“lock artifact -> freshness proof -> format/render proof -> handoff proof”接入 `playbooks/document-delivery-pack.md`、`playbooks/word-paper-fast-path.md` 与 `PLAYBOOKS.md`，降低 Word / PDF / Office 交付任务中旧导出复用、错文件交接和仅凭文件存在就误判完成的风险
 - [x] 新增 `document-intake-brief-template.md`，并将“source of truth / output strategy / constraints / verification / routing decision”接入 `playbooks/document-task-routing.md`，降低 PDF / Word / 简历 / 表格混合任务起手走错链路、误覆盖原件和交付目标不清的风险
 - [x] 将“浏览器下载触发 -> 本地落盘 -> 文件校验 -> 下一流程交接”固化成标准下载接力流程，优先降低 PDF/JD/导出文件类任务中的假完成与错文件复用风险
 - [x] 将 completion proof 内嵌进 `browser-download-handoff.md`，把浏览器下载类任务的完成标准收紧为“精确本地文件 + 强证明信号 + 明确下一流程”，继续压低下载预览/提示误判为完成的风险

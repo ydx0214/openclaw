@@ -23,17 +23,17 @@ if (-not $weeklyFile) {
 
 $text = Get-Content $weeklyFile -Raw
 
-function Get-Count($name) {
-    $pattern = "### " + [regex]::Escape($name) + "\r?\n-\s*(\d+)"
-    if ($text -match $pattern) { return $matches[1] }
-    return "0"
+$categoryMatches = [regex]::Matches($text, '(?ms)^###\s+(.+?)\r?\n-\s*(\d+)')
+$weeklyRows = @()
+foreach ($match in $categoryMatches) {
+    $name = $match.Groups[1].Value.Trim()
+    $count = $match.Groups[2].Value.Trim()
+    $weeklyRows += "| $name | $count |`r`n"
 }
-
-$model = Get-Count "Model"
-$browser = Get-Count "Browser"
-$automation = Get-Count "Automation"
-$config = Get-Count "Config"
-$workflow = Get-Count "Workflow"
+if (-not $weeklyRows) {
+    $weeklyRows += "| (none) | 0 |`r`n"
+}
+$weeklyOverview = ($weeklyRows -join '') + "`r`n"
 
 $content = "# Evolution Dashboard`r`n`r`n" +
 "Homepage for self-evolution progress.`r`n`r`n" +
@@ -51,11 +51,7 @@ $content = "# Evolution Dashboard`r`n`r`n" +
 "## Weekly Overview`r`n`r`n" +
 "| Metric | Count |`r`n" +
 "|---|---:|`r`n" +
-"| Model | $model |`r`n" +
-"| Browser | $browser |`r`n" +
-"| Automation | $automation |`r`n" +
-"| Config | $config |`r`n" +
-"| Workflow | $workflow |`r`n`r`n" +
+$weeklyOverview +
 "---`r`n`r`n" +
 "## Repo`r`n`r`n" +
 "- GitHub: $repoUrl`r`n" +

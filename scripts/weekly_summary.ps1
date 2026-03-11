@@ -50,28 +50,28 @@ $summary = @"
 
 ## Overview
 
-- 本周共纳入日报：$($files.Count) 篇
+- Daily reports included: $($files.Count)
 
 ## Done
 
-- 汇总最近 7 天日报
-- 按可配置规则统计高频问题分类
-- 生成周报文件
+- Aggregated daily reports from the last 7 days
+- Counted frequent issue categories using configurable rules
+- Generated the weekly summary file
 
 ## Improved
 
-- 让进化记录从“每天一篇”升级到“每周可回顾”
-- 把问题分类从脚本硬编码升级为独立规则文件，新增类别不必改脚本
+- Upgraded evolution tracking from daily-only notes to weekly review
+- Moved category rules out of script code so new categories only need config changes
 
 ## Problems By Category
 
 $categorySection## High Frequency Failure Patterns
 
-- 优先关注计数最高的类别，并在下周重点修复
+- Prioritize the highest-count category for next week's fixes
 
 ## Next Week
 
-- 根据本周最高频问题继续优化
+- Continue improving the highest-frequency problem area
 "@
 
 Set-Content -Path $output -Value $summary -Encoding UTF8

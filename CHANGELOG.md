@@ -55,3 +55,4 @@
 - 新增 `playbooks/windows-file-dialog-handoff.md`，把 Windows 打开/保存/另存为/选文件夹 对话框沉淀为统一交接流程，并接入 `PLAYBOOKS.md` 与 `TOOLS.md`，降低浏览器上传下载、Office 导出、桌面应用文件选择中的假完成风险
 - 新增 `playbooks/web-form-execution.md`，把通用浏览器表单任务沉淀为 `数据准备 -> 字段映射 -> 页面侧验证 -> 明确提交边界` 工作流，并接入 `PLAYBOOKS.md`，降低多步骤表单、带上传表单和草稿/提交边界不清时的假完成风险
 - 新增 `playbooks/openclaw-agent-delegation.md`，把复杂任务起手分流固化为 direct / ACP / local-tool-chain 三条默认路线，并接入 `PLAYBOOKS.md` 与 `TOOLS.md`，降低大任务一开始选错执行路径导致的返工与弱验证风险
+- 新增 `playbooks/local-file-delivery-handoff.md`，把“本地文件已生成/已下载 -> reveal/open/review/唯一交付文件选择 -> 下一流程交接”沉淀为标准接力流程，并接入 `PLAYBOOKS.md`、`TOOLS.md` 与 `desktop-operations.md`，降低简历/文档/导出文件/图片交付中的错文件、旧文件和末端假完成风险

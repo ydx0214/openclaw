@@ -2,7 +2,10 @@
 
 ## 2026-03-11
 
-- 新增 ideas/form-fill-pack-template.md，把复杂浏览器表单执行前的数据准备沉淀为统一 Form Fill Pack 模板，并接入 playbooks/web-form-execution.md 与 oadmap.md，降低官网申请、资料提交和带上传多步表单中的边填边猜、资料漂移与误提交风险
+- 新增 `ideas/research-action-pack-template.md`，并将“Research Brief -> Action Pack -> 下一流程输入”正式接入 `playbooks/browser-research-briefing.md` 与 `roadmap.md`，减少官网研究、政策/FAQ、职位研究、文档转执行清单后再次手工整理的重复劳动
+
+- 新增 ideas/form-fill-pack-template.md，把复杂浏览器表单执行前的数据准备沉淀为统一 Form Fill Pack 模板，并接入 playbooks/web-form-execution.md 与 
+oadmap.md，降低官网申请、资料提交和带上传多步表单中的边填边猜、资料漂移与误提交风险
 
 - 新增 `ideas/browser-stable-automation-rule.md`，并将“多步浏览器任务默认使用 `snapshot(refs=aria)` + 固定 `targetId` + 每步后按状态变化刷新 snapshot`”接入 `TOOLS.md` 与 `playbooks/web-form-execution.md`，降低动态页面、多步骤表单和上传流程中的 stale ref 与跨步误操作风险
 

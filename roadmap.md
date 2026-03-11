@@ -49,7 +49,8 @@
 - [x] 将“浏览器上传控件 -> Windows 文件对话框 -> 页面侧验收”固化成跨浏览器/桌面的标准上传接力流程，优先降低官网投递、附件表单、资料提交任务中的卡点
 - [x] 将 completion proof 内嵌进 `browser-upload-handoff.md`，把上传类任务的完成标准收紧为“页面侧已接受目标文件 + 至少一条次证明 + handoff-ready”，继续压低官网投递、附件表单、资料提交中的假完成风险
 - [x] 将“结构化资料 -> 字段映射 -> draft-ready 验证 -> 明确 submit 批准边界”固化成通用浏览器表单执行流程，优先降低多步骤表单、带上传表单和资料提交流程中的假完成与误提交风险
-- [ ] 将 `Form Fill Pack` 前置到更多浏览器复杂任务入口，固定“先锁资料来源/上传文件/敏感确认/验收点，再执行页面动作”的默认准备步骤
+- [x] 为官网投递场景新增 `career-form-fill-pack-handoff-template.md`，并把 `Career Prep Handoff -> Career Form Fill Pack -> web-form-execution` 固化为复杂 careers 表单的默认准备链路，减少边翻资料边填、上传目标不唯一和敏感字段混填的返工
+- [ ] 继续将 `Form Fill Pack` 前置到更多浏览器复杂任务入口，固定“先锁资料来源/上传文件/敏感确认/验收点，再执行页面动作”的默认准备步骤
 - [x] 将“多步浏览器自动化默认使用 aria refs + 固定 targetId + 每步后刷新 snapshot”固化成浏览器任务稳定性规则，并接入 `web-form-execution.md`、`browser-research-briefing.md`、`browser-upload-handoff.md`、`browser-download-handoff.md`，优先压低 stale ref、跨步误操作和动态页面重绘导致的返工
 - [ ] 继续把浏览器状态刷新规则扩到更多高频 browser playbook，并沉淀按任务类型区分的页面状态变化检查点
 - [x] 将 research / prep / delivery / form / upload 这些已有 playbook 的默认串联顺序固化进 `openclaw-agent-delegation.md`，减少复杂混合任务中起手路由正确但中途接力断开的返工

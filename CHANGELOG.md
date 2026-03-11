@@ -28,3 +28,4 @@
 - 新增 `ideas/task-health-summary-template.md`，把最小任务健康摘要协议落成可复用样例，降低后续新脚本接入统一状态输出的成本
 - 新增 `ideas/last-run-status-template.json`，为无人值守脚本补一个可落盘的最近运行状态模板，降低后续看板/告警对文本解析的耦合
 - 给 `build_dashboard.ps1` 接入 `status/build_dashboard.last-run.json` 最近运行状态落盘，验证“状态行 + JSON”双通道输出可落地
+- 给 `weekly_summary.ps1` 接入 `status/weekly_summary.last-run.json` 最近运行状态落盘，补齐第二条核心汇总链路的双通道状态输出

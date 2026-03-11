@@ -14,7 +14,9 @@ $weekId = "{0}-{1:D2}" -f $today.Year, $isoWeek
 $rangeText = "{0:yyyy-MM-dd} ~ {1:yyyy-MM-dd}" -f $start, $today
 $dailyDir = Join-Path $RepoPath "reports\daily"
 $weeklyDir = Join-Path $RepoPath "reports\weekly"
+$statusDir = Join-Path $RepoPath "status"
 $output = Join-Path $weeklyDir ("{0}.md" -f $weekId)
+$statusOutput = Join-Path $statusDir "weekly_summary.last-run.json"
 $categoryConfigPath = Join-Path $RepoPath "scripts\weekly_summary.categories.json"
 
 if (-not (Test-Path $dailyDir)) {
@@ -24,6 +26,10 @@ if (-not (Test-Path $dailyDir)) {
 
 if (-not (Test-Path $weeklyDir)) {
     New-Item -ItemType Directory -Path $weeklyDir -Force | Out-Null
+}
+
+if (-not (Test-Path $statusDir)) {
+    New-Item -ItemType Directory -Path $statusDir -Force | Out-Null
 }
 
 $files = Get-ChildItem $dailyDir -Filter *.md | Where-Object {
@@ -120,4 +126,30 @@ if ($writtenText -notmatch '## Problems By Category' -or $writtenText -notmatch 
     exit 1
 }
 
-Write-Output "OK: WEEKLY_SUMMARY status=ok; path=$output; reports=$($files.Count); categories=$($categoryStats.Count)"
+$statusPayload = [ordered]@{
+    task = 'weekly_summary'
+    status = 'ok'
+    path = $output
+    summary = "Weekly summary generated successfully."
+    timestamp = (Get-Date).ToString('o')
+    details = [ordered]@{
+        reports = $files.Count
+        categories = $categoryStats.Count
+        week = $weekId
+    }
+}
+
+$statusPayload | ConvertTo-Json -Depth 5 | Set-Content -Path $statusOutput -Encoding UTF8
+
+if (-not (Test-Path $statusOutput)) {
+    Write-Error "WEEKLY_SUMMARY_STATUS_WRITE_FAILED: $statusOutput"
+    exit 1
+}
+
+$statusText = Get-Content $statusOutput -Raw -Encoding UTF8 | ConvertFrom-Json
+if ($statusText.task -ne 'weekly_summary' -or $statusText.status -ne 'ok') {
+    Write-Error "WEEKLY_SUMMARY_STATUS_VERIFY_FAILED: invalid status payload"
+    exit 1
+}
+
+Write-Output "OK: WEEKLY_SUMMARY status=ok; path=$output; reports=$($files.Count); categories=$($categoryStats.Count); status_json=$statusOutput"

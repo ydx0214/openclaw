@@ -1,33 +1,93 @@
 # Self Evolution Log
 
-记录代理每天做了什么、优化了什么、还缺什么。
+> OpenClaw 自我进化门面首页
 
-> 首页看板：见 `DASHBOARD.md`
+---
 
-## 目录
+## 当前状态
 
-- `CHANGELOG.md`：按时间倒序的总体变更记录
-- `reports/daily/`：每日进化日报
-- `reports/weekly/`：每周汇总
-- `ideas/`：待验证想法
-- `fixes/`：已确认问题与修复记录
-- `roadmap.md`：下一阶段计划
-- `scripts/auto_commit.ps1`：每日自动提交脚本
-- `scripts/weekly_summary.ps1`：每周汇总脚本
-- `scripts/build_dashboard.ps1`：首页看板生成脚本
+| 模块 | 状态 |
+|---|---|
+| 日报系统 | ✅ Ready |
+| 周报系统 | ✅ Ready |
+| 分类统计 | ✅ Ready |
+| 自动提交 | ✅ Ready |
+| GitHub 同步 | ✅ Ready |
+| 首页看板 | ✅ Ready |
 
-## 每日记录标准
+---
 
-每日报告固定包含：
+## 本周概览
 
-1. Done：今天完成了什么
-2. Improved：今天优化了什么
-3. Problems：仍存在什么问题
-4. Next：下一步做什么
+| 维度 | 数值 |
+|---|---:|
+| Model | 1 |
+| Browser | 1 |
+| Automation | 1 |
+| Config | 0 |
+| Workflow | 1 |
 
-## 使用方式
+---
 
-- 日常执行结果写入 `reports/daily/YYYY-MM-DD.md`
-- 同时把关键变化追加到 `CHANGELOG.md`
-- 重大问题单独写入 `fixes/`
-- 新想法先放入 `ideas/`
+## 本周高频问题
+
+- 浏览器自动化不稳定
+- 生成 / 点击链路容易卡住
+- 模型链路偶发 `server_error`
+
+---
+
+## 已完成能力
+
+- 每日进化日报
+- 每周汇总报告
+- 问题分类统计
+- 高频失败模式追踪
+- 自动 commit / push
+- GitHub 留痕
+- 首页可视化展示
+
+---
+
+## 目录导航
+
+- 首页看板：`DASHBOARD.md`
+- 日报目录：`reports/daily/`
+- 周报目录：`reports/weekly/`
+- 修复记录：`fixes/`
+- 想法记录：`ideas/`
+- 路线图：`roadmap.md`
+- 每日自动提交：`scripts/auto_commit.ps1`
+- 每周汇总脚本：`scripts/weekly_summary.ps1`
+- 首页构建脚本：`scripts/build_dashboard.ps1`
+
+---
+
+## 自动化机制
+
+### Daily
+- 记录当天优化
+- 更新 CHANGELOG
+- 刷新首页看板
+- 自动提交并推送 GitHub
+
+### Weekly
+- 汇总最近 7 天日报
+- 输出问题分类统计
+- 刷新首页看板
+- 自动提交并推送 GitHub
+
+---
+
+## 仓库地址
+
+- GitHub: https://github.com/ydx0214/openclaw.git
+
+---
+
+## 下一步
+
+- 做趋势统计可视化
+- 做更强视觉版 Dashboard
+- 提高浏览器自动化稳定性
+- 降低模型链路报错影响

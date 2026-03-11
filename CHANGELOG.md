@@ -17,3 +17,4 @@
 - 给 auto_commit.ps1 增加 `origin` 远程预检与明确报错，减少新仓库初始化时的推送排障成本
 
 - 将 auto_commit.ps1 的分支检测与 origin 远程预检前移到 commit 之前，避免推送前置条件缺失时产生半完成的本地提交
+- 将“无人值守脚本统一采用 preflight -> execute -> verify -> explain 模板”写入 roadmap，作为后续日报/周报/看板/自动提交链路的一致化演进方向

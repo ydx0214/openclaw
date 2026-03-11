@@ -4,12 +4,17 @@ param(
 
 Set-Location $RepoPath
 
+if (-not (Test-Path $RepoPath)) {
+    Write-Error "REPO_PATH_MISSING: $RepoPath"
+    exit 1
+}
+
 $timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
 
 # 保守提交：只有有变更时才提交
 $changes = git status --porcelain
 if (-not $changes) {
-    Write-Output "NO_CHANGES"
+    Write-Output "OK: AUTO_COMMIT status=noop; reason=no_changes"
     exit 0
 }
 
@@ -33,6 +38,12 @@ if ($LASTEXITCODE -ne 0) {
     exit 1
 }
 
+$headSha = (git rev-parse HEAD 2>$null).Trim()
+if (-not $headSha) {
+    Write-Error "GIT_HEAD_SHA_DETECT_FAILED"
+    exit 1
+}
+
 git push origin $branch
 if ($LASTEXITCODE -ne 0) {
     git push --set-upstream origin $branch
@@ -42,4 +53,16 @@ if ($LASTEXITCODE -ne 0) {
     }
 }
 
-Write-Output "OK: $commitMessage -> $branch"
+$upstreamRef = "origin/$branch"
+$remoteSha = (git rev-parse $upstreamRef 2>$null).Trim()
+if (-not $remoteSha) {
+    Write-Error "GIT_PUSH_VERIFY_FAILED: upstream ref missing after push ($upstreamRef)"
+    exit 1
+}
+
+if ($remoteSha -ne $headSha) {
+    Write-Error "GIT_PUSH_VERIFY_FAILED: local HEAD $headSha != remote $remoteSha"
+    exit 1
+}
+
+Write-Output "OK: AUTO_COMMIT status=ok; branch=$branch; head=$headSha; remote=$upstreamRef; verify=matched"

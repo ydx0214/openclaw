@@ -22,3 +22,4 @@
 - 给 weekly_summary.ps1 补最小 preflight / verify / explain：缺日报目录时直接报错、缺周报目录时自动创建、写出后校验关键章节并输出结构化成功摘要
 
 - 给 build_dashboard.ps1 补最小 preflight / verify / explain，并输出结构化状态摘要，减少首页看板静默失败风险
+- 给 auto_commit.ps1 补统一结构化状态输出与 push 后 SHA 校验，减少“提交成功但远端未对齐”的静默失真风险

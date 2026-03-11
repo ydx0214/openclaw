@@ -38,3 +38,4 @@
 - 新增 `ideas/document-task-routing-template.md`，把 PDF / Word / 简历 / 表格 / Markdown 任务沉淀为统一分流与验收模板，降低复杂文档任务走错工具链和漏校验的概率
 - 新增 `playbooks/document-task-routing.md`，把复杂文档任务按提取、排版、简历、表格、Markdown 交付 5 条路径分流，并接入 `PLAYBOOKS.md` 与 `TOOLS.md`
 - 新增 `ideas/browser-research-briefing-template.md`，把浏览器查询/官网调研/多页资料整合沉淀为统一简报模板，优先服务职位研究、产品对比、文档转操作方案等复杂真实任务
+- 新增 `ideas/career-application-prep-brief-template.md`，把“职位官网研究 -> 材料缺口 -> Fill Readiness -> form pack/简历变体准备”固化成求职类复杂任务的投递前准备模板，并将短版 Prep Brief 接入 `playbooks/careers-site-application.md`

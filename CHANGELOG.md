@@ -2,6 +2,8 @@
 
 ## 2026-03-12
 
+- 新增 `self-evolution-log/ideas/browser-page-state-checkpoints-template.md`，并将按任务类型区分的页面状态变化检查点接入 `playbooks/browser-research-briefing.md`、`playbooks/browser-upload-handoff.md`、`playbooks/browser-download-handoff.md` 与 `playbooks/web-form-execution.md`，降低复杂浏览器任务中的 stale ref、跨步误操作与页面已变但仍按旧状态继续操作的返工风险
+
 - 新增 `playbooks/capability-intake-handoff.md`，并将“新能力需求 -> 最佳能力路径 -> 最小 smoke test -> 下一执行链路”接入 `PLAYBOOKS.md`、`TOOLS.md` 与 `roadmap.md`，减少找到 skill / 工具 / MCP 但没有真正变成可执行任务链的断层
 
 - 新增 `self-evolution-log/ideas/multimedia-platform-spec-card-template.md`，并将多媒体工作流前置为 `Platform Spec Card -> Generation Brief -> prompt pack -> iteration log -> delivery pack -> acceptance`，同时接入 `playbooks/multimedia-generation-workflow.md` 与 `roadmap.md`，降低封面图、短视频、图生视频任务中的错比例、错时长、错安全区和交付件不清造成的返工

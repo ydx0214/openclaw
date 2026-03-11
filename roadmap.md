@@ -52,7 +52,7 @@
 - [x] 为官网投递场景新增 `career-form-fill-pack-handoff-template.md`，并把 `Career Prep Handoff -> Career Form Fill Pack -> web-form-execution` 固化为复杂 careers 表单的默认准备链路，减少边翻资料边填、上传目标不唯一和敏感字段混填的返工
 - [ ] 继续将 `Form Fill Pack` 前置到更多浏览器复杂任务入口，固定“先锁资料来源/上传文件/敏感确认/验收点，再执行页面动作”的默认准备步骤
 - [x] 将“多步浏览器自动化默认使用 aria refs + 固定 targetId + 每步后刷新 snapshot”固化成浏览器任务稳定性规则，并接入 `web-form-execution.md`、`browser-research-briefing.md`、`browser-upload-handoff.md`、`browser-download-handoff.md`，优先压低 stale ref、跨步误操作和动态页面重绘导致的返工
-- [ ] 继续把浏览器状态刷新规则扩到更多高频 browser playbook，并沉淀按任务类型区分的页面状态变化检查点
+- [x] 新增 `ideas/browser-page-state-checkpoints-template.md`，并将按任务类型区分的页面状态变化检查点接入 `browser-research-briefing.md`、`browser-upload-handoff.md`、`browser-download-handoff.md` 与 `web-form-execution.md`，降低 stale ref、跨步误操作与“状态已变但还按旧页面继续操作”的返工风险
 - [x] 将 research / prep / delivery / form / upload 这些已有 playbook 的默认串联顺序固化进 `openclaw-agent-delegation.md`，减少复杂混合任务中起手路由正确但中途接力断开的返工
 - [x] 将 completion proof 内嵌进 `windows-file-dialog-handoff.md`，把 Open / Save / Save As / Select Folder 的完成标准收紧为“本地结果 + 源应用接受 + handoff-ready”，继续压低跨浏览器 / 桌面 / 文档链路中的假完成风险
 - [x] 新增 `ideas/desktop-action-proof-template.md`，并把“Final artifact / Primary proof / Secondary proof / False-completion trap / Handoff-ready”接入 `playbooks/desktop-operations.md`，降低资源管理器、Office 与本地 GUI 操作中“动作发出去了但目标状态没真正达成”的假完成风险

@@ -24,7 +24,7 @@ Homepage for self-evolution progress.
 | Model | 0 |
 | Browser | 0 |
 | Automation | 1 |
-| Config | 1 |
+| Config | 0 |
 | Workflow | 1 |
 
 ---

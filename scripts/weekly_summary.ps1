@@ -21,7 +21,31 @@ $files = Get-ChildItem $dailyDir -Filter *.md | Where-Object {
     $_.Name -ne 'TEMPLATE.md' -and $_.LastWriteTime -ge $start
 } | Sort-Object LastWriteTime
 
-$categoryConfigs = Get-Content $categoryConfigPath -Raw -Encoding UTF8 | ConvertFrom-Json
+$defaultCategoryConfigs = @(
+    [pscustomobject]@{ name = 'Model'; patterns = @('model', 'server_error', 'provider') }
+    [pscustomobject]@{ name = 'Browser'; patterns = @('browser', 'snapshot', 'page', 'element') }
+    [pscustomobject]@{ name = 'Automation'; patterns = @('automation', 'script', 'task', 'click') }
+    [pscustomobject]@{ name = 'Config'; patterns = @('config', 'gateway', 'credential', 'restart') }
+    [pscustomobject]@{ name = 'Workflow'; patterns = @('workflow', 'report', 'record', 'repeat') }
+)
+
+$categoryConfigs = $null
+if (Test-Path $categoryConfigPath) {
+    try {
+        $categoryConfigs = Get-Content $categoryConfigPath -Raw -Encoding UTF8 | ConvertFrom-Json
+    }
+    catch {
+        Write-Warning "CATEGORY_CONFIG_INVALID; fallback to built-in defaults"
+    }
+}
+else {
+    Write-Warning "CATEGORY_CONFIG_MISSING; fallback to built-in defaults"
+}
+
+if (-not $categoryConfigs -or $categoryConfigs.Count -eq 0) {
+    $categoryConfigs = $defaultCategoryConfigs
+}
+
 $categoryStats = [ordered]@{}
 foreach ($category in $categoryConfigs) {
     $categoryStats[$category.name] = 0

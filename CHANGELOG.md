@@ -44,3 +44,4 @@
 - 将上传交接模板正式落成 `playbooks/browser-upload-handoff.md` 并接入 `PLAYBOOKS.md`，把浏览器附件上传沉淀为可复用的独立流程
 - 新增 `ideas/multimedia-generation-brief-template.md`，把生图 / 视频生成任务前置收口为统一 `Generation Brief` 模板，降低多轮 prompt 返工和多媒体交付失焦风险
 - 新增正式 `playbooks/multimedia-generation-workflow.md`，把多媒体任务沉淀为 `素材盘点 -> Generation Brief -> prompt pack -> acceptance` 工作流，并接入 `PLAYBOOKS.md`
+- 新增 `ideas/multimedia-iteration-log-template.md`，并将多媒体工作流升级为 `素材盘点 -> Generation Brief -> prompt pack -> iteration log -> acceptance`，减少多轮生成任务中版本结论和可复用素材的散落风险

@@ -2,98 +2,65 @@
 
 <div align="center">
 
-# ⚡ OpenClaw Self Evolution Console
+# ⚡ OpenClaw 自我进化控制台
 
-> 持续记录 · 自动复盘 · 分类统计 · GitHub 留痕
+> 中文优先 · 自动复盘 · 分类统计 · GitHub 留痕
 
-[English](./README.md) · [中文](./README.zh-CN.md) · [Dashboard](./DASHBOARD.md) · [中文看板](./DASHBOARD.zh-CN.md) · [Daily Reports](./reports/daily/) · [Weekly Reports](./reports/weekly/) · [Roadmap](./roadmap.md)
+**默认入口：中文**  
+[中文首页](./README.zh-CN.md) · [English](./README.en.md) · [中文看板](./DASHBOARD.zh-CN.md) · [English Dashboard](./DASHBOARD.md)
 
 </div>
 
 ---
 
-## ███ System Overview
+## 当前推荐入口
 
-| Core Module | Status | Note |
+| 语言 | 页面 | 说明 |
 |---|---|---|
-| Daily Evolution | ✅ Active | 每日/高频自动复盘 |
-| Weekly Summary | ✅ Active | 每周自动汇总 |
-| Category Stats | ✅ Active | model/browser/automation/config/workflow |
-| Auto Commit | ✅ Active | 自动提交并推送 |
-| GitHub Sync | ✅ Active | 已接远程仓库 |
-| Visual Dashboard | ✅ Active | README + DASHBOARD 双首页 |
+| 中文 | `README.zh-CN.md` | 中文门面首页 |
+| 中文 | `DASHBOARD.zh-CN.md` | 中文实时看板 |
+| English | `README.en.md` | English homepage |
+| English | `DASHBOARD.md` | English dashboard |
 
 ---
 
-## ███ This Week Metrics
+## 当前状态
 
-<table>
-<tr>
-<td><b>Model</b><br>1</td>
-<td><b>Browser</b><br>1</td>
-<td><b>Automation</b><br>1</td>
-<td><b>Config</b><br>0</td>
-<td><b>Workflow</b><br>1</td>
-</tr>
-</table>
-
----
-
-## ███ High Frequency Failure Patterns
-
-- Browser automation instability
-- Click / generation chain gets stuck
-- Upstream model `server_error`
+| 核心模块 | 状态 |
+|---|---|
+| 每日进化 | ✅ 运行中 |
+| 每周汇总 | ✅ 运行中 |
+| 分类统计 | ✅ 运行中 |
+| 自动提交 | ✅ 运行中 |
+| GitHub 同步 | ✅ 运行中 |
+| 可视化门面 | ✅ 运行中 |
 
 ---
 
-## ███ Capability Matrix
+## 本周概览
 
-- ✅ Daily reports
-- ✅ Weekly reports
-- ✅ Failure category statistics
-- ✅ High-frequency issue tracking
-- ✅ Auto commit / push
-- ✅ GitHub traceability
-- ✅ Visual homepage
-- ✅ Dashboard refresh in automation flow
-
----
-
-## ███ Automation Pipeline
-
-**Daily Flow**
-```text
-Observe → Summarize → Write Daily Report → Update Changelog → Refresh Dashboard → Commit → Push
-```
-
-**Weekly Flow**
-```text
-Collect 7 Days → Aggregate → Category Stats → Build Weekly Summary → Refresh Dashboard → Commit → Push
-```
+| 维度 | 数值 |
+|---|---:|
+| 模型问题 | 1 |
+| 浏览器问题 | 1 |
+| 自动化问题 | 1 |
+| 配置问题 | 0 |
+| 流程问题 | 1 |
 
 ---
 
-## ███ Navigation
+## 入口说明
 
-- Dashboard: `DASHBOARD.md`
-- Daily: `reports/daily/`
-- Weekly: `reports/weekly/`
-- Fixes: `fixes/`
-- Ideas: `ideas/`
-- Scripts: `scripts/`
+如果你是中文用户：
+- 直接看 `README.zh-CN.md`
+- 看板看 `DASHBOARD.zh-CN.md`
 
----
-
-## ███ Next Upgrade
-
-- Trend visualization blocks
-- Better weekly comparison
-- More stable browser automation
-- Lower provider/server error impact
+如果你是英文用户：
+- 直接看 `README.en.md`
+- 看板看 `DASHBOARD.md`
 
 ---
 
-## ███ Repository
+## 仓库地址
 
 - GitHub: https://github.com/ydx0214/openclaw.git

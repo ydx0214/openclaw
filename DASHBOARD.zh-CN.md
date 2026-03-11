@@ -8,7 +8,7 @@
 **模式：自动改进**  
 **同步：GitHub 已开启**
 
-[中文首页](./README.zh-CN.md) · [English](./README.md) · [英文看板](./DASHBOARD.md)
+[中文首页](./README.zh-CN.md) · [English](./README.en.md) · [英文看板](./DASHBOARD.md)
 
 </div>
 

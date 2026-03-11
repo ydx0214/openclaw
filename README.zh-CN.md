@@ -6,7 +6,7 @@
 
 > 持续记录 · 自动复盘 · 分类统计 · GitHub 留痕
 
-[中文首页](./README.zh-CN.md) · [English](./README.md) · [看板](./DASHBOARD.zh-CN.md) · [日报](./reports/daily/) · [周报](./reports/weekly/)
+[中文首页](./README.zh-CN.md) · [English](./README.en.md) · [看板](./DASHBOARD.zh-CN.md) · [日报](./reports/daily/) · [周报](./reports/weekly/)
 
 </div>
 

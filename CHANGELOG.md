@@ -2,6 +2,8 @@
 
 ## 2026-03-12
 
+- 新增 `playbooks/batch-rename-apply-guard.md`，并接入 `PLAYBOOKS.md`、`TOOLS.md` 与 `playbooks/local-batch-file-routing.md`，把高风险本地批量改名/移动任务的默认执行顺序固定为 `preview -> apply -> verify -> handoff`，减少下载目录整理、上传前文件清洗和素材批量改名中的范围漂移、误触文件族与“脚本成功=任务完成”的假完成
+
 - ?? `playbooks/resume-evidence-pack.md`???? `PLAYBOOKS.md`?`TOOLS.md` ? `roadmap.md`????/JD ???????????????? `JD signal -> evidence strength -> safe usage -> do-not-claim boundary`??????????????? JD?????????/?????????
 oadmap.md，把官网/JD 研究到简历定制之间的中间层固定为 JD signal -> evidence strength -> safe usage -> do-not-claim boundary，减少目标岗位简历定制里反复翻 JD、弱匹配硬写和简历/问答边界不清的返工
 

@@ -90,6 +90,7 @@
 - [x] 将本地文件批处理任务正式沉淀为 `playbooks/local-batch-file-routing.md`，把 ZIP/解压、批量改名、图片格式转换、按扩展名整理、校验和、文件名清洗统一按交付目标分流到 `local-toolbox` / `batch-file-studio`
 - [ ] 继续把 `local-batch-file-routing` 接到更多高频入口，优先覆盖下载目录整理、上传前文件清洗、素材批量改名和交付包打包场景
 - [x] 为高风险批量改名/移动任务补更明确的 preview -> apply -> verify 统一验收模板，继续降低误改名、误触达和范围漂移风险
+- [x] 将 `self-evolution-log/ideas/batch-rename-apply-guard-template.md` 正式落成 `playbooks/batch-rename-apply-guard.md`，并接入 `PLAYBOOKS.md`、`TOOLS.md` 与 `playbooks/local-batch-file-routing.md`，把高风险本地批量改名/移动任务的默认执行顺序收紧为 `preview -> apply -> verify -> handoff`，减少下载目录整理、上传前文件清洗和素材批量改名里的误触与假完成
 - [ ] 继续把 `preview -> apply -> verify` 防护层接到更多下载目录整理、上传前文件清洗、素材批量改名和归档打包入口，优先减少批处理任务中的范围漂移与误触文件族风险
 - [x] 新增 `playbooks/capability-intake-handoff.md`，把“新能力需求 -> 最佳能力路径 -> 最小 smoke test -> 下一执行链路”固化成接入流程，并接入 `PLAYBOOKS.md` 与 `TOOLS.md`，减少找到 skill / 工具 / MCP 但没有真正变成可执行任务链的断层
 - [x] 为 capability intake 新增 `Capability Proof Pack` 模板，并接入 `playbooks/capability-intake-handoff.md` 与 `TOOLS.md`，把“发现能力”进一步收紧为“最小已证明任务 + proof signals + IO contract + next handoff”，降低新 skill / MCP / 工具接入中的假就绪风险

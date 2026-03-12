@@ -2,6 +2,8 @@
 
 ## 2026-03-12
 
+- 新增 `self-evolution-log/ideas/document-downstream-consumer-scorecard-template.md`，把复杂文档提取后的可用性从“lane 通过”继续收紧为“对具体下游消费者是否真可用”，按 `Markdown / Office / Excel / 简历 / Research Evidence Pack / Form Fill` 六类消费者分别检查 must-preserve elements、cleanup 成本与 failure cost，减少复杂 PDF / 扫描件 / 表格文档在进入高成本下游流程后才暴露结构失真、字段混淆和引用边界不清的返工
+
 - 把“本地产物 -> 浏览器上传”的默认执行链正式写入 `PLAYBOOKS.md` 与 `TOOLS.md`：`local-file-delivery-handoff.md -> attachment-readiness-pack.md -> browser-upload-handoff.md -> windows-file-dialog-handoff.md (if needed)`，把上传前文件锁定、本地 proof、页面接受信号和系统对话框交接收成一条标准链，减少简历投递、材料提交、多附件表单里错传旧版本、边上传边找文件，以及把对话框关闭误判为上传成功的返工
 
 - 新增 `playbooks/download-cleanup-pack.md`，并接入 `PLAYBOOKS.md`、`TOOLS.md` 与 `roadmap.md`，把“下载目录整理 / 上传前文件清洗 / 审阅前材料收口”固定为 `锁定唯一目标 -> 预览保留/排除范围 -> scoped cleanup -> 验证唯一交付包/目录 -> 下一交接`，减少浏览器下载后停在散乱本地文件、上传前临时挑文件和打包范围过宽导致的返工

@@ -232,3 +232,7 @@ oadmap.md 作为新的长期进化方向；优先减少 Explorer/文件管理、
 - 新增 `self-evolution-log/ideas/auth-target-context-lock.md`，并把这层规则接入 `playbooks/browser-auth-proof-card.md`、`playbooks/browser-upload-handoff.md` 与 `playbooks/careers-site-application.md`：把登录态浏览器任务的默认前门从"已证明 account/workspace/role"继续收紧为"若后续要 edit/upload/continue draft，还必须再锁定正确 target object / draft / attachment slot / report scope"，减少 ATS 续投、后台附件更新和多 workspace 编辑场景里"登录是对的但对象改错了"的高成本返工
 
 - 将 uth-target-context-lock 正式接入 playbooks/browser-admin-report-execution-pack.md 与 playbooks/browser-admin-report-workflow.md，把登录后后台 / 报表任务的默认前门从"账号/工作区/范围对了"继续收紧为"账号对 + 对象对 + scope 对"，减少多 report row、多 dataset、多 export entry 和多 record 场景里"登录是对的但对象选错了"的高成本返工
+
+## 2026-03-12
+
+- 新增 playbooks/browser-element-locator-guide.md，把浏览器元素定位的技术细节从散落的示例整理为系统化指南：定位策略层级（aria ref > role > text > CSS/XPath）、Ref 管理最佳实践、交互模式库（等待/滚动/iframe/下拉/上传/日期选择）、复杂场景处理（动态加载/shadow DOM/模态框）、调试技巧与性能优化，并接入 PLAYBOOKS.md 作为 rowser-stable-execution.md 的技术补充

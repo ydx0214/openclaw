@@ -2,6 +2,8 @@
 
 ## 2026-03-12
 
+- 新增 `playbooks/browser-stable-execution.md`，并接入 `PLAYBOOKS.md`、`playbooks/browser-research-briefing.md`、`playbooks/web-form-execution.md`、`playbooks/browser-upload-handoff.md` 与 `playbooks/browser-download-handoff.md`，把多步浏览器任务的默认推进单元正式收口为 `snapshot(refs=aria) -> one action -> state checkpoint -> refreshed snapshot -> next action`，减少官网研究、表单填写、上传下载和后台操作里的 stale ref、上下文漂移与把动作成功误判为状态成功的返工
+
 - 将 `self-evolution-log/ideas/capability-investment-gate-template.md` 正式落成 `playbooks/capability-investment-gate.md`，并接入 `PLAYBOOKS.md`、`TOOLS.md` 与 `playbooks/capability-intake-handoff.md`，把 OpenClaw 新能力/新工具接入类任务从“技术上能接”进一步收紧为“是否值得长期投入”的显式闸门，减少为低复用、高维护能力过度建设的返工
 
 - 将 `self-evolution-log/ideas/desktop-persisted-state-proof-template.md` 继续接入 `playbooks/windows-file-dialog-handoff.md` 与 `playbooks/office-output-proof.md`，把 Save / Save As / Export 类任务的完成标准从“对话框关闭 + 文件存在”收紧为“本地产物已验证 + persisted-state proof + 下游可安全依赖”，减少桌面/Office 导出、另存为和上传前文档链路里“看起来存了其实没真正写入最新状态”的返工

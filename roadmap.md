@@ -67,6 +67,7 @@
 - [x] 新增 `ideas/desktop-action-proof-template.md`，并把“Final artifact / Primary proof / Secondary proof / False-completion trap / Handoff-ready”接入 `playbooks/desktop-operations.md`，降低资源管理器、Office 与本地 GUI 操作中“动作发出去了但目标状态没真正达成”的假完成风险
 - [x] 新增 `ideas/desktop-persisted-state-proof-template.md`，并接入 `playbooks/desktop-operations.md` 与 `PLAYBOOKS.md`，把桌面/Office 编辑后的完成标准进一步收紧为“已保存/已应用 + 至少一条持久化证明”，降低文档修改、设置变更和本地 GUI 编辑中“界面看起来改了但实际没写入”的假完成风险
 - [x] 将 `ideas/desktop-persisted-state-proof-template.md` 正式落成 `playbooks/desktop-persisted-state-proof.md`，并接入 `desktop-operations.md`、`windows-file-dialog-handoff.md`、`office-output-proof.md` 与 `PLAYBOOKS.md`，把桌面/Office 保存导出类任务的完成标准进一步收紧为“文件/设置真正持久化 + 下游可安全依赖`
+- [x] 将桌面/Office 编辑后保存导出的默认接力链正式写入 `PLAYBOOKS.md` 与 `TOOLS.md`：`desktop-operations -> desktop-persisted-state-proof -> windows-file-dialog-handoff (if needed) -> office-output-proof/local-file-delivery-handoff`，减少真实桌面任务里 playbook 存在但没有被稳定调用的断层
 
 ## Phase 6
 

@@ -105,6 +105,7 @@
 - [ ] 继续把 `preview -> apply -> verify` 防护层接到更多下载目录整理、上传前文件清洗、素材批量改名和归档打包入口，优先减少批处理任务中的范围漂移与误触文件族风险
 - [x] 新增 `playbooks/capability-intake-handoff.md`，把“新能力需求 -> 最佳能力路径 -> 最小 smoke test -> 下一执行链路”固化成接入流程，并接入 `PLAYBOOKS.md` 与 `TOOLS.md`，减少找到 skill / 工具 / MCP 但没有真正变成可执行任务链的断层
 - [x] 为 capability intake 新增 `Capability Proof Pack` 模板，并接入 `playbooks/capability-intake-handoff.md` 与 `TOOLS.md`，把“发现能力”进一步收紧为“最小已证明任务 + proof signals + IO contract + next handoff”，降低新 skill / MCP / 工具接入中的假就绪风险
+- [x] 将 `self-evolution-log/ideas/capability-proof-pack-template.md` 正式落成 `playbooks/capability-proof-pack.md`，并接入 `PLAYBOOKS.md`、`TOOLS.md` 与 `playbooks/capability-intake-handoff.md`，把新能力接入的默认完成标准从“已发现 / 已配置 / 可列出”推进为“至少有一个已证明真实任务 + proof signals + 可复用 IO 契约 + 明确下一接力流程”，减少新 skill / MCP / 工具方向停在假就绪状态的返工
 - [ ] 继续把 capability intake 流程接到更多高频入口，优先覆盖“能不能做 X / 有没有 skill / 要不要接 MCP / 是否值得 ACP 开发”这类能力探索场景
 - [x] 新增 `playbooks/capability-evidence-pack.md`，把 docs / README / vendor page / 官方能力页研究收口为 `Task Family -> Capability Claims -> Prerequisites / Constraints -> Proof Status -> Recommended Next Route`，减少把 capability marketing claim、接入前提和本机 proof 混成一层后直接进入接入/投资判断的返工
 - [x] 新增 `playbooks/acp-implementation-pack.md`，把 ACP coding 请求的前置压缩固定为“目标结果 -> repo/workspace -> scope boundary -> acceptance -> side-effect boundary -> handoff requirement”，降低 Codex / Claude Code / Gemini 线程因任务包过虚导致的澄清回合、改偏和弱验收风险

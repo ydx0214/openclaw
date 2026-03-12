@@ -2,6 +2,8 @@
 
 ## 2026-03-12
 
+- 新增 `playbooks/download-cleanup-pack.md`，并接入 `PLAYBOOKS.md`、`TOOLS.md` 与 `roadmap.md`，把“下载目录整理 / 上传前文件清洗 / 审阅前材料收口”固定为 `锁定唯一目标 -> 预览保留/排除范围 -> scoped cleanup -> 验证唯一交付包/目录 -> 下一交接`，减少浏览器下载后停在散乱本地文件、上传前临时挑文件和打包范围过宽导致的返工
+
 - 新增 `self-evolution-log/ideas/document-extraction-lane-selector-template.md`，把复杂 PDF / 扫描件 / 多栏 / 表格型文档的起手判断收口为 `文档类型 + 主要目标 + 下游消费者 + 可接受清洗量 -> 选择最窄提取 lane`，减少把不同复杂文档一股脑塞进同一提取链路、导致后续 Markdown / 表格 / Office / 证据包阶段才暴露返工的问题
 
 - 新增 `self-evolution-log/experiments/document-intelligence-trial-pack-docling.md`，把复杂 PDF / 表格 / 扫描件文档能力的试投产验证固定为 `3 类真实样例 + 6 项验收维度 + invest now / trial only / defer` 的 `Document Intelligence Trial Pack`，避免新文档解析能力只停在“功能很强”的介绍层，改为先证明它是否真能把复杂文档稳定转成下游可消费输入

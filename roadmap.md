@@ -91,7 +91,8 @@
 ## Phase 7
 
 - [x] 将本地文件批处理任务正式沉淀为 `playbooks/local-batch-file-routing.md`，把 ZIP/解压、批量改名、图片格式转换、按扩展名整理、校验和、文件名清洗统一按交付目标分流到 `local-toolbox` / `batch-file-studio`
-- [ ] 继续把 `local-batch-file-routing` 接到更多高频入口，优先覆盖下载目录整理、上传前文件清洗、素材批量改名和交付包打包场景
+- [x] 继续把 `local-batch-file-routing` 接到更多高频入口，优先覆盖下载目录整理、上传前文件清洗、素材批量改名和交付包打包场景
+- [x] 新增 `playbooks/download-cleanup-pack.md`，并接入 `PLAYBOOKS.md` 与 `TOOLS.md`，把“下载目录整理 / 上传前文件清洗 / 审阅前材料收口”固定为 `锁定唯一目标 -> 预览保留/排除范围 -> scoped cleanup -> 验证唯一交付包/目录 -> 下一交接`，减少浏览器下载后停在散乱本地文件、上传前临时挑文件和打包范围过宽导致的返工
 - [x] 为高风险批量改名/移动任务补更明确的 preview -> apply -> verify 统一验收模板，继续降低误改名、误触达和范围漂移风险
 - [x] 将 `self-evolution-log/ideas/batch-rename-apply-guard-template.md` 正式落成 `playbooks/batch-rename-apply-guard.md`，并接入 `PLAYBOOKS.md`、`TOOLS.md` 与 `playbooks/local-batch-file-routing.md`，把高风险本地批量改名/移动任务的默认执行顺序收紧为 `preview -> apply -> verify -> handoff`，减少下载目录整理、上传前文件清洗和素材批量改名里的误触与假完成
 - [ ] 继续把 `preview -> apply -> verify` 防护层接到更多下载目录整理、上传前文件清洗、素材批量改名和归档打包入口，优先减少批处理任务中的范围漂移与误触文件族风险

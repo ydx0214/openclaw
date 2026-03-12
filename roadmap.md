@@ -135,3 +135,5 @@
 - [ ] 在出现真实半结构化网页任务缺口时，试做 `Stagehand` 的 task-shaped browser proof，验证它是否值得作为 OpenClaw 现有 browser lane 之外的 AI-assisted middle lane；在完成 unfamiliar admin/docs/form 三类最小 proof 之前，默认维持 `trial only`
 - [x] 新增 `self-evolution-log/experiments/browser-use-browser-capability-trial-pack.md`，把 `browser-use` 压成一份可复用 `Capability Evidence Pack + Investment Gate + Trial Pack`：明确真实任务族、官方能力声明、前提/成本、false-ready trap、本机最小 proof 路线与当前 `trial only` 结论，避免因为 README / demo 很强就直接把它误判成已值得接入 OpenClaw 主 browser 链路
 - [ ] 在出现真实弱结构/易变网页任务缺口时，试做 `browser-use` 的 task-shaped browser proof，优先验证它是否真能补现有 browser lane 在 unfamiliar admin page、复杂 docs navigation、weak-selector draft form 上的探索层缺口；在完成最小 proof 前，默认维持 `trial only`
+
+- [ ] 将 browser AI middle-lane task gate 继续接到更多 README/docs 驱动的浏览器新能力评估入口，先强制判断 existing browser lane enough? -> exploration gap? -> task-shaped proof -> downstream handoff，避免因为 demo/README 很强就过早接入 Stagehand、browser-use 一类候选能力

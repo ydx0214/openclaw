@@ -219,3 +219,4 @@ oadmap.md 作为新的长期进化方向；优先减少 Explorer/文件管理、
 
 
 
+- 新增 `self-evolution-log/ideas/browser-ai-middle-lane-task-gate.md`，把 Stagehand / browser-use 这类浏览器 AI 候选能力的默认前门收紧为 `existing browser lane enough? -> exploration gap? -> task-shaped proof(admin/docs/form) -> IO contract -> downstream handoff`，避免因 README/demo 很强就过早接 SDK、cloud 或平行流程；并把这条 `browser AI middle lane` 继续记为 `trial only` 的长期观察方向

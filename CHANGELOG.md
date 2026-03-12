@@ -2,6 +2,8 @@
 
 ## 2026-03-12
 
+- 将多媒体默认起手链继续收紧为 `multimedia-source-asset-readiness -> multimedia-platform-spec-card -> multimedia-generation-workflow -> multimedia-prompt-pack -> multimedia-iteration-log (if needed) -> multimedia-delivery-pack`，并同步更新 `PLAYBOOKS.md`、`TOOLS.md` 与 `playbooks/multimedia-generation-workflow.md`，同时补入小红书封面、图生视频、产品/Logo 敏感生成三个高频入口压缩路由，减少已有素材任务里边写 prompt 边补裁切/比例/安全区/保护元素导致的返工
+
 - 将 `self-evolution-log/ideas/research-decision-pack-template.md` 正式落成 `playbooks/research-decision-pack.md`，并接入 `PLAYBOOKS.md`、`TOOLS.md`、`playbooks/browser-research-briefing.md` 与 `playbooks/research-action-pack.md`，把多选项研究的默认收口从“比较结论”推进为“可复核的 Decision Pack + 明确下一执行路线”，减少工具/平台选型、职位路径比较、政策执行路线选择和 OpenClaw 新能力投入判断中的二次整理、重复开页与决策理由丢失
 
 - 新增 `playbooks/browser-upload-subtask-rule.md`，并接入 `PLAYBOOKS.md`、`TOOLS.md` 与 `playbooks/browser-upload-handoff.md`，把浏览器附件上传正式收口为独立子任务：先锁 `field + artifact`、做本地 proof、按 `browser-native / browser->windows-dialog` 选路、再以页面侧接受证明和下一安全动作收口；同时把默认上传链更新为 `local-file-delivery-handoff -> attachment-readiness-pack -> browser-upload-subtask-rule -> browser-upload-handoff -> windows-file-dialog-handoff (if needed)`，减少资料提交、后台附件更新、多附件表单和导出后二次上传里的错传版本、页面未接受却继续和把对话框关闭误判为完成的返工

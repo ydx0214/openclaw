@@ -2,6 +2,8 @@
 
 ## 2026-03-13
 
+- 新增 `playbooks/cron-task-workflow.md`，填补定时任务和提醒能力的工作流空白：明确任务类型（systemEvent vs agentTurn）、定时配置（at/every/cron三种模式）、Payload配置、交付模式（none/announce/webhook）、验证步骤和常见问题修复，提供常见场景表（健康审计/自我进化/用户提醒/系统监控）、Cron模式速查表和具体命令行示例，并接入 PLAYBOOKS.md 与 TOOLS.md，减少创建定时任务时配置错误或验证不完整的返工
+
 - 新增 `playbooks/document-ai-understanding-workflow.md`，填补本地文档（PDF/DOCX）AI理解的工作流空白：明确何时使用AI理解文档（摘要、关键信息提取、跨文档综合、结构化输出）、提供完整的prompt模式（总结、提取、综合、结构化）、处理长文档的分块策略、与research-evidence-pack等下游工作流的集成点，与 browser-research-briefing.md 的"浏览器AI辅助研究"形成互补（一个处理网上信息，一个处理本地文件），并接入 PLAYBOOKS.md 与 TOOLS.md
 
 - 在 `playbooks/browser-research-briefing.md` 中新增 "AI-Assisted Content Understanding" 部分，为浏览器研究工作流添加AI辅助理解和综合的能力指引，包含4个具体场景：跨页面综合、结构化数据提取、约束发现、AI结论验证规则，适用于定价对比、政策研究、技术文档等多页面复杂研究任务

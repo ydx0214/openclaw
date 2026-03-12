@@ -95,4 +95,5 @@
 - [x] 新增 `playbooks/acp-implementation-pack.md`，把 ACP coding 请求的前置压缩固定为“目标结果 -> repo/workspace -> scope boundary -> acceptance -> side-effect boundary -> handoff requirement”，降低 Codex / Claude Code / Gemini 线程因任务包过虚导致的澄清回合、改偏和弱验收风险
 - [ ] 继续把 `acp-implementation-pack` 接到更多高频 ACP 入口，优先覆盖“明确点名 Codex/Claude Code/Gemini 的实现任务”“capability intake 最终落到 ACP 开发”以及“需要长期线程的 repo 级实现工作”
 - [x] 新增 `ideas/capability-investment-gate-template.md`，并接入 `playbooks/capability-intake-handoff.md`，把“技术上能接”进一步分流为 `invest now / trial only / defer`，降低低频、脆弱或维护成本高的新能力被过度投入的风险
+- [x] 将 `ideas/capability-investment-gate-template.md` 正式落成 `playbooks/capability-investment-gate.md`，并接入 `PLAYBOOKS.md`、`TOOLS.md` 与 `playbooks/capability-intake-handoff.md`，把“找到能力候选”进一步压成“是否值得长期投入”的显式关口，减少为低复用 / 高维护能力过度建设的风险
 - [ ] 继续把 capability investment gate 接到更多高频能力入口，优先覆盖“是否值得为单次需求接 MCP / skill / ACP 开发”这类投入决策场景

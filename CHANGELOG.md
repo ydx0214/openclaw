@@ -2,6 +2,8 @@
 
 ## 2026-03-12
 
+- 将 `browser-auth-state-handoff` 继续前置到 `web-form-execution.md`、`browser-upload-handoff.md`、`browser-download-handoff.md` 与 `careers-site-application.md`，并同步更新 `PLAYBOOKS.md`、`TOOLS.md`，把登录后浏览器任务的默认起手从“直接进页面动作”收紧为“先选 auth lane 并证明登录态，再进入 form / upload / download / careers 下游流程”，减少因误用隔离浏览器、丢失现有 Chrome 会话或未证明登录态而造成的整链返工
+
 - 新增 `playbooks/browser-auth-state-handoff.md`，并接入 `PLAYBOOKS.md`、`TOOLS.md` 与 `playbooks/browser-research-briefing.md`，把登录态浏览器任务的起手判断固定为 `task goal -> auth dependency -> browser lane(openclaw/chrome relay) -> visible auth proof -> downstream handoff`，减少登录后研究、官网登录后台和需复用本机 Chrome 会话的任务里因路线选错或未证明登录态而导致的返工
 
 

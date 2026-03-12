@@ -73,7 +73,9 @@
 - [x] 补一份 `multimedia-prompt-pack-template.md`，把 `Generation Brief -> shared guardrails -> variant prompts -> acceptance -> next revision axis` 固化成可直接复用的首轮 prompt 输出模板，降低生图 / 视频 / 图生视频任务里从目标确认到可执行 prompt 的断层
 - [x] 为多媒体任务补版本对比记录与可复用素材清单，并新增 `multimedia-delivery-pack-template.md` 作为末端收口模板，减少多轮生成后的资产散落、版本失焦与后续上传/发布前再次手工挑版本的成本
 - [x] 将 `multimedia-prompt-pack-template.md` 提升为正式 `playbooks/multimedia-prompt-pack.md`，把 `Generation Brief -> Prompt Pack -> iteration log / delivery pack` 固化为多媒体复杂任务的默认中间层，减少生图 / 视频 / 图生视频任务里首轮 prompt 不可比较、不可验收、不可复用的返工
+- [x] 将 `ideas/multimedia-delivery-pack-template.md` 正式落成 `playbooks/multimedia-delivery-pack.md`，把“候选图/视频版本 -> 主交付版本 -> 可复用 prompt 资产 -> 下一交接动作”固化成多媒体任务的末端收口流程，减少上传、审阅、发布和二次编辑前再次手工挑版本与丢失 winning prompt 的返工
 - [ ] 继续把 `multimedia-prompt-pack` 接到更多高频多媒体入口，优先覆盖小红书封面图、短视频分镜、图生视频首轮生成和跨平台素材复用场景
+- [ ] 继续把 `multimedia-delivery-pack` 接到更多高频多媒体入口，优先覆盖封面图定稿、短视频版本收口、图生视频交付和发布前审阅场景
 
 ## Phase 7
 

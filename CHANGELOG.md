@@ -5,6 +5,8 @@
 - 新增 `self-evolution-log/experiments/docling-windows-smoke-test-pack.md`，基于 Docling 官方文档首页、GitHub README 与 CLI reference，把 Windows 上复杂文档增强能力的最小验证路径固定为 `preconditions -> install -> baseline check -> 普通 PDF -> 多栏/表格 PDF -> 扫描件 OCR -> 6 维验收 -> invest now / trial only / defer`，用于后续判断 Docling 是否值得进入复杂 PDF / 表格 / 扫描件任务的长期能力建设
 
 - 新增 `self-evolution-log/ideas/browser-upload-subtask-rule.md`，把“浏览器里的附件上传”明确收紧为独立子任务：先锁字段与唯一文件、再做本地 proof、按 `browser-native / browser->windows-dialog` 选路、最后以页面侧接受证明收口，并把这条规则追加进 `roadmap.md` 作为后续非求职资料提交、多附件表单、后台附件更新和导出后二次上传场景的默认演进方向
+
+- 新增 `playbooks/multimedia-source-asset-readiness.md`，并接入 `PLAYBOOKS.md`、`TOOLS.md` 与 `playbooks/multimedia-generation-workflow.md`，把多媒体任务里“已有本地/下载素材”的前置环节固定为 `锁定唯一主素材 -> 验收清晰度/裁切/UI污染/主体稳定性 -> 标记 protected elements / forbidden drift -> 再进入 prompt/生成`，减少封面图、图生视频、产品图和截图派生素材任务里因错源图、低质截图、坏裁切和未标记保护元素导致的整链返工
 ## 2026-03-12
 
 - 新增 `playbooks/capability-evidence-pack.md`，并接入 `PLAYBOOKS.md`、`TOOLS.md` 与 `roadmap.md`，把 docs / README / vendor page / 官方能力页研究固定为 `Task Family -> Capability Claims -> Prerequisites / Constraints -> Proof Status -> Recommended Next Route` 的 `Capability Evidence Pack`，减少评估 skill / MCP / 工具 / ACP 方向时把 marketing claim、接入前提、本机 proof 和下一路线判断混成一层，导致“文档说能做”被误判成“真实任务已可做”的返工

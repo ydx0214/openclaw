@@ -91,6 +91,7 @@
 - [x] 将 `multimedia-prompt-pack-template.md` 提升为正式 `playbooks/multimedia-prompt-pack.md`，把 `Generation Brief -> Prompt Pack -> iteration log / delivery pack` 固化为多媒体复杂任务的默认中间层，减少生图 / 视频 / 图生视频任务里首轮 prompt 不可比较、不可验收、不可复用的返工
 - [x] 将 `ideas/multimedia-delivery-pack-template.md` 正式落成 `playbooks/multimedia-delivery-pack.md`，把“候选图/视频版本 -> 主交付版本 -> 可复用 prompt 资产 -> 下一交接动作”固化成多媒体任务的末端收口流程，减少上传、审阅、发布和二次编辑前再次手工挑版本与丢失 winning prompt 的返工
 - [x] 新增 `playbooks/multimedia-iteration-log.md`，把多轮生图 / 视频 / 图生视频比较正式收口为 `brief -> prompt pack -> iteration log -> delivery pack`，减少只保存最后一个 prompt、版本胜出原因丢失和下一轮改动轴混乱导致的返工
+- [x] 新增 `playbooks/multimedia-source-asset-readiness.md`，并接入 `PLAYBOOKS.md`、`TOOLS.md` 与 `playbooks/multimedia-generation-workflow.md`，把“已有本地/下载素材 -> 选择唯一主素材 -> 验收清晰度/裁切/UI污染/保护元素 -> 再进入 prompt/生成”固化成默认前置层，减少封面图、图生视频、产品图和截图派生素材任务里因错源图、低质截图、坏裁切和未标记保护元素导致的整链返工
 - [ ] 继续把 `multimedia-prompt-pack` 接到更多高频多媒体入口，优先覆盖小红书封面图、短视频分镜、图生视频首轮生成和跨平台素材复用场景
 - [ ] 继续把 `multimedia-iteration-log` 接到更多高频多媒体入口，优先覆盖封面图多版本比稿、短视频镜头稿迭代、图生视频运动方向比较和发布前版本收口场景
 - [ ] 继续把 `multimedia-delivery-pack` 接到更多高频多媒体入口，优先覆盖封面图定稿、短视频版本收口、图生视频交付和发布前审阅场景

@@ -6,6 +6,8 @@
 
 - 新增 `playbooks/xiaohongshu-cover-image-generation.md`，把小红书封面图生成从通用多媒体工作流升级为平台专用 playbook：明确 3:4 比例、标题安全区、色彩风格等平台约束，提供 Generation Brief 模板、3 变体 Prompt Pack、Delivery Pack，与 xiaohongshu-mcp-workflow 形成"封面生成 -> MCP 发布"的完整链路，减少小红书封面图任务中临时拼凑比例/prompt/验收标准的返工
 
+- 新增 `playbooks/short-video-cover-generation.md`，把短视频封面/缩略图生成从通用多媒体工作流升级为多平台专用 playbook：覆盖抖音/小红书/视频号/YouTube Shorts 四平台的 9:16/3:4/16:9 比例、分辨率、安全区规范，提供平台对比表、视频上下文锁定、Generation Brief 模板、3 变体 Prompt Pack、Delivery Pack，与视频编辑/发布流程形成"封面生成 -> 视频交接"的完整链路，减少短视频封面任务中临时查比例/错平台/安全区踩雷的返工
+
 ## 2026-03-12
 
 - 新增 `playbooks/xiaohongshu-mcp-workflow.md`，把小红书 MCP 工具接入正式收口为内容研究、趋势分析、内容发布三条主链路，并与多媒体工作流和浏览器工作流形成标准交接，减少小红书任务无标准流程、发布失败无 proof 和多工具协同断层的返工

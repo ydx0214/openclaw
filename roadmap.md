@@ -122,3 +122,4 @@
 - [x] 将 `ideas/capability-investment-gate-template.md` 正式落成 `playbooks/capability-investment-gate.md`，并接入 `PLAYBOOKS.md`、`TOOLS.md` 与 `playbooks/capability-intake-handoff.md`，把“找到能力候选”进一步压成“是否值得长期投入”的显式关口，减少为低复用 / 高维护能力过度建设的风险
 - [ ] 继续把 capability investment gate 接到更多高频能力入口，优先覆盖“是否值得为单次需求接 MCP / skill / ACP 开发”这类投入决策场景
 - [ ] 试做 `OmniParser + OmniTool` 的 Windows screenshot grounding proof，优先验证它是否能补现有桌面自动化在弱 UIA / 图标密集界面上的盲区；在本机真实样例完成 `screenshot -> parsed elements -> target pick` 之前，默认维持 `trial only`
+- [ ] 在出现真实半结构化网页任务缺口时，试做 `Stagehand` 的 task-shaped browser proof，验证它是否值得作为 OpenClaw 现有 browser lane 之外的 AI-assisted middle lane；在完成 unfamiliar admin/docs/form 三类最小 proof 之前，默认维持 `trial only`

@@ -2,7 +2,8 @@
 
 ## 2026-03-12
 
-- 新增 playbooks/resume-evidence-pack.md，并接入 PLAYBOOKS.md、TOOLS.md 与 oadmap.md，把官网/JD 研究到简历定制之间的中间层固定为 JD signal -> evidence strength -> safe usage -> do-not-claim boundary，减少目标岗位简历定制里反复翻 JD、弱匹配硬写和简历/问答边界不清的返工
+- ?? `playbooks/resume-evidence-pack.md`???? `PLAYBOOKS.md`?`TOOLS.md` ? `roadmap.md`????/JD ???????????????? `JD signal -> evidence strength -> safe usage -> do-not-claim boundary`??????????????? JD?????????/?????????
+oadmap.md，把官网/JD 研究到简历定制之间的中间层固定为 JD signal -> evidence strength -> safe usage -> do-not-claim boundary，减少目标岗位简历定制里反复翻 JD、弱匹配硬写和简历/问答边界不清的返工
 
 - 鏂板 `playbooks/browser-stable-execution.md`锛屽苟鎺ュ叆 `PLAYBOOKS.md`銆乣playbooks/browser-research-briefing.md`銆乣playbooks/web-form-execution.md`銆乣playbooks/browser-upload-handoff.md` 涓?`playbooks/browser-download-handoff.md`锛屾妸澶氭娴忚鍣ㄤ换鍔＄殑榛樿鎺ㄨ繘鍗曞厓姝ｅ紡鏀跺彛涓?`snapshot(refs=aria) -> one action -> state checkpoint -> refreshed snapshot -> next action`锛屽噺灏戝畼缃戠爺绌躲€佽〃鍗曞～鍐欍€佷笂浼犱笅杞藉拰鍚庡彴鎿嶄綔閲岀殑 stale ref銆佷笂涓嬫枃婕傜Щ涓庢妸鍔ㄤ綔鎴愬姛璇垽涓虹姸鎬佹垚鍔熺殑杩斿伐
 

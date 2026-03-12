@@ -2,6 +2,8 @@
 
 ## 2026-03-12
 
+- 新增 `self-evolution-log/experiments/docling-windows-smoke-test-pack.md`，基于 Docling 官方文档首页、GitHub README 与 CLI reference，把 Windows 上复杂文档增强能力的最小验证路径固定为 `preconditions -> install -> baseline check -> 普通 PDF -> 多栏/表格 PDF -> 扫描件 OCR -> 6 维验收 -> invest now / trial only / defer`，用于后续判断 Docling 是否值得进入复杂 PDF / 表格 / 扫描件任务的长期能力建设
+
 - 新增 `self-evolution-log/ideas/browser-upload-subtask-rule.md`，把“浏览器里的附件上传”明确收紧为独立子任务：先锁字段与唯一文件、再做本地 proof、按 `browser-native / browser->windows-dialog` 选路、最后以页面侧接受证明收口，并把这条规则追加进 `roadmap.md` 作为后续非求职资料提交、多附件表单、后台附件更新和导出后二次上传场景的默认演进方向
 ## 2026-03-12
 

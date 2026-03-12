@@ -2,6 +2,8 @@
 
 ## 2026-03-12
 
+- 把 `resume-evidence-pack` 真正接入 `career-prep-handoff.md` 与 `resume-tailoring-from-jd.md` 的默认求职链路，明确要求在存在真实 JD/官网岗位页时先产出 `Resume Evidence Pack`，再进入简历改写，减少弱匹配硬写、反复重开 JD 和简历/问答边界不清的返工
+
 - 新增 `playbooks/multimedia-platform-spec-card.md`，并接入 `PLAYBOOKS.md`、`TOOLS.md` 与 `playbooks/multimedia-generation-workflow.md`，把多媒体任务的前置约束固定为 `主平台 -> 输出规格 -> 内容约束 -> 生产约束 -> 验收 -> 交接`，减少封面图、短视频、图生视频和跨平台复用任务里因输出契约不清导致的返工
 
 - 新增 `playbooks/batch-rename-apply-guard.md`，并接入 `PLAYBOOKS.md`、`TOOLS.md` 与 `playbooks/local-batch-file-routing.md`，把高风险本地批量改名/移动任务的默认执行顺序固定为 `preview -> apply -> verify -> handoff`，减少下载目录整理、上传前文件清洗和素材批量改名中的范围漂移、误触文件族与“脚本成功=任务完成”的假完成

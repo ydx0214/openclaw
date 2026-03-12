@@ -2,6 +2,8 @@
 
 ## 2026-03-13
 
+- 新增 `playbooks/screenshot-post-processing.md`，填补截图后处理的标准化工作流空白：明确6条路由（裁剪/缩放/格式转换/压缩/尺寸查看/拼接），提供完整Python PIL命令示例和快速命令参考表，接入 PLAYBOOKS.md 与 TOOLS.md，前置连接 windows-desktop-automation 截图，后置连接 batch-file-studio、xiaohongshu、浏览器上传工作流，减少截图后需要临时拼代码或开Photoshop的返工
+
 - 新增 `playbooks/resume-to-profile-import.md`，填补简历文件（PDF/DOCX）到候选人档案（candidate-profile.json）的同步工作流空白：明确工作流步骤（简历文本提取 -> AI字段解析 -> profile合并 -> 完整性验证），提供快速命令汇总（office-local extract + job-hunt-studio profile-status），接入 PLAYBOOKS.md 与 TOOLS.md，连接 office-local（文档提取）+ job-hunt-studio（档案管理）+ careers-site-application（网申投递）三个能力模块，减少用户手动从简历复制信息到candidate-profile的重复劳动
 
 - 在 `playbooks/xiaohongshu-mcp-workflow.md` 中新增 "Video Note Analysis & Frame Extraction" 第四条工作流，补全小红书视频笔记分析的标准化流程：搜索视频笔记 -> 获取详情 -> 下载本地 -> ffmpeg 帧提取 -> 分析/封面生成，提供单帧/多帧/时间戳三种提取模式的命令示例，明确帧质量验证步骤和与 multimedia-source-asset-readiness、xiaohongshu-cover-image-generation 的集成点，补全之前 video-frame-extraction-capability-integration.md idea 中的 next steps，减少小红书视频相关任务无标准流程、帧提取命令分散的返工

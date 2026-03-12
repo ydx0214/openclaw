@@ -73,9 +73,11 @@
 - [x] 继续把 `browser-auth-state-handoff` 接到更多登录态浏览器入口，优先覆盖登录后研究、官网登录后台、需复用 Chrome 会话的资料提交和 careers 登录后续流程
 - [x] 新增 `playbooks/browser-auth-proof-card.md`，把登录态浏览器任务在 lane 选定之后继续收口为 `auth class -> preferred lane -> visible account/workspace/role proof -> false-ready trap -> downstream workflow` 的小证明包，减少把“页面打开了/像后台”误判成“当前会话已足够支撑后续上传、导出、后台操作和多 workspace 任务”的返工
 - [ ] 继续把 `browser-auth-proof-card` 接到更多登录态浏览器入口，优先覆盖多 workspace SaaS 后台、Chrome relay 复用场景、登录后资料提交和 ATS 申请链路
+- [x] 将 `auth-target-context-lock` 接到 `browser-admin-report-execution-pack.md` 与 `browser-admin-report-workflow.md`，把登录后后台/报表任务的默认前门从“账号/工作区/范围对了”继续收紧为“账号对 + 对象对 + scope 对”，减少多 report row、多 dataset、多 record 和多 export entry 场景里“登录是对的但对象选错了”的高成本返工
 - [x] 新增 `playbooks/browser-admin-report-workflow.md`，把登录后后台 / 报表 / 管理台任务固定为 `auth proof -> workspace/scope proof -> stable browser execution -> export/download proof -> downloaded-file-routing -> next workflow`，减少官网登录后台、SaaS 报表中心和管理台导出任务里因账号/工作区、筛选范围和本地产物链路断裂导致的返工
 - [x] 新增 `playbooks/browser-admin-report-execution-pack.md`，把后台 / 报表 / 管理台任务在页面动作前先压成 `task goal -> auth lane -> scope lock -> page-state checkpoints -> output/handoff` 的执行包，并接入 `PLAYBOOKS.md`、`TOOLS.md` 与 `browser-admin-report-workflow.md`，减少登录后后台任务里账号/workspace、筛选范围、输出类型和下游交接分散在脑内导致的错 workspace、错 scope、假完成与下载后断链
 - [x] 将 `browser-auth-state-handoff -> browser-admin-report-execution-pack -> browser-admin-report-workflow` 进一步收紧为登录后后台 / 报表任务的默认前门链，并在 `browser-admin-report-workflow.md` 增补可复用 `Admin / Report Proof Card`，把“已登录后台”推进为“账号/工作区、scope/filter、页面状态、产物与下一路线都已被独立证明”，继续压低错 workspace、错 scope 和导出后断链
+- [ ] 继续给登录后后台 / 报表任务补更贴近真实页面的 `target-context proof` 样例卡，优先覆盖多 report row、多 dataset、多 export entry 和多 record 编辑/导出场景
 - [x] 将“多步浏览器自动化默认使用 aria refs + 固定 targetId + 每步后刷新 snapshot”固化成浏览器任务稳定性规则，并接入 `web-form-execution.md`、`browser-research-briefing.md`、`browser-upload-handoff.md`、`browser-download-handoff.md`，优先压低 stale ref、跨步误操作和动态页面重绘导致的返工
 - [x] 新增 `ideas/browser-page-state-checkpoints-template.md`，并将按任务类型区分的页面状态变化检查点接入 `browser-research-briefing.md`、`browser-upload-handoff.md`、`browser-download-handoff.md` 与 `web-form-execution.md`，降低 stale ref、跨步误操作与“状态已变但还按旧页面继续操作”的返工风险
 - [x] 将 research / prep / delivery / form / upload 这些已有 playbook 的默认串联顺序固化进 `openclaw-agent-delegation.md`，减少复杂混合任务中起手路由正确但中途接力断开的返工

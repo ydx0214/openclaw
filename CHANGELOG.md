@@ -2,6 +2,8 @@
 
 ## 2026-03-12
 
+- 新增 `playbooks/attachment-readiness-pack.md`，并接入 `PLAYBOOKS.md` 与 `roadmap.md`，把浏览器上传前的准备层固定为“upload field + chosen file + local proof + page-side acceptance target + next move”，减少官网投递、材料提交、多附件表单里边上传边找文件、错传版本和把对话框关闭误判为上传成功的返工
+
 - 新增 `playbooks/acp-implementation-pack.md`，并接入 `PLAYBOOKS.md`、`TOOLS.md` 与 `roadmap.md`，把 ACP coding 类任务的前置收口固定为“目标结果 + repo/workspace + scope boundary + acceptance checks + side-effect boundary + handoff requirement”，减少用 Codex / Claude Code / Gemini 做实现任务时因任务包过虚导致的澄清回合、改偏和弱验收
 
 - 新增 `playbooks/browser-export-proof.md`，并接入 `PLAYBOOKS.md`、`TOOLS.md`、`playbooks/browser-download-handoff.md`、`playbooks/web-form-execution.md` 与 `roadmap.md`，把异步导出类浏览器任务固定为“export trigger + ready-state proof + local-file proof + next-route”，减少报表/后台/导出中心场景里把 toast、spinner、ready button 或旧文件误判为完成的返工

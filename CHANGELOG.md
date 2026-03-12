@@ -2,6 +2,8 @@
 
 ## 2026-03-13
 
+- 新增 `playbooks/resume-to-profile-import.md`，填补简历文件（PDF/DOCX）到候选人档案（candidate-profile.json）的同步工作流空白：明确工作流步骤（简历文本提取 -> AI字段解析 -> profile合并 -> 完整性验证），提供快速命令汇总（office-local extract + job-hunt-studio profile-status），接入 PLAYBOOKS.md 与 TOOLS.md，连接 office-local（文档提取）+ job-hunt-studio（档案管理）+ careers-site-application（网申投递）三个能力模块，减少用户手动从简历复制信息到candidate-profile的重复劳动
+
 - 在 `playbooks/xiaohongshu-mcp-workflow.md` 中新增 "Video Note Analysis & Frame Extraction" 第四条工作流，补全小红书视频笔记分析的标准化流程：搜索视频笔记 -> 获取详情 -> 下载本地 -> ffmpeg 帧提取 -> 分析/封面生成，提供单帧/多帧/时间戳三种提取模式的命令示例，明确帧质量验证步骤和与 multimedia-source-asset-readiness、xiaohongshu-cover-image-generation 的集成点，补全之前 video-frame-extraction-capability-integration.md idea 中的 next steps，减少小红书视频相关任务无标准流程、帧提取命令分散的返工
 
 - 新增 `playbooks/skill-discovery-workflow.md`，填补使用 find-skills 工具发现和评估新能力的标准化工作流空白：提供何时使用、常用搜索关键词（图像/视频/语音/文档/浏览器）、评估候选技能的标准、试用决策框架（按安装量判断优先级）、集成决策框架（长期使用/特定场景/回退），并记录本次发现的高价值技能（语音1.4K-1.6K安装、图像7.6K/3K安装、视频777/271安装），接入 PLAYBOOKS.md 与 TOOLS.md，减少发现新能力时无标准流程、评估标准不清晰的返工

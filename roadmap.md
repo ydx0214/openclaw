@@ -50,6 +50,7 @@
 - [x] 新增 `document-intake-brief-template.md`，并将“source of truth / output strategy / constraints / verification / routing decision”接入 `playbooks/document-task-routing.md`，降低 PDF / Word / 简历 / 表格混合任务起手走错链路、误覆盖原件和交付目标不清的风险
 - [x] 将“浏览器下载触发 -> 本地落盘 -> 文件校验 -> 下一流程交接”固化成标准下载接力流程，优先降低 PDF/JD/导出文件类任务中的假完成与错文件复用风险
 - [x] 将 completion proof 内嵌进 `browser-download-handoff.md`，把浏览器下载类任务的完成标准收紧为“精确本地文件 + 强证明信号 + 明确下一流程”，继续压低下载预览/提示误判为完成的风险
+- [x] 新增 `playbooks/browser-export-proof.md`，把异步导出类浏览器任务固化为 `export trigger -> ready-state proof -> local-file proof -> next-route`，降低报表/导出中心/后台生成文件任务中把 toast、spinner、ready button 或旧文件误判为完成的风险
 - [x] 将“已下载本地文件 -> 按执行目标分流到文档 / 求职 / 多媒体 / 解包流程”固化成标准路由规则，减少下载完成后停在本地文件、后续链路接不上或走错工具链的情况
 - [x] 将“浏览器上传控件 -> Windows 文件对话框 -> 页面侧验收”固化成跨浏览器/桌面的标准上传接力流程，优先降低官网投递、附件表单、资料提交任务中的卡点
 - [x] 将 completion proof 内嵌进 `browser-upload-handoff.md`，把上传类任务的完成标准收紧为“页面侧已接受目标文件 + 至少一条次证明 + handoff-ready”，继续压低官网投递、附件表单、资料提交中的假完成风险

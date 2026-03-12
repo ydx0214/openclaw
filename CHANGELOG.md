@@ -2,6 +2,8 @@
 
 ## 2026-03-12
 
+- 新增 `self-evolution-log/experiments/document-intelligence-trial-pack-docling.md`，把复杂 PDF / 表格 / 扫描件文档能力的试投产验证固定为 `3 类真实样例 + 6 项验收维度 + invest now / trial only / defer` 的 `Document Intelligence Trial Pack`，避免新文档解析能力只停在“功能很强”的介绍层，改为先证明它是否真能把复杂文档稳定转成下游可消费输入
+
 - 把 `resume-evidence-pack` 真正接入 `career-prep-handoff.md` 与 `resume-tailoring-from-jd.md` 的默认求职链路，明确要求在存在真实 JD/官网岗位页时先产出 `Resume Evidence Pack`，再进入简历改写，减少弱匹配硬写、反复重开 JD 和简历/问答边界不清的返工
 
 - 新增 `self-evolution-log/ideas/document-intelligence-capability-gate-docling.md`，把“是否值得引入更强本地文档智能解析能力”先收口为 `Capability Investment Gate`，当前结论定为 `trial only`：先用真实复杂 PDF / 表格 / 扫描件样例验证结构化输出质量、下游可消费性与 Windows 可维护性，再决定是否升级成正式 skill 或接入文档主链路

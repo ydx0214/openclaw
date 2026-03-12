@@ -2,6 +2,8 @@
 
 ## 2026-03-12
 
+- 将 `self-evolution-log/ideas/document-downstream-consumer-scorecard-template.md` 正式落成 `playbooks/document-downstream-consumer-scorecard.md`，并接入 `PLAYBOOKS.md`、`TOOLS.md` 与文档主链路，把复杂文档提取的默认验收从“lane 通过即可继续”收紧为“对具体下游消费者也足够可用”，按 `Markdown / Office / Excel / 简历 / Research Evidence Pack / Form Fill` 六类消费者分别检查 must-preserve elements、cleanup 成本与 failure cost，减少复杂 PDF / 扫描件 / 表格文档在进入高成本下游流程后才暴露结构失真、字段混淆和引用边界不清的返工
+
 - 新增 `self-evolution-log/ideas/document-downstream-consumer-scorecard-template.md`，把复杂文档提取后的可用性从“lane 通过”继续收紧为“对具体下游消费者是否真可用”，按 `Markdown / Office / Excel / 简历 / Research Evidence Pack / Form Fill` 六类消费者分别检查 must-preserve elements、cleanup 成本与 failure cost，减少复杂 PDF / 扫描件 / 表格文档在进入高成本下游流程后才暴露结构失真、字段混淆和引用边界不清的返工
 
 - 把“本地产物 -> 浏览器上传”的默认执行链正式写入 `PLAYBOOKS.md` 与 `TOOLS.md`：`local-file-delivery-handoff.md -> attachment-readiness-pack.md -> browser-upload-handoff.md -> windows-file-dialog-handoff.md (if needed)`，把上传前文件锁定、本地 proof、页面接受信号和系统对话框交接收成一条标准链，减少简历投递、材料提交、多附件表单里错传旧版本、边上传边找文件，以及把对话框关闭误判为上传成功的返工

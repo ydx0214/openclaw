@@ -37,7 +37,8 @@
 - [x] 新增 `self-evolution-log/ideas/document-extraction-lane-validation-card-template.md`，把 lane selector 后的轻量验证固定为 `proof extraction -> reading order / structure fidelity / cleanup cost / downstream usability / proof over placebo -> keep/switch/trial`，减少把“抽出文本了”误判成“这条提取 lane 已经足够好”的返工
 - [x] 将 `self-evolution-log/ideas/document-extraction-lane-validation-card-template.md` 正式落成 `playbooks/document-extraction-lane-validation.md`，并接入 `playbooks/document-extraction-lane-selector.md`、`PLAYBOOKS.md` 与 `TOOLS.md`，把复杂 PDF / 扫描件 / 多栏 / 表格文档的轻量 proof 验证固化为默认中间层，减少 lane 选对了但验证不够、直到下游工作流才暴露返工的问题
 - [x] 新增 `self-evolution-log/ideas/document-downstream-consumer-scorecard-template.md`，把复杂文档提取后的“是否能被 Markdown / Office / Excel / 简历 / 证据包 / 表单流程真正消费”收口成一张按下游消费者判断的评分卡，减少 lane 已过但真正进入下游时才暴露结构失真、字段混淆和引用边界不清的返工
-- [ ] 将这张 `document-downstream-consumer-scorecard` 继续嵌入复杂文档主链路，优先覆盖 Markdown / Office / resume / evidence-pack / form-fill 五类高成本消费者
+- [x] 将这张 `document-downstream-consumer-scorecard` 正式落成 `playbooks/document-downstream-consumer-scorecard.md`，并接入 `PLAYBOOKS.md` 与 `TOOLS.md`，把复杂文档主链路从“lane 通过即可下游”继续收紧为“lane 通过 + 对具体下游消费者可用”，优先覆盖 Markdown / Office / resume / evidence-pack / form-fill 五类高成本消费者
+- [ ] 继续补 `document-downstream-consumer-scorecard` 的真实样例卡，优先覆盖 Markdown / Office / resume / evidence-pack / form-fill 五类高成本消费者
 - [ ] 为简历与官网投递材料准备补一条“资料检查 -> 简历草稿 -> 变体 -> 表单包 -> 浏览器填表前校验”的固定工作流
 - [x] 为岗位定向简历补一条“简历变体 -> 交付文件 -> 输出校验 -> 上传交接”的固定收口流程，减少上传错文件、旧文件或未验证导出的风险
 - [x] 为 Word / 论文类任务补一条更短的可执行入口，默认包含 inspect、style-report、render-check 三步验收

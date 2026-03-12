@@ -140,3 +140,7 @@
 - [ ] 在出现真实弱结构/易变网页任务缺口时，试做 `browser-use` 的 task-shaped browser proof，优先验证它是否真能补现有 browser lane 在 unfamiliar admin page、复杂 docs navigation、weak-selector draft form 上的探索层缺口；在完成最小 proof 前，默认维持 `trial only`
 
 - [ ] 将 browser AI middle-lane task gate 继续接到更多 README/docs 驱动的浏览器新能力评估入口，先强制判断 existing browser lane enough? -> exploration gap? -> task-shaped proof -> downstream handoff，避免因为 demo/README 很强就过早接入 Stagehand、browser-use 一类候选能力
+
+## Phase 8
+
+- [x] 新增 `playbooks/xiaohongshu-mcp-workflow.md`，把小红书 MCP 工具接入正式收口为内容研究、趋势分析、内容发布三条主链路，并与多媒体工作流和浏览器工作流形成标准交接，减少小红书任务无标准流程、发布失败无 proof 和多工具协同断层的返工

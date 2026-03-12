@@ -2,6 +2,7 @@
 
 ## 2026-03-12
 
+- 新增 `playbooks/xiaohongshu-mcp-workflow.md`，把小红书 MCP 工具接入正式收口为内容研究、趋势分析、内容发布三条主链路，并与多媒体工作流和浏览器工作流形成标准交接，减少小红书任务无标准流程、发布失败无 proof 和多工具协同断层的返工
 - 将 `self-evolution-log/ideas/browser-page-state-checkpoints-template.md` 正式落成 `playbooks/browser-page-state-checkpoints.md`，把多步浏览器任务中的页面状态变化检查点固化为 `action -> state checkpoint -> proof -> next action` 循环，并接入 `browser-upload-handoff.md`、`browser-research-briefing.md`、`browser-download-handoff.md`、`web-form-execution.md`、`PLAYBOOKS.md` 与 `TOOLS.md`，减少多步表单、上传、下载、研究任务中因页面状态变化后未刷新snapshot就继续操作导致的 stale ref 和假完成返工
 - 新增 self-evolution-log/ideas/policy-faq-to-document-evidence-pack.md，把政策/FAQ研究结果转化为文档草稿的证据包结构化为 verbatim-ready claims / paraphrase-ready points / re-check required / missing information 四层结构，并接回 playbooks/research-evidence-pack.md 作为 Route B 的补充模板，减少政策页面、官方FAQ转 memo/guide/报告等文档任务中的"结论写出来了但不确定哪些能直接引用、哪些需要回源复核"的返工
 - 新增 self-evolution-log/ideas/known-path-upload-artifact-lock.md，并回接 playbooks/attachment_readiness_pack.md 与 roadmap.md，把"已知路径本地文件 -> 浏览器上传前准备"收紧为 exact path -> upload role -> handoff intent(route-next) -> local proof -> upload field mapping -> page-side acceptance target，减少把"本地看过文件 / Explorer 选中过文件"误判成"已准备好上传"的返工

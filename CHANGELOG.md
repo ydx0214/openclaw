@@ -2,6 +2,8 @@
 
 ## 2026-03-13
 
+- 新增 `playbooks/document-ai-understanding-workflow.md`，填补本地文档（PDF/DOCX）AI理解的工作流空白：明确何时使用AI理解文档（摘要、关键信息提取、跨文档综合、结构化输出）、提供完整的prompt模式（总结、提取、综合、结构化）、处理长文档的分块策略、与research-evidence-pack等下游工作流的集成点，与 browser-research-briefing.md 的"浏览器AI辅助研究"形成互补（一个处理网上信息，一个处理本地文件），并接入 PLAYBOOKS.md 与 TOOLS.md
+
 - 在 `playbooks/browser-research-briefing.md` 中新增 "AI-Assisted Content Understanding" 部分，为浏览器研究工作流添加AI辅助理解和综合的能力指引，包含4个具体场景：跨页面综合、结构化数据提取、约束发现、AI结论验证规则，适用于定价对比、政策研究、技术文档等多页面复杂研究任务
 
 - 学习使用 find-skills 工具发现 AI 能力生态中的新 skills，通过 `npx skills find image generation` 和 `npx skills find video generation` 发现多个高价值图像/视频生成 skills（ai-image-generation 21K 安装、ai-video-generation 20.7K 安装等），为后续能力接入提供候选方向，并把"使用 find-skills 发现新能力"记为能力评估的默认入口

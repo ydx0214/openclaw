@@ -2,6 +2,7 @@
 
 ## 2026-03-12
 
+- 将 `self-evolution-log/ideas/browser-page-state-checkpoints-template.md` 正式落成 `playbooks/browser-page-state-checkpoints.md`，把多步浏览器任务中的页面状态变化检查点固化为 `action -> state checkpoint -> proof -> next action` 循环，并接入 `browser-upload-handoff.md`、`browser-research-briefing.md`、`browser-download-handoff.md`、`web-form-execution.md`、`PLAYBOOKS.md` 与 `TOOLS.md`，减少多步表单、上传、下载、研究任务中因页面状态变化后未刷新snapshot就继续操作导致的 stale ref 和假完成返工
 - 新增 self-evolution-log/ideas/policy-faq-to-document-evidence-pack.md，把政策/FAQ研究结果转化为文档草稿的证据包结构化为 verbatim-ready claims / paraphrase-ready points / re-check required / missing information 四层结构，并接回 playbooks/research-evidence-pack.md 作为 Route B 的补充模板，减少政策页面、官方FAQ转 memo/guide/报告等文档任务中的"结论写出来了但不确定哪些能直接引用、哪些需要回源复核"的返工
 - 新增 self-evolution-log/ideas/known-path-upload-artifact-lock.md，并回接 playbooks/attachment_readiness_pack.md 与 roadmap.md，把"已知路径本地文件 -> 浏览器上传前准备"收紧为 exact path -> upload role -> handoff intent(route-next) -> local proof -> upload field mapping -> page-side acceptance target，减少把"本地看过文件 / Explorer 选中过文件"误判成"已准备好上传"的返工
 - 将"已知路径本地文件任务走 file/system fast path"接入 playbooks/local-file-delivery-handoff.md、playbooks/desktop-operations.md、PLAYBOOKS.md 与 TOOLS.md，把 打开这个文件/文件夹、Explorer 选中文件、本地 reveal/open/review、导出后本地审阅这类高频任务的默认链路收紧为 desktop-execution-lane-selector -> file/system lane judgment -> local-file-delivery-handoff，减少把已知路径任务误做成 Explorer 里重新找路径的 GUI 浏览返工

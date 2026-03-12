@@ -2,6 +2,8 @@
 
 ## 2026-03-12
 
+- 将 `self-evolution-log/ideas/desktop-execution-lane-selector.md` 正式落成 `playbooks/desktop-execution-lane-selector.md`，并接入 `PLAYBOOKS.md`、`TOOLS.md` 与 `playbooks/desktop-operations.md`，把桌面 / Explorer / Office / 本地 GUI 复杂任务的默认前门判断固定为 `end state -> lane choice(file/system vs browser handoff vs semantic desktop vs visual/coordinate vs capability-gap) -> proof plan -> action`，减少一上来就错 lane、乱点、过早坐标化和过早升级能力的返工
+
 - 新增 `self-evolution-log/experiments/browser-use-browser-capability-trial-pack.md`，把 `browser-use` 作为 OpenClaw 现有 browser lane 之外的候选 AI-assisted middle lane 压成一份可复用试投产验证包：明确真实任务族、官方能力声明、前提/成本、false-ready trap、本机最小 proof 路线与当前 `trial only` 结论；同时把这条方向写入 `roadmap.md`，避免因为 README / demo 很强就过早把它误判成已适合接入主 browser 链路
 
 - 新增 `self-evolution-log/experiments/stagehand-browser-capability-trial-pack.md`，把 Stagehand 作为“浏览器 AI-assisted middle lane”候选能力压成一份可复用试投产验证包：明确真实任务族、官方能力声明、外部依赖/维护成本、false-ready trap、本机最小 proof 路线，以及当前 `trial only` 的投入结论；同时把这条方向写入 `roadmap.md`，避免因为 README 很强就过早把它误判成已适合接入 OpenClaw 主 browser 链路

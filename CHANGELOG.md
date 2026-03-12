@@ -2,6 +2,8 @@
 
 ## 2026-03-12
 
+- 新增 `playbooks/acp-implementation-pack.md`，并接入 `PLAYBOOKS.md`、`TOOLS.md` 与 `roadmap.md`，把 ACP coding 类任务的前置收口固定为“目标结果 + repo/workspace + scope boundary + acceptance checks + side-effect boundary + handoff requirement”，减少用 Codex / Claude Code / Gemini 做实现任务时因任务包过虚导致的澄清回合、改偏和弱验收
+
 - 新增 `playbooks/browser-export-proof.md`，并接入 `PLAYBOOKS.md`、`TOOLS.md`、`playbooks/browser-download-handoff.md`、`playbooks/web-form-execution.md` 与 `roadmap.md`，把异步导出类浏览器任务固定为“export trigger + ready-state proof + local-file proof + next-route”，减少报表/后台/导出中心场景里把 toast、spinner、ready button 或旧文件误判为完成的返工
 
 - 新增 `playbooks/multimedia-delivery-pack.md`，并接入 `multimedia-generation-workflow.md`、`PLAYBOOKS.md`、`TOOLS.md` 与 `roadmap.md`，把多媒体任务的末端收口固定为“主交付版本 + 可复用 prompt 资产 + 下一交接动作 + completion proof”，减少封面图/短视频/图生视频任务在上传、发布、审阅前再次手工挑版本和丢失 winning prompt 的返工

@@ -6,6 +6,8 @@
 
 - 新增 `playbooks/multimedia-delivery-pack.md`，并接入 `multimedia-generation-workflow.md`、`PLAYBOOKS.md`、`TOOLS.md` 与 `roadmap.md`，把多媒体任务的末端收口固定为“主交付版本 + 可复用 prompt 资产 + 下一交接动作 + completion proof”，减少封面图/短视频/图生视频任务在上传、发布、审阅前再次手工挑版本和丢失 winning prompt 的返工
 
+- 新增 `self-evolution-log/ideas/desktop-persisted-state-proof-template.md`，并接入 `playbooks/desktop-operations.md`、`PLAYBOOKS.md` 与 `roadmap.md`，把桌面/Office 编辑后的完成标准进一步收紧为“已保存/已应用 + 至少一条持久化证明”，减少文档修改、设置变更和本地 GUI 编辑里“界面看起来改了但实际没写入”的返工
+
 - 新增 `playbooks/office-output-proof.md`，并接入 `document-delivery-pack.md`、`word-paper-fast-path.md`、`paper-formatting.md`、`PLAYBOOKS.md` 与 `TOOLS.md`，把 Word / PDF / Excel / Markdown-to-Office 交付任务的完成标准收紧为“唯一交付件 + freshness + 必要格式证明 + 下一步交接”，减少旧导出复用、错文件 handoff 和仅凭文件存在就误判完成的风险
 
 - ���� `playbooks/multimedia-prompt-pack.md`�������� `PLAYBOOKS.md` �� `self-evolution-log/roadmap.md`���Ѷ�ý�帴������ӡ�brief ���е� prompt ����һ���Դ���ı�������Ϊ `shared guardrails -> variant prompts -> acceptance checklist -> next revision axis` �Ŀɸ����������ɰ���������ͼ / ��Ƶ / ͼ����Ƶ������� prompt ������汾�Ƚ�ʧ��

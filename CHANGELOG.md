@@ -2,6 +2,7 @@
 
 ## 2026-03-12
 
+- 新增 self-evolution-log/ideas/known-path-upload-artifact-lock.md，并回接 playbooks/attachment-readiness-pack.md 与 oadmap.md，把“已知路径本地文件 -> 浏览器上传前准备”收紧为 exact path -> upload role -> handoff intent(route-next) -> local proof -> upload field mapping -> page-side acceptance target，减少把“本地看过文件 / Explorer 选中过文件”误判成“已准备好上传”的返工
 - 将“已知路径本地文件任务走 file/system fast path”接入 playbooks/local-file-delivery-handoff.md、playbooks/desktop-operations.md、PLAYBOOKS.md 与 TOOLS.md，把 打开这个文件/文件夹、Explorer 选中文件、本地 reveal/open/review、导出后本地审阅这类高频任务的默认链路收紧为 desktop-execution-lane-selector -> file/system lane judgment -> local-file-delivery-handoff，减少把已知路径任务误做成 Explorer 里重新找路径的 GUI 浏览返工
 - 新增 `self-evolution-log/ideas/known-path-local-file-intent-card.md`，把已知本地路径任务进一步收紧为 `exact path -> handoff intent(reveal-only/open-for-review/route-next/delivery-pack) -> proof -> next route`，减少“资源管理器打开了/应用启动了”被误判成真实 handoff 已完成的返工
 - 将 `known-path local file intent` 正式接入 `playbooks/local-file-delivery-handoff.md`、`playbooks/desktop-operations.md`、`PLAYBOOKS.md`、`TOOLS.md` 与 `roadmap.md`，把已知路径本地任务的默认完成判断从“路径存在/窗口打开”推进为“精确 artifact 已验证 + intent 已完成 + next route 明确（若需要）”，继续压低导出后本地审阅、上传前本地确认和 Explorer 选中文件场景里的假完成
@@ -16,6 +17,7 @@
 - 新增 `playbooks/browser-auth-proof-card.md`，并接回 `playbooks/browser-auth-state-handoff.md`、`PLAYBOOKS.md`、`TOOLS.md` 与 `roadmap.md`，把登录态浏览器任务在 lane 选定之后继续收口为 `auth class -> preferred lane -> visible account/workspace/role proof -> false-ready trap -> downstream workflow` 的小证明包，减少把“页面打开了 / 像后台 / 没看到登录框”误判成“当前会话已足够支撑后续后台、上传、下载、表单和 ATS 任务”的返工
 ## 2026-03-12
 
+- 新增 self-evolution-log/ideas/known-path-upload-artifact-lock.md，并回接 playbooks/attachment-readiness-pack.md 与 oadmap.md，把“已知路径本地文件 -> 浏览器上传前准备”收紧为 exact path -> upload role -> handoff intent(route-next) -> local proof -> upload field mapping -> page-side acceptance target，减少把“本地看过文件 / Explorer 选中过文件”误判成“已准备好上传”的返工
 - 将“已知路径本地文件任务走 file/system fast path”接入 playbooks/local-file-delivery-handoff.md、playbooks/desktop-operations.md、PLAYBOOKS.md 与 TOOLS.md，把 打开这个文件/文件夹、Explorer 选中文件、本地 reveal/open/review、导出后本地审阅这类高频任务的默认链路收紧为 desktop-execution-lane-selector -> file/system lane judgment -> local-file-delivery-handoff，减少把已知路径任务误做成 Explorer 里重新找路径的 GUI 浏览返工
 - 将多媒体默认起手链继续收紧为 `multimedia-source-asset-readiness -> multimedia-platform-spec-card -> multimedia-generation-workflow -> multimedia-prompt-pack -> multimedia-iteration-log (if needed) -> multimedia-delivery-pack`，并同步更新 `PLAYBOOKS.md`、`TOOLS.md` 与 `playbooks/multimedia-generation-workflow.md`，同时补入小红书封面、图生视频、产品/Logo 敏感生成三个高频入口压缩路由，减少已有素材任务里边写 prompt 边补裁切/比例/安全区/保护元素导致的返工
 
@@ -36,11 +38,13 @@
 - 新增 `playbooks/multimedia-source-asset-readiness.md`，并接入 `PLAYBOOKS.md`、`TOOLS.md` 与 `playbooks/multimedia-generation-workflow.md`，把多媒体任务里“已有本地/下载素材”的前置环节固定为 `锁定唯一主素材 -> 验收清晰度/裁切/UI污染/主体稳定性 -> 标记 protected elements / forbidden drift -> 再进入 prompt/生成`，减少封面图、图生视频、产品图和截图派生素材任务里因错源图、低质截图、坏裁切和未标记保护元素导致的整链返工
 ## 2026-03-12
 
+- 新增 self-evolution-log/ideas/known-path-upload-artifact-lock.md，并回接 playbooks/attachment-readiness-pack.md 与 oadmap.md，把“已知路径本地文件 -> 浏览器上传前准备”收紧为 exact path -> upload role -> handoff intent(route-next) -> local proof -> upload field mapping -> page-side acceptance target，减少把“本地看过文件 / Explorer 选中过文件”误判成“已准备好上传”的返工
 - 将“已知路径本地文件任务走 file/system fast path”接入 playbooks/local-file-delivery-handoff.md、playbooks/desktop-operations.md、PLAYBOOKS.md 与 TOOLS.md，把 打开这个文件/文件夹、Explorer 选中文件、本地 reveal/open/review、导出后本地审阅这类高频任务的默认链路收紧为 desktop-execution-lane-selector -> file/system lane judgment -> local-file-delivery-handoff，减少把已知路径任务误做成 Explorer 里重新找路径的 GUI 浏览返工
 - 新增 `playbooks/capability-evidence-pack.md`，并接入 `PLAYBOOKS.md`、`TOOLS.md` 与 `roadmap.md`，把 docs / README / vendor page / 官方能力页研究固定为 `Task Family -> Capability Claims -> Prerequisites / Constraints -> Proof Status -> Recommended Next Route` 的 `Capability Evidence Pack`，减少评估 skill / MCP / 工具 / ACP 方向时把 marketing claim、接入前提、本机 proof 和下一路线判断混成一层，导致“文档说能做”被误判成“真实任务已可做”的返工
 
 ## 2026-03-12
 
+- 新增 self-evolution-log/ideas/known-path-upload-artifact-lock.md，并回接 playbooks/attachment-readiness-pack.md 与 oadmap.md，把“已知路径本地文件 -> 浏览器上传前准备”收紧为 exact path -> upload role -> handoff intent(route-next) -> local proof -> upload field mapping -> page-side acceptance target，减少把“本地看过文件 / Explorer 选中过文件”误判成“已准备好上传”的返工
 - 将“已知路径本地文件任务走 file/system fast path”接入 playbooks/local-file-delivery-handoff.md、playbooks/desktop-operations.md、PLAYBOOKS.md 与 TOOLS.md，把 打开这个文件/文件夹、Explorer 选中文件、本地 reveal/open/review、导出后本地审阅这类高频任务的默认链路收紧为 desktop-execution-lane-selector -> file/system lane judgment -> local-file-delivery-handoff，减少把已知路径任务误做成 Explorer 里重新找路径的 GUI 浏览返工
 - 将 `self-evolution-log/ideas/document-downstream-consumer-scorecard-template.md` 正式落成 `playbooks/document-downstream-consumer-scorecard.md`，并接入 `PLAYBOOKS.md`、`TOOLS.md` 与文档主链路，把复杂文档提取的默认验收从“lane 通过即可继续”收紧为“对具体下游消费者也足够可用”，按 `Markdown / Office / Excel / 简历 / Research Evidence Pack / Form Fill` 六类消费者分别检查 must-preserve elements、cleanup 成本与 failure cost，减少复杂 PDF / 扫描件 / 表格文档在进入高成本下游流程后才暴露结构失真、字段混淆和引用边界不清的返工
 
@@ -221,3 +225,4 @@ oadmap.md 作为新的长期进化方向；优先减少 Explorer/文件管理、
 
 - 新增 `self-evolution-log/ideas/browser-ai-middle-lane-task-gate.md`，把 Stagehand / browser-use 这类浏览器 AI 候选能力的默认前门收紧为 `existing browser lane enough? -> exploration gap? -> task-shaped proof(admin/docs/form) -> IO contract -> downstream handoff`，避免因 README/demo 很强就过早接 SDK、cloud 或平行流程；并把这条 `browser AI middle lane` 继续记为 `trial only` 的长期观察方向
 - 新增 `self-evolution-log/ideas/auth-target-context-lock.md`，并把这层规则接入 `playbooks/browser-auth-proof-card.md`、`playbooks/browser-upload-handoff.md` 与 `playbooks/careers-site-application.md`：把登录态浏览器任务的默认前门从“已证明 account/workspace/role”继续收紧为“若后续要 edit/upload/continue draft，还必须再锁定正确 target object / draft / attachment slot / report scope”，减少 ATS 续投、后台附件更新和多 workspace 编辑场景里“登录是对的但对象改错了”的高成本返工
+

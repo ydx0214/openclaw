@@ -69,7 +69,8 @@
 - [ ] 继续将 `Form Fill Pack` 前置到更多浏览器复杂任务入口，固定“先锁资料来源/上传文件/敏感确认/验收点，再执行页面动作”的默认准备步骤
 - [x] 新增 `playbooks/browser-upload-subtask-rule.md`，并接入 `PLAYBOOKS.md`、`TOOLS.md` 与 `playbooks/browser-upload-handoff.md`，把“上传是独立子任务”正式收口为 `lock field+artifact -> local proof -> choose route -> page-side acceptance proof -> next safe move`，并将本地文件到浏览器上传的默认链路更新为 `local-file-delivery-handoff -> attachment-readiness-pack -> browser-upload-subtask-rule -> browser-upload-handoff -> windows-file-dialog-handoff (if needed)`，减少资料提交、后台附件更新、多附件表单和导出后二次上传里的错传版本、页面未接受却继续和把对话框关闭误判为完成的返工
 - [x] 新增 `playbooks/browser-auth-state-handoff.md`，把登录态浏览器任务的起手判断固定为 `task goal -> auth dependency -> browser lane(openclaw/chrome relay) -> visible auth proof -> downstream handoff`，减少登录后研究、官网后台、需复用本机 Chrome 会话的任务里因为路线选错或未证明登录态而导致的返工
-- [ ] 继续把 `browser-auth-state-handoff` 接到更多登录态浏览器入口，优先覆盖登录后研究、官网登录后台、需复用 Chrome 会话的资料提交和 careers 登录后续流程
+- [x] 继续把 `browser-auth-state-handoff` 接到更多登录态浏览器入口，优先覆盖登录后研究、官网登录后台、需复用 Chrome 会话的资料提交和 careers 登录后续流程
+- [x] 新增 `playbooks/browser-admin-report-workflow.md`，把登录后后台 / 报表 / 管理台任务固定为 `auth proof -> workspace/scope proof -> stable browser execution -> export/download proof -> downloaded-file-routing -> next workflow`，减少官网登录后台、SaaS 报表中心和管理台导出任务里因账号/工作区、筛选范围和本地产物链路断裂导致的返工
 - [x] 将“多步浏览器自动化默认使用 aria refs + 固定 targetId + 每步后刷新 snapshot”固化成浏览器任务稳定性规则，并接入 `web-form-execution.md`、`browser-research-briefing.md`、`browser-upload-handoff.md`、`browser-download-handoff.md`，优先压低 stale ref、跨步误操作和动态页面重绘导致的返工
 - [x] 新增 `ideas/browser-page-state-checkpoints-template.md`，并将按任务类型区分的页面状态变化检查点接入 `browser-research-briefing.md`、`browser-upload-handoff.md`、`browser-download-handoff.md` 与 `web-form-execution.md`，降低 stale ref、跨步误操作与“状态已变但还按旧页面继续操作”的返工风险
 - [x] 将 research / prep / delivery / form / upload 这些已有 playbook 的默认串联顺序固化进 `openclaw-agent-delegation.md`，减少复杂混合任务中起手路由正确但中途接力断开的返工

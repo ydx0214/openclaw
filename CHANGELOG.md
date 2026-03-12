@@ -2,6 +2,8 @@
 
 ## 2026-03-13
 
+- 在 `playbooks/xiaohongshu-mcp-workflow.md` 中新增 "Video Note Analysis & Frame Extraction" 第四条工作流，补全小红书视频笔记分析的标准化流程：搜索视频笔记 -> 获取详情 -> 下载本地 -> ffmpeg 帧提取 -> 分析/封面生成，提供单帧/多帧/时间戳三种提取模式的命令示例，明确帧质量验证步骤和与 multimedia-source-asset-readiness、xiaohongshu-cover-image-generation 的集成点，补全之前 video-frame-extraction-capability-integration.md idea 中的 next steps，减少小红书视频相关任务无标准流程、帧提取命令分散的返工
+
 - 新增 `playbooks/skill-discovery-workflow.md`，填补使用 find-skills 工具发现和评估新能力的标准化工作流空白：提供何时使用、常用搜索关键词（图像/视频/语音/文档/浏览器）、评估候选技能的标准、试用决策框架（按安装量判断优先级）、集成决策框架（长期使用/特定场景/回退），并记录本次发现的高价值技能（语音1.4K-1.6K安装、图像7.6K/3K安装、视频777/271安装），接入 PLAYBOOKS.md 与 TOOLS.md，减少发现新能力时无标准流程、评估标准不清晰的返工
 
 - 新增 `playbooks/cron-task-workflow.md`，填补定时任务和提醒能力的工作流空白：明确任务类型（systemEvent vs agentTurn）、定时配置（at/every/cron三种模式）、Payload配置、交付模式（none/announce/webhook）、验证步骤和常见问题修复，提供常见场景表（健康审计/自我进化/用户提醒/系统监控）、Cron模式速查表和具体命令行示例，并接入 PLAYBOOKS.md 与 TOOLS.md，减少创建定时任务时配置错误或验证不完整的返工

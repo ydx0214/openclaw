@@ -2,6 +2,8 @@
 
 ## 2026-03-13
 
+- 在 `playbooks/browser-research-briefing.md` 中增强 Route A 和新增 Route E，填补浏览器研究结果到文档起草的对接能力空白：在 Route A 新增 "Output Delivery" 部分，明确政策/FAQ研究结果使用 research-evidence-pack -> document-task-routing 的路径；新增 Route E (Policy/FAQ to Document Draft)，提供完整工作流（证据捕获 -> evidence pack -> 文档路由 -> 带源引用的输出）和可直接复用的输出模板，明确使用 evidence pack 确保每个事实性claim都有source anchor，使文档可审核和可更新，接入 PLAYBOOKS.md 与 TOOLS.md，解决政策/FAQ研究完成后需要再次手工整理才能写成文档的重复劳动，减少source anchor丢失和引用失真的问题
+
 - 新增 `playbooks/screenshot-post-processing.md`，填补截图后处理的标准化工作流空白：明确6条路由（裁剪/缩放/格式转换/压缩/尺寸查看/拼接），提供完整Python PIL命令示例和快速命令参考表，接入 PLAYBOOKS.md 与 TOOLS.md，前置连接 windows-desktop-automation 截图，后置连接 batch-file-studio、xiaohongshu、浏览器上传工作流，减少截图后需要临时拼代码或开Photoshop的返工
 
 - 新增 `playbooks/resume-to-profile-import.md`，填补简历文件（PDF/DOCX）到候选人档案（candidate-profile.json）的同步工作流空白：明确工作流步骤（简历文本提取 -> AI字段解析 -> profile合并 -> 完整性验证），提供快速命令汇总（office-local extract + job-hunt-studio profile-status），接入 PLAYBOOKS.md 与 TOOLS.md，连接 office-local（文档提取）+ job-hunt-studio（档案管理）+ careers-site-application（网申投递）三个能力模块，减少用户手动从简历复制信息到candidate-profile的重复劳动

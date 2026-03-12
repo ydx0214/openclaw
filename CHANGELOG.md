@@ -2,6 +2,8 @@
 
 ## 2026-03-13
 
+- 在 `playbooks/browser-research-briefing.md` 中新增 "AI-Assisted Content Understanding" 部分，为浏览器研究工作流添加AI辅助理解和综合的能力指引，包含4个具体场景：跨页面综合、结构化数据提取、约束发现、AI结论验证规则，适用于定价对比、政策研究、技术文档等多页面复杂研究任务
+
 - 学习使用 find-skills 工具发现 AI 能力生态中的新 skills，通过 `npx skills find image generation` 和 `npx skills find video generation` 发现多个高价值图像/视频生成 skills（ai-image-generation 21K 安装、ai-video-generation 20.7K 安装等），为后续能力接入提供候选方向，并把"使用 find-skills 发现新能力"记为能力评估的默认入口
 
 - 新增 `self-evolution-log/ideas/video-frame-extraction-capability-integration.md`，把视频帧提取能力(ffmpeg)正式接入多媒体工作流，明确 video-frame extraction 的任务族（视频内容研究、视频封面提取、视频素材检查）、与 multimedia-source-asset-readiness 的集成点(Route E)、常用命令模式、completion proof 和下游交接规则，并把此能力增补到 PLAYBOOKS.md 与 TOOLS.md，减少视频相关任务中"有视频但不知道怎么提取帧用于分析/生成"的断层

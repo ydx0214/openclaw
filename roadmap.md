@@ -71,6 +71,7 @@
 - [x] 新增 `playbooks/browser-auth-state-handoff.md`，把登录态浏览器任务的起手判断固定为 `task goal -> auth dependency -> browser lane(openclaw/chrome relay) -> visible auth proof -> downstream handoff`，减少登录后研究、官网后台、需复用本机 Chrome 会话的任务里因为路线选错或未证明登录态而导致的返工
 - [x] 继续把 `browser-auth-state-handoff` 接到更多登录态浏览器入口，优先覆盖登录后研究、官网登录后台、需复用 Chrome 会话的资料提交和 careers 登录后续流程
 - [x] 新增 `playbooks/browser-admin-report-workflow.md`，把登录后后台 / 报表 / 管理台任务固定为 `auth proof -> workspace/scope proof -> stable browser execution -> export/download proof -> downloaded-file-routing -> next workflow`，减少官网登录后台、SaaS 报表中心和管理台导出任务里因账号/工作区、筛选范围和本地产物链路断裂导致的返工
+- [x] 新增 `playbooks/browser-admin-report-execution-pack.md`，把后台 / 报表 / 管理台任务在页面动作前先压成 `task goal -> auth lane -> scope lock -> page-state checkpoints -> output/handoff` 的执行包，并接入 `PLAYBOOKS.md`、`TOOLS.md` 与 `browser-admin-report-workflow.md`，减少登录后后台任务里账号/workspace、筛选范围、输出类型和下游交接分散在脑内导致的错 workspace、错 scope、假完成与下载后断链
 - [x] 将“多步浏览器自动化默认使用 aria refs + 固定 targetId + 每步后刷新 snapshot”固化成浏览器任务稳定性规则，并接入 `web-form-execution.md`、`browser-research-briefing.md`、`browser-upload-handoff.md`、`browser-download-handoff.md`，优先压低 stale ref、跨步误操作和动态页面重绘导致的返工
 - [x] 新增 `ideas/browser-page-state-checkpoints-template.md`，并将按任务类型区分的页面状态变化检查点接入 `browser-research-briefing.md`、`browser-upload-handoff.md`、`browser-download-handoff.md` 与 `web-form-execution.md`，降低 stale ref、跨步误操作与“状态已变但还按旧页面继续操作”的返工风险
 - [x] 将 research / prep / delivery / form / upload 这些已有 playbook 的默认串联顺序固化进 `openclaw-agent-delegation.md`，减少复杂混合任务中起手路由正确但中途接力断开的返工

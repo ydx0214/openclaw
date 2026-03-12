@@ -2,6 +2,7 @@
 
 ## 2026-03-12
 
+- 新增 `playbooks/browser-admin-report-execution-pack.md`，并接入 `PLAYBOOKS.md`、`TOOLS.md` 与 `playbooks/browser-admin-report-workflow.md`，把登录后后台 / 报表 / 管理台任务在页面动作前先压成 `task goal -> auth lane -> scope lock -> page-state checkpoints -> output/handoff` 的小执行包，减少账号/workspace、筛选范围、输出类型和下游交接分散在执行过程中导致的错 scope、假完成与下载后断链
 - 新增 `self-evolution-log/experiments/omniparser-omnitool-windows-trial-pack.md`，把 OmniParser / OmniTool 作为“桌面 screenshot grounding 补强”候选能力压成一份可复用验证包：明确任务族、官方能力声明、安装/权重/license/维护前提、false-ready trap、本机 smoke test 路线，以及当前 `trial only` 的投入结论；同时把这条方向写入 `roadmap.md`，避免因 benchmark/README 很强就过早把它误判成已适合接入 OpenClaw 主桌面链路
 ## 2026-03-12
 

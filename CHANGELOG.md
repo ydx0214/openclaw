@@ -3,6 +3,7 @@
 ## 2026-03-12
 
 - 将“已知路径本地文件任务走 file/system fast path”接入 playbooks/local-file-delivery-handoff.md、playbooks/desktop-operations.md、PLAYBOOKS.md 与 TOOLS.md，把 打开这个文件/文件夹、Explorer 选中文件、本地 reveal/open/review、导出后本地审阅这类高频任务的默认链路收紧为 desktop-execution-lane-selector -> file/system lane judgment -> local-file-delivery-handoff，减少把已知路径任务误做成 Explorer 里重新找路径的 GUI 浏览返工
+- 新增 `self-evolution-log/ideas/known-path-local-file-intent-card.md`，把已知本地路径任务进一步收紧为 `exact path -> handoff intent(reveal-only/open-for-review/route-next/delivery-pack) -> proof -> next route`，减少“资源管理器打开了/应用启动了”被误判成真实 handoff 已完成的返工
 - 将 `self-evolution-log/ideas/desktop-execution-lane-selector.md` 正式落成 `playbooks/desktop-execution-lane-selector.md`，并接入 `PLAYBOOKS.md`、`TOOLS.md` 与 `playbooks/desktop-operations.md`，把桌面 / Explorer / Office / 本地 GUI 复杂任务的默认前门判断固定为 `end state -> lane choice(file/system vs browser handoff vs semantic desktop vs visual/coordinate vs capability-gap) -> proof plan -> action`，减少一上来就错 lane、乱点、过早坐标化和过早升级能力的返工
 
 - 新增 `self-evolution-log/experiments/browser-use-browser-capability-trial-pack.md`，把 `browser-use` 作为 OpenClaw 现有 browser lane 之外的候选 AI-assisted middle lane 压成一份可复用试投产验证包：明确真实任务族、官方能力声明、前提/成本、false-ready trap、本机最小 proof 路线与当前 `trial only` 结论；同时把这条方向写入 `roadmap.md`，避免因为 README / demo 很强就过早把它误判成已适合接入主 browser 链路

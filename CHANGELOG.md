@@ -2,6 +2,8 @@
 
 ## 2026-03-12
 
+- 新增 `playbooks/career-form-fill-pack.md`，并接入 `playbooks/career-prep-handoff.md`、`playbooks/careers-site-application.md`、`playbooks/web-form-execution.md`、`PLAYBOOKS.md` 与 `roadmap.md`，把官网投递中“资料已准备”到“进入页面执行”之间的散落输入收紧成一个可复用执行包，减少多步骤申请里边翻资料边填、上传目标不唯一和敏感字段混填的返工
+
 - 新增 `self-evolution-log/ideas/capability-investment-gate-template.md`，并接入 `playbooks/capability-intake-handoff.md` 与 `roadmap.md`，把“技术上能接的新能力”进一步分流为 `invest now / trial only / defer`，降低低频、脆弱或维护成本高的新 skill / MCP / 工具能力被过度投入的风险
 
 - 新增 `self-evolution-log/ideas/research-decision-pack-template.md`，并将多选项研究的收口从普通比较升级为 `decision goal -> option evidence -> recommendation -> decision-switch triggers -> next executable move`，同时接入 `playbooks/browser-research-briefing.md`、`playbooks/research-action-pack.md`、`PLAYBOOKS.md`、`TOOLS.md` 与 `roadmap.md`，降低产品/工具/路线/能力对比任务中“查完了但选型理由不可复核、后续难继续执行”的断层

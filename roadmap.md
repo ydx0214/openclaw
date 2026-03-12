@@ -66,6 +66,7 @@
 - [x] 将 `Career Form Fill Pack` 正式落成 `playbooks/career-form-fill-pack.md`，并接入 `career-prep-handoff.md`、`careers-site-application.md`、`web-form-execution.md` 与 `PLAYBOOKS.md`，把“准备资料”到“进入页面执行”之间的交接收紧为一个可复用执行包
 - [x] 新增 `playbooks/attachment-readiness-pack.md`，把浏览器上传前的准备层固化为 `upload field -> chosen file -> local proof -> page-side acceptance target -> next move`，降低官网投递、材料提交、多附件表单里边上传边找文件、错传版本和页面接受信号不清的返工
 - [ ] 继续将 `Form Fill Pack` 前置到更多浏览器复杂任务入口，固定“先锁资料来源/上传文件/敏感确认/验收点，再执行页面动作”的默认准备步骤
+- [ ] 继续把“上传是独立子任务”的规则前置到更多非求职浏览器入口，优先覆盖资料提交、后台附件更新、多附件表单和导出后二次上传场景，默认收口为 `attachment-readiness-pack -> browser-upload-handoff -> windows-file-dialog-handoff (if needed)` + 页面侧接受证明
 - [x] 将“多步浏览器自动化默认使用 aria refs + 固定 targetId + 每步后刷新 snapshot”固化成浏览器任务稳定性规则，并接入 `web-form-execution.md`、`browser-research-briefing.md`、`browser-upload-handoff.md`、`browser-download-handoff.md`，优先压低 stale ref、跨步误操作和动态页面重绘导致的返工
 - [x] 新增 `ideas/browser-page-state-checkpoints-template.md`，并将按任务类型区分的页面状态变化检查点接入 `browser-research-briefing.md`、`browser-upload-handoff.md`、`browser-download-handoff.md` 与 `web-form-execution.md`，降低 stale ref、跨步误操作与“状态已变但还按旧页面继续操作”的返工风险
 - [x] 将 research / prep / delivery / form / upload 这些已有 playbook 的默认串联顺序固化进 `openclaw-agent-delegation.md`，减少复杂混合任务中起手路由正确但中途接力断开的返工

@@ -103,6 +103,7 @@
 - [x] 新增 `playbooks/capability-intake-handoff.md`，把“新能力需求 -> 最佳能力路径 -> 最小 smoke test -> 下一执行链路”固化成接入流程，并接入 `PLAYBOOKS.md` 与 `TOOLS.md`，减少找到 skill / 工具 / MCP 但没有真正变成可执行任务链的断层
 - [x] 为 capability intake 新增 `Capability Proof Pack` 模板，并接入 `playbooks/capability-intake-handoff.md` 与 `TOOLS.md`，把“发现能力”进一步收紧为“最小已证明任务 + proof signals + IO contract + next handoff”，降低新 skill / MCP / 工具接入中的假就绪风险
 - [ ] 继续把 capability intake 流程接到更多高频入口，优先覆盖“能不能做 X / 有没有 skill / 要不要接 MCP / 是否值得 ACP 开发”这类能力探索场景
+- [x] 新增 `playbooks/capability-evidence-pack.md`，把 docs / README / vendor page / 官方能力页研究收口为 `Task Family -> Capability Claims -> Prerequisites / Constraints -> Proof Status -> Recommended Next Route`，减少把 capability marketing claim、接入前提和本机 proof 混成一层后直接进入接入/投资判断的返工
 - [x] 新增 `playbooks/acp-implementation-pack.md`，把 ACP coding 请求的前置压缩固定为“目标结果 -> repo/workspace -> scope boundary -> acceptance -> side-effect boundary -> handoff requirement”，降低 Codex / Claude Code / Gemini 线程因任务包过虚导致的澄清回合、改偏和弱验收风险
 - [ ] 继续把 `acp-implementation-pack` 接到更多高频 ACP 入口，优先覆盖“明确点名 Codex/Claude Code/Gemini 的实现任务”“capability intake 最终落到 ACP 开发”以及“需要长期线程的 repo 级实现工作”
 - [x] 新增 `ideas/capability-investment-gate-template.md`，并接入 `playbooks/capability-intake-handoff.md`，把“技术上能接”进一步分流为 `invest now / trial only / defer`，降低低频、脆弱或维护成本高的新能力被过度投入的风险

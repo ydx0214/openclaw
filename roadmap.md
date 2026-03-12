@@ -41,7 +41,8 @@
 - [x] 将 `Research Action Pack` 正式落成 `playbooks/research-action-pack.md`，并接入浏览器研究到表单 / 文档 / 简历 / 操作清单的执行交接链路，减少研究完成后再次手工整理输入的返工
 - [ ] 继续把 `Action Pack` 叠层接到更多研究类入口，优先覆盖官网研究、政策/FAQ、文档转执行清单、产品对比后的决策交接
 - [x] 新增 `playbooks/research-evidence-pack.md`，把“Research Brief -> Evidence Pack -> Action Pack / 文档 / 简历 / 表单 / capability intake”固化为研究结果的证据层，减少后续写作、填表和能力评估时重翻页面、引用失真和 source anchor 丢失的返工
-- [ ] 继续把 `research-evidence-pack` 接到更多高频研究入口，优先覆盖 JD/官网研究转简历证据点、政策/FAQ 转文档草稿、表单要求页转字段证据包和 capability docs 评估场景
+- [x] 将 JD / 官网研究 -> 简历证据点 这条高频入口正式固化为 `playbooks/resume-evidence-pack.md`，把 `research-evidence-pack` 到 `resume-tailoring-from-jd` 之间的中间层收紧为“JD signal -> evidence strength -> safe usage -> do-not-claim boundary”，减少为目标岗位改简历时反复翻 JD、弱匹配硬写和问答/简历边界不清的返工
+- [ ] 继续把 `research-evidence-pack` 接到更多高频研究入口，优先覆盖政策/FAQ 转文档草稿、表单要求页转字段证据包和 capability docs 评估场景
 - [x] 为多选项研究新增 `research-decision-pack-template.md`，把产品/工具/路线/能力比较收口为 `decision goal -> option evidence -> recommendation -> decision-switch triggers -> next executable move`，降低研究已完成但选型理由不可复核、后续难以继续执行的断层
 - [x] 将文档类复杂任务的末端收口固化为 `document-delivery-pack.md`，把“编辑/转换完成”提升为“一个可编辑源 + 一个明确交付文件 + 已验证下一步”的标准交接
 - [ ] 继续把 `document-delivery-pack` 接到更多文档类入口，优先覆盖 Markdown->Word、PDF/Word 转交付、简历之外的一般 Office 交付场景

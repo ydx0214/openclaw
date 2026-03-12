@@ -124,6 +124,8 @@
 - [x] 新增 `ideas/capability-investment-gate-template.md`，并接入 `playbooks/capability-intake-handoff.md`，把“技术上能接”进一步分流为 `invest now / trial only / defer`，降低低频、脆弱或维护成本高的新能力被过度投入的风险
 - [x] 将 `ideas/capability-investment-gate-template.md` 正式落成 `playbooks/capability-investment-gate.md`，并接入 `PLAYBOOKS.md`、`TOOLS.md` 与 `playbooks/capability-intake-handoff.md`，把“找到能力候选”进一步压成“是否值得长期投入”的显式关口，减少为低复用 / 高维护能力过度建设的风险
 - [ ] 继续把 capability investment gate 接到更多高频能力入口，优先覆盖“是否值得为单次需求接 MCP / skill / ACP 开发”这类投入决策场景
+- [x] 新增 `self-evolution-log/ideas/desktop-execution-lane-selector.md`，把桌面/本地 GUI 复杂任务的前门判断固定为 `end state -> lane choice(file/system vs browser vs semantic desktop vs visual/coordinate) -> proof plan -> action`，减少本地文件、Explorer、Office、文件对话框与弱 UIA 场景里一上来就乱点、错 lane 或过早升级能力的返工
+- [ ] 继续把 `desktop-execution-lane-selector` 接到更多高频桌面入口，优先覆盖 Explorer/文件管理、Office 保存导出、浏览器触发的 Windows 文件对话框，以及弱 UIA / 图标密集界面的 lane 选择判断
 - [ ] 试做 `OmniParser + OmniTool` 的 Windows screenshot grounding proof，优先验证它是否能补现有桌面自动化在弱 UIA / 图标密集界面上的盲区；在本机真实样例完成 `screenshot -> parsed elements -> target pick` 之前，默认维持 `trial only`
 - [x] 新增 `self-evolution-log/experiments/omniparser-omnitool-local-capability-proof-pack.md`，把 OmniParser / OmniTool 从 README 级 trial 继续压成一份本机 `Capability Proof Pack`：先固定 `parser-only -> real screenshot -> elements json / annotated proof -> target pick judgment` 的轻量验证路线，再决定是否值得投入 Docker / Windows VM / agent loop 这条更重的 OmniTool 链路
 - [ ] 在出现真实半结构化网页任务缺口时，试做 `Stagehand` 的 task-shaped browser proof，验证它是否值得作为 OpenClaw 现有 browser lane 之外的 AI-assisted middle lane；在完成 unfamiliar admin/docs/form 三类最小 proof 之前，默认维持 `trial only`

@@ -1,5 +1,9 @@
 ﻿# Changelog
 
+## 2026-03-14
+
+- 探索语音能力方向（Speech-to-Text / Text-to-Speech），使用 `find-skills` 工具发现高价值语音技能：inferen-sh/skills@speech-to-text (1.2K安装)、elevenlabs/skills@text-to-speech (1.7K安装)、openai/skills@speech (342安装) 等，已更新 `playbooks/skill-discovery-workflow.md`，为未来集成语音转文字/文字转语音能力做准备
+
 ## 2026-03-13
 
 - 在 `playbooks/browser-research-briefing.md` 中增强 Route A 和新增 Route E，填补浏览器研究结果到文档起草的对接能力空白：在 Route A 新增 "Output Delivery" 部分，明确政策/FAQ研究结果使用 research-evidence-pack -> document-task-routing 的路径；新增 Route E (Policy/FAQ to Document Draft)，提供完整工作流（证据捕获 -> evidence pack -> 文档路由 -> 带源引用的输出）和可直接复用的输出模板，明确使用 evidence pack 确保每个事实性claim都有source anchor，使文档可审核和可更新，接入 PLAYBOOKS.md 与 TOOLS.md，解决政策/FAQ研究完成后需要再次手工整理才能写成文档的重复劳动，减少source anchor丢失和引用失真的问题

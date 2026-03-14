@@ -2,6 +2,8 @@
 
 ## 2026-03-14
 
+- **下午17:00**：新增 `playbooks/mcp-server-integration-workflow.md`，标准化 MCP 服务器能力扩展工作流：提供 mcporter CLI 工具使用指南、常用命令汇总、添加新服务器步骤、高价值 MCP 服务器推荐列表（搜索浏览器/数据开发/生产力工具/AI多媒体）、故障排查指南，已更新 PLAYBOOKS.md (0.1) 与 TOOLS.md，填补 OpenClaw 工具链扩展能力的标准化空白，为后续接入更多 MCP 能力提供操作指引
+
 - **下午16:50**：新增 `playbooks/composite-workflow-orchestration.md`，标准化复合工作流编排模板，解决复杂任务需要串联多个playbook的问题：提供任务拆解模板、依赖分析方法、交接点定义、4种常用工作流模式（内容创作/求职申请/文档处理/批量文件）、交接验证清单和Completion Proof模板，与 cron-task-workflow.md（时间驱动）形成互补（本模板是即时编排），填补现有工具链中"多playbook串联"场景的标准化空白，已更新 PLAYBOOKS.md (0.1)
 
 - **下午16:30**：探索浏览器自动化与网页抓取能力方向，使用 `find-skills` 工具发现这两个领域的主流技能：浏览器自动化领域 sickn33/antigravity-awesome-skills@browser-automation (1.9K安装) 为最高，网页抓取领域 brettdavies/crawl4ai-skill@crawl4ai (187安装) 为最高，更新 `skill-discovery-workflow.md` 新增浏览器自动化和网页抓取两个领域的技能发现表，为批量网页数据抓取、动态内容提取、网站自动化操作等复杂任务提供新的能力选择，填补现有工具链中浏览器自动化/网页抓取方向的标准化空白

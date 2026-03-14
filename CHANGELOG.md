@@ -2,6 +2,8 @@
 
 ## 2026-03-14
 
+- 下午15:40：新增 `playbooks/pdf-processing-workflow.md`，标准化 PDF 文档处理工作流：定义 4 条处理路由（文本提取/表格提取/转Word/OCR），提供工具选择表和快速命令汇总，接入 PLAYBOOKS.md (5.2) 与 TOOLS.md，填补文档处理方向中 PDF 处理的标准化空白，减少 PDF 任务中临时查命令、无标准流程的返工；同时更新 `skill-discovery-workflow.md` 新增 PDF 处理技能发现（anthropics/skills@pdf 37.1K安装为最高）
+
 - 下午15:30：新增 `playbooks/markdown-to-word-conversion.md`，标准化 Markdown 转 Word 文档的工作流：明确使用场景（论文/报告初稿、协作审阅、排版需求）、转换步骤、常见问题（图片、表格、代码块、中文字体）、快速命令汇总，并更新 PLAYBOOKS.md 在 document-ai-understanding-workflow 后新增 5.1 编号，减少 Markdown 转 Word 任务中无标准流程、格式问题无人可查的返工
 
 - 下午：使用 `find-skills` 工具发现视频生成和图像生成的主流技能，更新 `playbooks/skill-discovery-workflow.md`：新增 inferen-sh/skills@ai-video-generation (18.7K安装) 和 inferen-sh/skills@ai-image-generation (18.9K安装)，这两个是目前最高安装量的视频/图像生成技能，为小红书/抖音等内容创作提供了新的能力选择

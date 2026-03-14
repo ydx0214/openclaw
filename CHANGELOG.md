@@ -2,6 +2,8 @@
 
 ## 2026-03-14
 
+- **下午17:13**：新增 `playbooks/speech-processing-workflow.md`，标准化语音处理（STT/TTS）能力工作流：明确任务类型识别（语音转文字 vs 文字转语音）、源/目标锁定、能力选择（内置tts vs skills）、执行模式、质量验证、下游交接，提供4种高频入口路由（快速TTS消息/高品质TTS制作/音视频转写/多语言语音内容）和快速命令参考表，列出已发现的高价值语音skills（elevenlabs 1.5K-1.7K安装、inferen-sh 1.3K安装），已更新 PLAYBOOKS.md (12) 与 TOOLS.md，填补语音处理能力的标准化工作流空白，为会议录音转写、语音播报、多语言语音合成等复杂任务提供标准入口，连接tts工具+find-skills+语音skills的完整能力链路
+
 - **下午17:03**：增强 `playbooks/mcp-server-integration-workflow.md`，新增 MCP 服务器健康检查与降级策略：增加"备选方案"列、健康检查步骤、降级决策树（登录态操作 vs 内容抓取）、smart-crawler 详细用法（工具能力表、调用示例、三用例：竞品分析/素材收集/离线应急），填补 MCP 离线时无标准降级流程的空白，为复杂任务提供故障恢复能力，确保任务完成率
 
 - **下午17:00**：新增 `playbooks/mcp-server-integration-workflow.md`，标准化 MCP 服务器能力扩展工作流：提供 mcporter CLI 工具使用指南、常用命令汇总、添加新服务器步骤、高价值 MCP 服务器推荐列表（搜索浏览器/数据开发/生产力工具/AI多媒体）、故障排查指南，已更新 PLAYBOOKS.md (0.1) 与 TOOLS.md，填补 OpenClaw 工具链扩展能力的标准化空白，为后续接入更多 MCP 能力提供操作指引

@@ -2,6 +2,8 @@
 
 ## 2026-03-14
 
+- 下午16:00：探索数据分析、Excel/API 技能方向，使用 `find-skills` 工具发现这三个领域的主流技能：数据分析领域 astronomer/agents@analyzing-data (438安装) 为最高，Excel领域 vasilyu1983/ai-agents-public@document-xlsx (133安装) 为最高，API领域 eddiebe147/claude-settings@api-documentation-writer (50安装) 为最高，更新 `playbooks/skill-discovery-workflow.md` 新增这三个领域的技能发现表，为数据处理、Excel批量操作、API集成等复杂任务提供新的能力选择，填补现有工具链中数据分析/Excel/API 方向的标准化空白
+
 - 下午15:50：探索 OCR 文字识别和表格提取能力方向，使用 `find-skills` 工具发现 OCR 领域的高价值技能：ocr-document-processor (1.3K安装)、paddleocr-text-recognition (830安装)、pdf-ocr (438安装)，以及表格提取技能 table-extractor (98安装)，更新 `skill-discovery-workflow.md` 和 `pdf-processing-workflow.md` 新增"高级OCR技能选项"章节，为扫描件PDF和复杂表格处理提供更强的能力支持，填补文档处理方向中 OCR/表格提取的标准化空白：定义 4 条处理路由（文本提取/表格提取/转Word/OCR），提供工具选择表和快速命令汇总，接入 PLAYBOOKS.md (5.2) 与 TOOLS.md，填补文档处理方向中 PDF 处理的标准化空白，减少 PDF 任务中临时查命令、无标准流程的返工；同时更新 `skill-discovery-workflow.md` 新增 PDF 处理技能发现（anthropics/skills@pdf 37.1K安装为最高）
 
 - 下午15:30：新增 `playbooks/markdown-to-word-conversion.md`，标准化 Markdown 转 Word 文档的工作流：明确使用场景（论文/报告初稿、协作审阅、排版需求）、转换步骤、常见问题（图片、表格、代码块、中文字体）、快速命令汇总，并更新 PLAYBOOKS.md 在 document-ai-understanding-workflow 后新增 5.1 编号，减少 Markdown 转 Word 任务中无标准流程、格式问题无人可查的返工

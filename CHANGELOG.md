@@ -2,6 +2,8 @@
 
 ## 2026-03-14
 
+- 下午15:30：新增 `playbooks/markdown-to-word-conversion.md`，标准化 Markdown 转 Word 文档的工作流：明确使用场景（论文/报告初稿、协作审阅、排版需求）、转换步骤、常见问题（图片、表格、代码块、中文字体）、快速命令汇总，并更新 PLAYBOOKS.md 在 document-ai-understanding-workflow 后新增 5.1 编号，减少 Markdown 转 Word 任务中无标准流程、格式问题无人可查的返工
+
 - 下午：使用 `find-skills` 工具发现视频生成和图像生成的主流技能，更新 `playbooks/skill-discovery-workflow.md`：新增 inferen-sh/skills@ai-video-generation (18.7K安装) 和 inferen-sh/skills@ai-image-generation (18.9K安装)，这两个是目前最高安装量的视频/图像生成技能，为小红书/抖音等内容创作提供了新的能力选择
 
 - 上午：探索语音能力方向（Speech-to-Text / Text-to-Speech），使用 `find-skills` 工具发现高价值语音技能：inferen-sh/skills@speech-to-text (1.2K安装)、elevenlabs/skills@text-to-speech (1.7K安装)、openai/skills@speech (342安装) 等，已更新 `playbooks/skill-discovery-workflow.md`，为未来集成语音转文字/文字转语音能力做准备

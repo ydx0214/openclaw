@@ -2,6 +2,8 @@
 
 ## 2026-03-14
 
+- **下午16:50**：新增 `playbooks/composite-workflow-orchestration.md`，标准化复合工作流编排模板，解决复杂任务需要串联多个playbook的问题：提供任务拆解模板、依赖分析方法、交接点定义、4种常用工作流模式（内容创作/求职申请/文档处理/批量文件）、交接验证清单和Completion Proof模板，与 cron-task-workflow.md（时间驱动）形成互补（本模板是即时编排），填补现有工具链中"多playbook串联"场景的标准化空白，已更新 PLAYBOOKS.md (0.1)
+
 - **下午16:30**：探索浏览器自动化与网页抓取能力方向，使用 `find-skills` 工具发现这两个领域的主流技能：浏览器自动化领域 sickn33/antigravity-awesome-skills@browser-automation (1.9K安装) 为最高，网页抓取领域 brettdavies/crawl4ai-skill@crawl4ai (187安装) 为最高，更新 `skill-discovery-workflow.md` 新增浏览器自动化和网页抓取两个领域的技能发现表，为批量网页数据抓取、动态内容提取、网站自动化操作等复杂任务提供新的能力选择，填补现有工具链中浏览器自动化/网页抓取方向的标准化空白
 
 - **下午16:20**：新增剪贴板增强能力，为 `windows-desktop-automation` 技能添加 `clipboard-read`、`clipboard-write`、`clipboard-clear` 命令，并创建标准化 `playbooks/clipboard-enhancement-workflow.md`，填补桌面操作中剪贴板使用场景的空白。支持 Workflow A（捕获并处理）、Workflow B（模板填充）、Workflow C（多阶段复制）三种模式，已更新 PLAYBOOKS.md 和 TOOLS.md

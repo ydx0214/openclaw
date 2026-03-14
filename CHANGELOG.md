@@ -2,7 +2,9 @@
 
 ## 2026-03-14
 
-- 探索语音能力方向（Speech-to-Text / Text-to-Speech），使用 `find-skills` 工具发现高价值语音技能：inferen-sh/skills@speech-to-text (1.2K安装)、elevenlabs/skills@text-to-speech (1.7K安装)、openai/skills@speech (342安装) 等，已更新 `playbooks/skill-discovery-workflow.md`，为未来集成语音转文字/文字转语音能力做准备
+- 下午：使用 `find-skills` 工具发现视频生成和图像生成的主流技能，更新 `playbooks/skill-discovery-workflow.md`：新增 inferen-sh/skills@ai-video-generation (18.7K安装) 和 inferen-sh/skills@ai-image-generation (18.9K安装)，这两个是目前最高安装量的视频/图像生成技能，为小红书/抖音等内容创作提供了新的能力选择
+
+- 上午：探索语音能力方向（Speech-to-Text / Text-to-Speech），使用 `find-skills` 工具发现高价值语音技能：inferen-sh/skills@speech-to-text (1.2K安装)、elevenlabs/skills@text-to-speech (1.7K安装)、openai/skills@speech (342安装) 等，已更新 `playbooks/skill-discovery-workflow.md`，为未来集成语音转文字/文字转语音能力做准备
 
 ## 2026-03-13
 

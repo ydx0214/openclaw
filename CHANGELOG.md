@@ -2,6 +2,8 @@
 
 ## 2026-03-14
 
+- **下午17:03**：增强 `playbooks/mcp-server-integration-workflow.md`，新增 MCP 服务器健康检查与降级策略：增加"备选方案"列、健康检查步骤、降级决策树（登录态操作 vs 内容抓取）、smart-crawler 详细用法（工具能力表、调用示例、三用例：竞品分析/素材收集/离线应急），填补 MCP 离线时无标准降级流程的空白，为复杂任务提供故障恢复能力，确保任务完成率
+
 - **下午17:00**：新增 `playbooks/mcp-server-integration-workflow.md`，标准化 MCP 服务器能力扩展工作流：提供 mcporter CLI 工具使用指南、常用命令汇总、添加新服务器步骤、高价值 MCP 服务器推荐列表（搜索浏览器/数据开发/生产力工具/AI多媒体）、故障排查指南，已更新 PLAYBOOKS.md (0.1) 与 TOOLS.md，填补 OpenClaw 工具链扩展能力的标准化空白，为后续接入更多 MCP 能力提供操作指引
 
 - **下午16:50**：新增 `playbooks/composite-workflow-orchestration.md`，标准化复合工作流编排模板，解决复杂任务需要串联多个playbook的问题：提供任务拆解模板、依赖分析方法、交接点定义、4种常用工作流模式（内容创作/求职申请/文档处理/批量文件）、交接验证清单和Completion Proof模板，与 cron-task-workflow.md（时间驱动）形成互补（本模板是即时编排），填补现有工具链中"多playbook串联"场景的标准化空白，已更新 PLAYBOOKS.md (0.1)

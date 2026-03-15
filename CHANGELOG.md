@@ -1,5 +1,9 @@
 ﻿# Changelog
 
+## 2026-03-15
+
+- **下午16:24**：探索社交媒体自动化能力方向，使用 `find-skills` 工具发现该领域的主流技能：twitter-automation (30.2K安装) 为最高，social-content (20.6K安装) 次之，同时发现工作流自动化领域的高价值技能（workflow-automation 11.4K、deployment-automation 10.6K），更新 `skill-discovery-workflow.md` 新增「社交媒体自动化领域」和「工作流/自动化领域」两个技能发现表；新增 `playbooks/social-media-automation-workflow.md`，标准化社交媒体内容创作、跨平台发布和管理工作流，提供3种工作流模式（单平台发布/跨平台发布/社交媒体分析）、平台约束速查和快速命令参考，已更新 PLAYBOOKS.md (14.1) 与 TOOLS.md 新增「Social Media Automation」部分，填补现有工具链中跨平台社交媒体自动化能力的标准化空白，连接 xiaohongshu-mcp + multimedia-generation + 社交媒体skills形成完整内容发布链路
+
 ## 2026-03-14
 
 - **下午17:23**：新增 `playbooks/image-processing-workflow.md`，标准化图像处理能力工作流：明确任务分类（Transform/Adjust/Format/Compress/Filter/Enhance/Composite/Repair）、工具选择（PIL为主）、常用操作命令（裁剪/缩放/旋转/格式转换/亮度调整/滤镜/合并）、质量验证步骤、下游交接（小红书封面/浏览器上传/文档），提供快速命令参考表和"小红书封面预处理"完整示例，已更新 PLAYBOOKS.md (1.3) 与 TOOLS.md，填补通用图像处理能力的标准化空白，连接 screenshot-post-processing + video-frame-extraction + xiaohongshu-cover-image-generation 形成完整多媒体处理链路
